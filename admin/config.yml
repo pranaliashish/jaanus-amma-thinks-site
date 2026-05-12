@@ -5,14 +5,20 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
+publish_mode: simple
+
 collections:
   - name: "blog"
     label: "Blog"
     folder: "blog"
     create: true
     slug: "{{slug}}"
+
     fields:
       - { label: "Title", name: "title", widget: "string" }
+
       - { label: "Date", name: "date", widget: "datetime" }
+
       - { label: "Description", name: "description", widget: "text" }
+
       - { label: "Body", name: "body", widget: "markdown" }
