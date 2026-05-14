@@ -103,12 +103,12 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 50vh;
+    min-height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: 50px 20px;
 
     background:
         radial-gradient(circle at top left, rgba(255, 214, 224, 0.45), transparent 35%),
