@@ -324,4 +324,28 @@ body {
     line-height: 1.7;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Featured Story Cards Animation */
+
+.story-card {
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.story-card img {
+    transition: transform 0.4s ease;
+}
+
+.story-card:hover img {
+    transform: scale(1.05);
+}
+
+.story-image {
+    overflow: hidden;
+}
 ```
