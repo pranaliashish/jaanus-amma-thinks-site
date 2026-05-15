@@ -29,6 +29,7 @@ body {
     overflow-x: hidden;
     background: linear-gradient(135deg, var(--cream) 0%, var(--lavender) 100%);
     min-height: 100vh;
+    background: #fff8f5;
 }
 
 /* Navigation */
@@ -102,38 +103,65 @@ body {
 }
 
 /* Hero Section */
+
 .hero {
-    min-height: 40vh;
+    min-height: 88vh;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 50px 20px;
+
+    padding: 80px 6%;
 
     background:
-        radial-gradient(circle at top left, rgba(255, 214, 224, 0.45), transparent 35%),
-        radial-gradient(circle at bottom right, rgba(255, 245, 210, 0.5), transparent 35%),
-        linear-gradient(135deg, #fffdf8 0%, #fdf7f2 100%);
+        radial-gradient(circle at top left,
+            rgba(255, 228, 236, 0.65),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(255, 245, 225, 0.7),
+            transparent 35%),
+
+        linear-gradient(135deg,
+            #fff8f5 0%,
+            #fdf7f2 100%);
+
+    overflow: hidden;
 }
 
 .hero-content {
-    max-width: 800px;
-    z-index: 2;
+    width: 100%;
+    max-width: 1300px;
+
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+
+    align-items: center;
+    gap: 50px;
 }
 
 .hero-title {
     font-family: 'Dancing Script', cursive;
-    font-size: clamp(3rem, 8vw, 6rem);
-    color: var(--text-dark);
-    margin-bottom: 1rem;
-    line-height: 1.2;
+
+    font-size: clamp(4rem, 8vw, 7rem);
+
+    line-height: 1.05;
+
+    color: #4d4b4f;
+
+    margin-bottom: 1.5rem;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    color: var(--text-light);
+    font-size: 1.5rem;
+
+    line-height: 1.8;
+
+    color: #7a7676;
+
+    max-width: 650px;
+
     margin-bottom: 2.5rem;
-    font-weight: 300;
 }
 
 .hero-buttons {
@@ -381,23 +409,9 @@ body {
 
     filter:
         brightness(1.02)
-        saturate(1.03);
+        saturate(1.04);
 
     mix-blend-mode: lighten;
-
-    -webkit-mask-image:
-        radial-gradient(circle at center,
-            rgba(0, 0, 0, 1) 45%,
-            rgba(0, 0, 0, 0.9) 62%,
-            rgba(0, 0, 0, 0.55) 78%,
-            transparent 100%);
-
-    mask-image:
-        radial-gradient(circle at center,
-            rgba(0, 0, 0, 1) 45%,
-            rgba(0, 0, 0, 0.9) 62%,
-            rgba(0, 0, 0, 0.55) 78%,
-            transparent 100%);
 
     box-shadow:
         0 30px 60px rgba(220, 200, 185, 0.12);
