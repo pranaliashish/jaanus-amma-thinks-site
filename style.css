@@ -543,6 +543,69 @@ body {
         gap: 20px;
     }
 
+/* Mobile Hero Fix */
 
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 16px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        gap: 16px;
+        font-size: 0.95rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 85vh;
+
+        padding:
+            100px 24px 70px;
+
+        background-position:
+            center center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+        line-height: 1.08;
+
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.35rem;
+        line-height: 1.7;
+
+        margin-bottom: 2rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 16px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+
+}
 
 ```
