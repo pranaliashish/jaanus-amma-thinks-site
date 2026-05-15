@@ -546,7 +546,7 @@ body {
 
         background-size: cover;
 
-        background-position: 68% center;
+        background-position: 58% center;
     }
 
     .hero::before {
@@ -563,7 +563,7 @@ body {
     }
 
     .hero-title {
-        font-size: 3.8rem;
+        font-size: 3.2rem;
         line-height: 1.05;
 
         margin-bottom: 1.5rem;
@@ -589,13 +589,10 @@ body {
         gap: 16px;
     }
 
-    .btn {
-        width: 85%;
-        max-width: 280px;
-
-        text-align: center;
-    }
-
+   .btn {
+    width: 82%;
+    max-width: 260px;
+}
     /* Sections */
 
     .featured-section,
