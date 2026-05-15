@@ -583,64 +583,72 @@ body {
     }
 }
 
-/* Floating Dreamy Elements */
+/* Elegant Floating Glow Stars */
 
 .floating-stars {
     position: absolute;
     inset: 0;
-    pointer-events: none;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .floating-stars span {
     position: absolute;
-    font-size: 1.8rem;
-    opacity: 0.5;
-    animation: floatStars 6s ease-in-out infinite;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 214, 102, 0.7);
+    border-radius: 50%;
+    box-shadow:
+        0 0 10px rgba(255, 214, 102, 0.8),
+        0 0 20px rgba(255, 214, 102, 0.5);
+    animation: floatGlow 7s ease-in-out infinite;
 }
 
 /* Individual Positions */
 
 .floating-stars span:nth-child(1) {
     top: 18%;
-    left: 10%;
+    left: 12%;
 }
 
 .floating-stars span:nth-child(2) {
-    top: 25%;
-    right: 12%;
+    top: 22%;
+    right: 20%;
     animation-delay: 1s;
 }
 
 .floating-stars span:nth-child(3) {
-    bottom: 20%;
-    left: 15%;
+    bottom: 22%;
+    left: 18%;
     animation-delay: 2s;
 }
 
 .floating-stars span:nth-child(4) {
     top: 12%;
-    right: 30%;
+    right: 35%;
     animation-delay: 3s;
 }
 
 .floating-stars span:nth-child(5) {
     bottom: 18%;
-    right: 18%;
+    right: 15%;
     animation-delay: 4s;
 }
 
 /* Floating Animation */
 
-@keyframes floatStars {
+@keyframes floatGlow {
 
     0%,
     100% {
         transform: translateY(0px);
+        opacity: 0.5;
     }
 
     50% {
         transform: translateY(-12px);
+        opacity: 1;
     }
 }
+
 ```
