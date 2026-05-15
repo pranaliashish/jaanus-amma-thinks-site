@@ -558,20 +558,20 @@ body {
     }
 
     .nav-links {
-        gap: 16px;
-        font-size: 0.95rem;
+        gap: 10px;
+        font-size: 0.82rem;
         flex-wrap: wrap;
         justify-content: center;
     }
 
     .hero {
-        min-height: 85vh;
+        min-height: 78vh;
 
         padding:
             100px 24px 70px;
 
         background-position:
-            center center;
+            72% center;
     }
 
     .hero-content {
@@ -580,7 +580,7 @@ body {
     }
 
     .hero-title {
-        font-size: 4rem;
+        font-size: 3.3rem;
         line-height: 1.08;
 
         margin-bottom: 1.5rem;
@@ -602,8 +602,8 @@ body {
     }
 
     .btn {
-        width: 100%;
-        max-width: 320px;
+        width: auto;
+        max-width: 170px;
     }
 
 }
