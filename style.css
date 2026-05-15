@@ -651,4 +651,110 @@ body {
     }
 }
 
+/* Dreamy Moon */
+
+.moon {
+    position: absolute;
+    top: 12%;
+    right: 18%;
+    width: 55px;
+    height: 55px;
+    background: #ffd86b;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(255, 216, 107, 0.5);
+    opacity: 0.25;
+}
+
+/* Crescent Cut */
+
+.moon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 14px;
+    width: 55px;
+    height: 55px;
+    background: #fdf8f4;
+    border-radius: 50%;
+}
+
+/* Clouds */
+
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50px;
+    filter: blur(1px);
+}
+
+.cloud::before,
+.cloud::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+}
+
+/* Cloud 1 */
+
+.cloud1 {
+    width: 90px;
+    height: 32px;
+    top: 22%;
+    left: 8%;
+    animation: cloudFloat 12s ease-in-out infinite;
+}
+
+.cloud1::before {
+    width: 38px;
+    height: 38px;
+    top: -18px;
+    left: 10px;
+}
+
+.cloud1::after {
+    width: 45px;
+    height: 45px;
+    top: -20px;
+    right: 12px;
+}
+
+/* Cloud 2 */
+
+.cloud2 {
+    width: 70px;
+    height: 26px;
+    bottom: 18%;
+    right: 12%;
+    animation: cloudFloat 15s ease-in-out infinite;
+}
+
+.cloud2::before {
+    width: 32px;
+    height: 32px;
+    top: -14px;
+    left: 8px;
+}
+
+.cloud2::after {
+    width: 36px;
+    height: 36px;
+    top: -16px;
+    right: 8px;
+}
+
+/* Floating Animation */
+
+@keyframes cloudFloat {
+
+    0%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(12px);
+    }
+}
+
 ```
