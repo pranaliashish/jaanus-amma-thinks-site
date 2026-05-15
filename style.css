@@ -105,7 +105,7 @@ body {
 /* Hero Section */
 
 .hero {
-    min-height: 88vh;
+    min-height: 78vh;
 
     display: flex;
     align-items: center;
@@ -140,6 +140,11 @@ body {
     gap: 50px;
 }
 
+.hero-text {
+    position: relative;
+    z-index: 2;
+}
+
 .hero-title {
     font-family: 'Dancing Script', cursive;
 
@@ -162,6 +167,16 @@ body {
     max-width: 650px;
 
     margin-bottom: 2.5rem;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    display: block;
 }
 
 .hero-buttons {
@@ -223,6 +238,7 @@ body {
         font-size: 1rem;
     }
 
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
@@ -265,7 +281,8 @@ body {
 }
 
 .story-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(10px);
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
@@ -340,10 +357,10 @@ body {
 
 @media (max-width: 900px) {
 
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+}  
 
     .hero-image img {
         max-width: 100%;
@@ -412,7 +429,8 @@ body {
 }
 
 .category-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.72);
+    backdrop-filter: blur(10px);
 
     padding: 32px 22px;
 
@@ -497,7 +515,7 @@ body {
 }
     
     .hero-title {
-        font-size: 4rem;
+        font-size: 3.2rem;
         line-height: 1.1;
     }
 
