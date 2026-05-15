@@ -547,31 +547,26 @@ body {
 
 @media (max-width: 768px) {
 
-    .navbar {
-        padding: 16px 20px;
-        flex-wrap: wrap;
-        gap: 12px;
-    }
+   .navbar {
+    justify-content: center;
+}
 
     .logo {
         font-size: 1.8rem;
     }
 
     .nav-links {
-        gap: 10px;
-        font-size: 0.82rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    display: none;
+}
 
     .hero {
-        min-height: 78vh;
+        min-height: 72vh;
 
         padding:
             100px 24px 70px;
 
         background-position:
-            72% center;
+            78% center;
     }
 
     .hero-content {
@@ -580,7 +575,7 @@ body {
     }
 
     .hero-title {
-        font-size: 3.3rem;
+        font-size: 3rem;
         line-height: 1.08;
 
         margin-bottom: 1.5rem;
