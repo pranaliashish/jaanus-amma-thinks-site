@@ -505,157 +505,114 @@ body {
     position: relative;
 }
 
-/* Better Mobile Layout */
+/* =========================================
+   FINAL MOBILE RESPONSIVE FIX
+========================================= */
 
 @media (max-width: 768px) {
 
-    /* MOBILE NAVBAR FIX */
+    /* Navbar */
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 20px;
-}
+    .navbar {
+        padding: 14px 0;
+    }
 
-.nav-links {
-    display: none;
-}
+    .nav-container {
+        justify-content: center;
+        padding: 0 14px;
+    }
 
-.logo {
-    font-size: 1.4rem;
-    text-align: center;
-}
+    .nav-menu {
+        display: none;
+    }
 
-/* MOBILE HERO FIX */
+    .nav-logo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
-.hero {
-    min-height: 88vh;
-    padding: 80px 24px;
-    text-align: center;
+    .nav-logo i {
+        font-size: 1.6rem;
+    }
 
-    background-position: 72% center;
-    background-size: cover;
-}
-
-.hero-content {
-    max-width: 100%;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    line-height: 1.1;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-}
-
-.hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    align-items: center;
-}
-
-.btn {
-    width: 85%;
-    text-align: center;
-}
+    /* Hero */
 
     .hero {
-        padding: 40px 20px;
-        min-height: auto;
+        min-height: 100vh;
+
+        padding: 110px 20px 80px;
+
+        text-align: center;
+
+        background-size: cover;
+
+        background-position: 68% center;
     }
 
-    .hero-content {
-    gap: 30px;
-    position: relative;
-    z-index: 2;
-}
-
-    .hero-text {
-    z-index: 2;
-}
-    
-    .hero-title {
-        font-size: 3.2rem;
-        line-height: 1.1;
-    }
-
-    .hero-subtitle {
-        font-size: 1.1rem;
-    }
-
-    .featured-section,
-    .categories-section {
-        padding: 50px 6%;
-    }
-
-    .story-grid,
-    .categories-grid {
-        gap: 20px;
-    }
-
-/* Mobile Hero Fix */
-
-@media (max-width: 768px) {
-
-   .navbar {
-    justify-content: center;
-}
-
-    .logo {
-        font-size: 1.8rem;
-    }
-
-    .nav-links {
-    display: none;
-}
-
-    .hero {
-        min-height: 72vh;
-
-        padding:
-            100px 24px 70px;
-
-        background-position:
-            78% center;
+    .hero::before {
+        background:
+            linear-gradient(
+                rgba(255,248,245,0.55),
+                rgba(255,248,245,0.65)
+            );
     }
 
     .hero-content {
         max-width: 100%;
-        text-align: center;
+        margin: 0 auto;
     }
 
     .hero-title {
-        font-size: 3rem;
-        line-height: 1.08;
+        font-size: 3.8rem;
+        line-height: 1.05;
 
         margin-bottom: 1.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.35rem;
-        line-height: 1.7;
+        font-size: 1.15rem;
 
-        margin-bottom: 2rem;
+        line-height: 1.8;
+
+        margin-bottom: 2.2rem;
+
+        color: #6f6b6b;
     }
 
+    /* Buttons */
+
     .hero-buttons {
-        display: flex;
         flex-direction: column;
+
         align-items: center;
 
         gap: 16px;
     }
 
     .btn {
-        width: auto;
-        max-width: 170px;
+        width: 85%;
+        max-width: 280px;
+
+        text-align: center;
+    }
+
+    /* Sections */
+
+    .featured-section,
+    .categories-section {
+        padding: 60px 6%;
+    }
+
+    .section-header h2 {
+        font-size: 2.4rem;
+    }
+
+    .story-grid,
+    .categories-grid {
+        gap: 22px;
     }
 
 }
+
 
 ```
