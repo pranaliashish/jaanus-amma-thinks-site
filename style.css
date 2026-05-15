@@ -544,6 +544,8 @@ body {
 
     .hero-content {
         gap: 30px;
+        position: relative;
+z-index: 2;
     }
 
     .hero-title {
@@ -635,6 +637,21 @@ body {
     animation-delay: 4s;
 }
 
+.floating-stars span:nth-child(6) {
+    top: 15%;
+    left: 42%;
+}
+
+.floating-stars span:nth-child(7) {
+    top: 72%;
+    left: 25%;
+}
+
+.floating-stars span:nth-child(8) {
+    top: 22%;
+    right: 8%;
+}
+
 /* Floating Animation */
 
 @keyframes floatGlow {
@@ -663,6 +680,7 @@ body {
     border-radius: 50%;
     box-shadow: 0 0 35px rgba(255, 216, 107, 0.75);
     opacity: 0.45;
+    z-index: 0;
 }
 
 /* Crescent Cut */
@@ -682,11 +700,15 @@ body {
 
 .cloud {
     position: absolute;
-    background: rgba(255, 245, 240, 0.95);
+    background: rgba(255, 248, 244, 0.98);
     border-radius: 50px;
-    filter: blur(1px);
+
     box-shadow:
-    0 8px 20px rgba(212, 190, 170, 0.18);
+        0 10px 30px rgba(230, 210, 190, 0.22);
+
+    filter: blur(0.5px);
+
+    opacity: 0.95;
 }
 
 .cloud::before,
@@ -700,10 +722,10 @@ body {
 /* Cloud 1 */
 
 .cloud1 {
-    width: 120px;
-    height: 42px;
-    top: 22%;
-    left: 8%;
+    width: 180px;
+    height: 60px;
+    top: 18%;
+    left: 2%;
     animation: cloudFloat 12s ease-in-out infinite;
 }
 
@@ -724,10 +746,10 @@ body {
 /* Cloud 2 */
 
 .cloud2 {
-    width: 100px;
-    height: 36px;
-    bottom: 18%;
-    right: 12%;
+    width: 160px;
+    height: 55px;
+    bottom: 10%;
+    right: 6%;
     animation: cloudFloat 15s ease-in-out infinite;
 }
 
