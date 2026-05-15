@@ -661,8 +661,8 @@ body {
     height: 55px;
     background: #ffd86b;
     border-radius: 50%;
-    box-shadow: 0 0 25px rgba(255, 216, 107, 0.5);
-    opacity: 0.25;
+    box-shadow: 0 0 35px rgba(255, 216, 107, 0.75);
+    opacity: 0.45;
 }
 
 /* Crescent Cut */
@@ -682,24 +682,26 @@ body {
 
 .cloud {
     position: absolute;
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 245, 240, 0.95);
     border-radius: 50px;
     filter: blur(1px);
+    box-shadow:
+    0 8px 20px rgba(212, 190, 170, 0.18);
 }
 
 .cloud::before,
 .cloud::after {
     content: "";
     position: absolute;
-    background: rgba(255, 255, 255, 0.45);
+    background: rgba(255, 245, 240, 0.95);
     border-radius: 50%;
 }
 
 /* Cloud 1 */
 
 .cloud1 {
-    width: 90px;
-    height: 32px;
+    width: 120px;
+    height: 42px;
     top: 22%;
     left: 8%;
     animation: cloudFloat 12s ease-in-out infinite;
@@ -722,8 +724,8 @@ body {
 /* Cloud 2 */
 
 .cloud2 {
-    width: 70px;
-    height: 26px;
+    width: 100px;
+    height: 36px;
     bottom: 18%;
     right: 12%;
     animation: cloudFloat 15s ease-in-out infinite;
