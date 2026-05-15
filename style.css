@@ -509,6 +509,61 @@ body {
 
 @media (max-width: 768px) {
 
+    /* MOBILE NAVBAR FIX */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.logo {
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/* MOBILE HERO FIX */
+
+.hero {
+    min-height: 88vh;
+    padding: 80px 24px;
+    text-align: center;
+
+    background-position: 72% center;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.btn {
+    width: 85%;
+    text-align: center;
+}
+
     .hero {
         padding: 40px 20px;
         min-height: auto;
