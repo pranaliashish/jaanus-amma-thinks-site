@@ -499,9 +499,11 @@ body {
         ),
         url("mobile-hero.png");
 
-    background-size: cover;
+    background-size: contain;
 
-    background-position: center center;
+       background-color: #fff8f5;
+
+    background-position: center top;
 
     background-repeat: no-repeat;
 }
