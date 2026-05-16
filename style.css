@@ -515,6 +515,7 @@ body {
     .hero-content {
         max-width: 100%;
         margin: 0 auto;
+        padding-top: 40px;
     }
 
     .hero-title {
@@ -529,6 +530,9 @@ margin: 0 auto 1.2rem;
     }
 
     .hero-subtitle {
+
+        max-width: 300px;
+margin: 0 auto 30px;
 
         font-size: 1.15rem;
 
