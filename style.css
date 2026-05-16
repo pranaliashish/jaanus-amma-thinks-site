@@ -118,7 +118,7 @@ body {
             rgba(255,248,245,0.55)
         ),
 
-        url("desktop-hero.png");
+        url("desktop-hero.png?v=2");
 
     background-size: cover;
     background-position: center;
@@ -516,11 +516,11 @@ body {
                 rgba(255,248,245,0.70)
             ),
 
-            url("mobile-hero.png");
+            url("mobile-hero.png?v=2");
 
         background-size: cover;
 
-        background-position: center top;
+        background-position: 68% center;
 
         background-repeat: no-repeat;
     }
@@ -567,9 +567,9 @@ body {
 
     .btn {
 
-        width: 100%;
+        width: 92%;
 
-        max-width: 320px;
+        max-width: 300px;
 
         padding: 1rem 2rem;
     }
