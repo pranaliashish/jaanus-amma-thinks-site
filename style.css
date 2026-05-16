@@ -118,27 +118,14 @@ body {
 
     background-image:
         linear-gradient(
-            rgba(255,248,245,0.45),
-            rgba(255,248,245,0.55)
+            rgba(255,248,245,0.22),
+            rgba(255,248,245,0.34)
         ),
         url("desktop-hero.png");
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-.hero::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background:
-        radial-gradient(circle at left,
-            rgba(255,255,255,0.5),
-            transparent 45%);
-
-    z-index: 1;
 }
 
 .hero-content {
@@ -507,8 +494,8 @@ body {
 
     background-image:
         linear-gradient(
-            rgba(255,248,245,0.60),
-            rgba(255,248,245,0.72)
+            rgba(255,248,245,0.42),
+            rgba(255,248,245,0.55)
         ),
         url("mobile-hero.png");
 
