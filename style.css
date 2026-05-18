@@ -600,30 +600,82 @@ padding-bottom: 30px;
 ========================================= */
 
 .about-section {
-    padding: 100px 8%;
-    background: #fffaf7;
+    padding: 120px 8%;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(255,240,245,0.7),
+        transparent 40%),
+
+        linear-gradient(
+        180deg,
+        #fffaf7 0%,
+        #fffdfc 100%);
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 .about-container {
     max-width: 1200px;
+
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    grid-template-columns: 0.95fr 1fr;
+
+    gap: 90px;
 
     align-items: center;
 }
 
+.about-image {
+    position: relative;
+}
+
+.about-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 85%;
+    height: 85%;
+
+    background: rgba(255, 225, 235, 0.55);
+
+    filter: blur(60px);
+
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+}
+
 .about-image img {
     width: 100%;
-    border-radius: 32px;
 
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-radius: 34px;
+
+    position: relative;
+    z-index: 2;
+
+    box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+
+    transition: all 0.4s ease;
+}
+
+.about-image img:hover {
+    transform: translateY(-8px);
 }
 
 .about-text {
-    color: #4a4a4a;
+    position: relative;
+    z-index: 2;
 }
 
 .about-tag {
@@ -632,20 +684,21 @@ padding-bottom: 30px;
     background: #ffe5ec;
     color: #ff6b81;
 
-    padding: 8px 18px;
-    border-radius: 30px;
+    padding: 9px 18px;
 
-    font-size: 0.9rem;
+    border-radius: 999px;
 
-    margin-bottom: 20px;
+    font-size: 0.92rem;
+
+    margin-bottom: 22px;
 }
 
 .about-text h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 
-    line-height: 1.2;
+    line-height: 1.12;
 
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 
     font-family: 'Dancing Script', cursive;
 
@@ -653,28 +706,35 @@ padding-bottom: 30px;
 }
 
 .about-text p {
-    font-size: 1.08rem;
+    font-size: 1.1rem;
 
-    line-height: 1.9;
+    line-height: 1.95;
 
     color: #6b6670;
 
-    margin-bottom: 22px;
+    margin-bottom: 24px;
+
+    max-width: 580px;
+}
+
+.about-text .btn {
+    margin-top: 10px;
 }
 
 /* =========================================
-   ABOUT SECTION MOBILE
+   ABOUT MOBILE
 ========================================= */
 
 @media (max-width: 768px) {
 
     .about-section {
-        padding: 70px 7%;
+        padding: 80px 7%;
     }
 
     .about-container {
         grid-template-columns: 1fr;
-        gap: 40px;
+
+        gap: 50px;
     }
 
     .about-text {
@@ -682,15 +742,17 @@ padding-bottom: 30px;
     }
 
     .about-text h2 {
-        font-size: 2.4rem;
+        font-size: 2.8rem;
     }
 
     .about-text p {
         font-size: 1rem;
+
+        max-width: 100%;
     }
 
     .about-image img {
-        border-radius: 24px;
+        border-radius: 28px;
     }
 }
 ```
