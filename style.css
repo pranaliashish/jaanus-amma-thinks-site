@@ -547,7 +547,7 @@ margin: 0 auto 30px;
     /* Buttons */
 
     .hero-buttons {
-
+padding-bottom: 30px;
         flex-direction: column;
 
         align-items: center;
