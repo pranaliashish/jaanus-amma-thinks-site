@@ -798,6 +798,8 @@ padding-bottom: 30px;
     position: relative;
 
     overflow: hidden;
+
+    isolation: isolate;
 }
 
 .story-page::before {
@@ -813,7 +815,32 @@ padding-bottom: 30px;
 
     background-size: 120px 120px;
 
-    opacity: 0.35;
+    opacity: 0.65;
+
+    pointer-events: none;
+}
+
+.story-page::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    background:
+        radial-gradient(
+            rgba(255, 225, 235, 0.35),
+            transparent 70%
+        );
+
+    top: -200px;
+    right: -180px;
+
+    z-index: -1;
+
+    filter: blur(30px);
 
     pointer-events: none;
 }
