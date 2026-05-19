@@ -865,4 +865,25 @@ padding-bottom: 30px;
         font-size: 1.05rem;
     }
 }
+
+.story-hero-image {
+
+    margin-top: 60px;
+}
+
+.story-hero-image img {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    border-radius: 32px;
+
+    box-shadow:
+        0 20px 60px rgba(255, 200, 220, 0.25);
+
+    display: block;
+
+    margin: 0 auto;
+}
 ```
