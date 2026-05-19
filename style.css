@@ -779,19 +779,20 @@ padding-bottom: 30px;
 
         radial-gradient(
             circle at top left,
-            rgba(255, 240, 245, 0.85),
+            rgba(255, 214, 230, 0.75),
             transparent 35%
         ),
 
         radial-gradient(
             circle at top right,
-            rgba(255, 245, 250, 0.7),
-            transparent 30%
+            rgba(255, 235, 245, 0.6),
+            transparent 32%
         ),
 
         linear-gradient(
             180deg,
-            #fffaf9 0%,
+            #fff6fa 0%,
+            #fff9fc 45%,
             #fffdfc 100%
         );
 
@@ -810,12 +811,15 @@ padding-bottom: 30px;
 
     inset: 0;
 
-    background-image:
-        radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px);
+    background:
+        radial-gradient(
+            rgba(255,255,255,0.9) 1.5px,
+            transparent 1.5px
+        );
 
     background-size: 120px 120px;
 
-    opacity: 0.65;
+    opacity: 0.55;
 
     pointer-events: none;
 }
