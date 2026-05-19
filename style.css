@@ -892,6 +892,13 @@ padding-bottom: 30px;
     color: #4d4b4f;
 
     margin-bottom: 28px;
+
+    position: relative;
+
+    z-index: 2;
+
+    text-shadow:
+        0 0 25px rgba(255,255,255,0.65);
 }
 
 .story-intro {
@@ -905,6 +912,36 @@ padding-bottom: 30px;
     max-width: 700px;
 
     margin: 0 auto;
+
+    margin-bottom: 60px;
+}
+
+.story-hero-image {
+
+    position: relative;
+}
+
+.story-hero-image::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 80%;
+    height: 80%;
+
+    background:
+        radial-gradient(
+            rgba(255, 220, 235, 0.45),
+            transparent 70%
+        );
+
+    top: 10%;
+    left: 10%;
+
+    filter: blur(40px);
+
+    z-index: -1;
 }
 
 /* =========================================
