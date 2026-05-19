@@ -766,4 +766,103 @@ padding-bottom: 30px;
         border-radius: 28px;
     }
 }
+
+/* =========================================
+   STORY PAGE
+========================================= */
+
+.story-page {
+
+    padding: 160px 8% 80px;
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(255,240,245,0.7),
+        transparent 40%),
+
+        linear-gradient(
+        180deg,
+        #fffaf7 0%,
+        #fffdfc 100%);
+}
+
+.story-container {
+
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.story-tag {
+
+    display: inline-block;
+
+    background: rgba(255, 228, 236, 0.65);
+
+    color: #d97f97;
+
+    padding: 10px 20px;
+
+    border-radius: 999px;
+
+    font-size: 1rem;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 24px;
+
+    backdrop-filter: blur(8px);
+}
+
+.story-title {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 5rem;
+
+    line-height: 1.1;
+
+    color: #4d4b4f;
+
+    margin-bottom: 28px;
+}
+
+.story-intro {
+
+    font-size: 1.25rem;
+
+    line-height: 1.9;
+
+    color: #6b6670;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+}
+
+/* =========================================
+   STORY PAGE MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .story-page {
+
+        padding: 140px 7% 70px;
+    }
+
+    .story-title {
+
+        font-size: 3.4rem;
+    }
+
+    .story-intro {
+
+        font-size: 1.05rem;
+    }
+}
 ```
