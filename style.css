@@ -682,19 +682,25 @@ padding-bottom: 30px;
 
     display: inline-block;
 
-    background: transparent;
+    background: rgba(255, 228, 236, 0.65);
 
-    color: #d48aa0;
+    color: #d97f97;
 
-    padding: 0;
+    padding: 10px 20px;
 
-    font-size: 0.88rem;
+    border-radius: 999px;
+
+    font-size: 1rem;
 
     letter-spacing: 1px;
 
     text-transform: uppercase;
 
-    margin-bottom: 18px;
+    font-weight: 500;
+
+    margin-bottom: 24px;
+
+    backdrop-filter: blur(8px);
 }
 
 .about-text h2 {
