@@ -3,14 +3,20 @@ media:
   output: /images/uploads
 
 content:
+
   - name: blog
     label: Blog Posts
     type: collection
+
     path: blog
+
     filename: "{primary}.md"
+
     view:
-      fields: [title, date]
+      fields: [title, date, category]
+
     fields:
+
       - name: title
         label: Title
         type: string
@@ -19,10 +25,25 @@ content:
         label: Date
         type: date
 
+      - name: category
+        label: Category
+        type: select
+
+        options:
+          - Bedtime Story
+          - Wonder Talk
+          - Toddler Activity
+          - Motherhood Reflection
+          - Ancient Indian Wisdom
+
       - name: description
-        label: Description
+        label: Short Description
         type: text
 
+      - name: cover
+        label: Cover Image
+        type: image
+
       - name: body
-        label: Body
+        label: Story Content
         type: rich-text
