@@ -25,25 +25,25 @@ content:
         label: Date
         type: date
 
-      - name: category
-        label: Category
-        type: select
+     - name: category
+  label: Category
+  widget: select
 
-       options:
-  - label: Bedtime Story
-    value: Bedtime Story
+  options:
+    - label: Bedtime Story
+      value: Bedtime Story
 
-  - label: Wonder Talk
-    value: Wonder Talk
+    - label: Wonder Talk
+      value: Wonder Talk
 
-  - label: Toddler Activity
-    value: Toddler Activity
+    - label: Toddler Activity
+      value: Toddler Activity
 
-  - label: Motherhood Reflection
-    value: Motherhood Reflection
+    - label: Motherhood Reflection
+      value: Motherhood Reflection
 
-  - label: Ancient Indian Wisdom
-    value: Ancient Indian Wisdom
+    - label: Ancient Indian Wisdom
+      value: Ancient Indian Wisdom
       - name: description
         label: Short Description
         type: text
