@@ -986,4 +986,61 @@ padding-bottom: 30px;
 
     margin: 0 auto;
 }
+
+/* =========================================
+   STORY BODY
+========================================= */
+
+.story-body {
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 3rem 2rem;
+
+    font-size: 1.15rem;
+
+    line-height: 2.2;
+
+    color: #5f5a67;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.story-body p {
+
+    margin-bottom: 1.8rem;
+}
+
+.story-body h1,
+.story-body h2,
+.story-body h3 {
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #5c5661;
+
+    margin-bottom: 2rem;
+}
+
+.story-body strong {
+
+    color: #e08aa2;
+}
+
+.story-body::first-letter {
+
+    font-size: 3rem;
+
+    font-family: 'Dancing Script', cursive;
+
+    color: #d98ca4;
+
+    float: left;
+
+    line-height: 1;
+
+    padding-right: 0.4rem;
+}
 ```
