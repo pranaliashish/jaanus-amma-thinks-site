@@ -993,7 +993,7 @@ padding-bottom: 30px;
 
 .story-body {
 
-    max-width: 760px;
+    max-width: 680px;
 
     margin: 0 auto;
 
@@ -1006,6 +1006,8 @@ padding-bottom: 30px;
     color: #5f5a67;
 
     font-family: 'Poppins', sans-serif;
+
+    margin-top: 2rem;
 }
 
 .story-body p {
