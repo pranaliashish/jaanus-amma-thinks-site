@@ -1045,4 +1045,49 @@ padding-bottom: 30px;
 
     padding-right: 0.4rem;
 }
+
+/* =========================================
+   LITTLE REFLECTION
+========================================= */
+
+.little-reflection {
+
+    max-width: 680px;
+
+    margin: 4rem auto 5rem;
+
+    padding: 2.5rem;
+
+    background: rgba(255, 240, 245, 0.75);
+
+    border-radius: 28px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(226, 170, 190, 0.15);
+
+    backdrop-filter: blur(6px);
+}
+
+.little-reflection h3 {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 2.2rem;
+
+    color: #c97c95;
+
+    margin-bottom: 1rem;
+}
+
+.little-reflection p {
+
+    font-size: 1.1rem;
+
+    line-height: 2;
+
+    color: #5f5a67;
+
+    margin: 0;
+}
 ```
