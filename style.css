@@ -457,6 +457,26 @@ backdrop-filter: blur(4px);
         overflow-x: hidden;
     }
 
+    .stories-grid {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.story-card {
+
+    width: 90%;
+
+    max-width: 380px;
+
+    margin: 0 auto;
+}
+
     /* Navbar */
 
     .navbar {
@@ -468,10 +488,15 @@ backdrop-filter: blur(4px);
         padding: 0 16px;
     }
 
-    .nav-menu {
-        display: none;
-    }
+ .nav-menu {
 
+    display: flex;
+
+    gap: 1rem;
+
+    font-size: 0.9rem;
+}
+    
     .nav-logo {
         font-size: 1.45rem;
         text-align: center;
