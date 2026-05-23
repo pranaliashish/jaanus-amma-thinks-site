@@ -456,50 +456,28 @@ backdrop-filter: blur(4px);
     body {
         overflow-x: hidden;
     }
+.story-grid {
 
-    .stories-grid {
+    display: flex !important;
 
-    display: flex;
+    flex-direction: column !important;
 
-    flex-direction: column;
+    align-items: center !important;
 
-    align-items: center;
+    justify-content: center !important;
 
-    gap: 2rem;
+    width: 100% !important;
 }
 
 .story-card {
 
-    width: 90%;
+    width: 90% !important;
 
-    max-width: 380px;
+    max-width: 360px !important;
 
-    margin: 0 auto;
-}
+    margin-left: auto !important;
 
-.stories-section {
-
-    padding: 4rem 1rem;
-}
-
-.stories-grid {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    width: 100%;
-}
-
-.story-card {
-
-    width: 100%;
-
-    max-width: 360px;
-
-    margin: 0 auto;
+    margin-right: auto !important;
 }
     
     /* Navbar */
