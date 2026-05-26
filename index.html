@@ -75,15 +75,7 @@
         <p>Gentle bedtime tales and wonder-filled moments for little hearts 🌙</p>
     </div>
 
-    <div class="story-grid">
-
-       <a href="blog/story.html?id=the-little-firefly-who-hid-its-light" class="story-card"> 
-            <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1200&auto=format&fit=crop" alt="Bedtime Story">
-
-            <div class="story-content">
-                <span class="story-category">Bedtime Story</span>
-                <h3>The Little Firefly Who Hid Its Light</h3>
-                <p>A gentle story about shyness, courage, and discovering your glow.</p>
+   <div class="story-grid" id="story-grid">
             </div>
         </a>
 
@@ -185,5 +177,59 @@
     </div>
 
 </section>
+
+<script>
+
+const stories = [
+
+    {
+        title: "The Little Firefly Who Hid Its Light",
+
+        category: "Bedtime Story",
+
+        description:
+            "A gentle bedtime story about shyness, courage, and discovering that even the softest little light can help someone feel less alone in the dark.",
+
+        image: "firefly-story.png",
+
+        slug: "the-little-firefly-who-hid-its-light"
+    }
+
+];
+
+const storyGrid = document.getElementById("story-grid");
+
+stories.forEach(story => {
+
+    storyGrid.innerHTML += `
+
+        <a href="blog/story.html?id=${story.slug}" class="story-card">
+
+            <div class="story-image">
+
+                <img src="${story.image}" alt="${story.title}">
+
+            </div>
+
+            <div class="story-content">
+
+                <span class="story-category">
+                    ${story.category}
+                </span>
+
+                <h3>${story.title}</h3>
+
+                <p>${story.description}</p>
+
+            </div>
+
+        </a>
+
+    `;
+
+});
+
+</script>
+
 </body>
 </html>
