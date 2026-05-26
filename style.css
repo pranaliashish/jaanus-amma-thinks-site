@@ -259,6 +259,9 @@ backdrop-filter: blur(4px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
     text-decoration: none;
+
+    max-width: 380px;
+margin: 0 auto;
 }
 
 .story-card:hover {
