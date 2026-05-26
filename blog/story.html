@@ -70,82 +70,9 @@
 
 <script>
 
-const stories = {
-
-    "little-firefly": {
-
-        title: "The Little Firefly Who Hid Its Light",
-
-        category: "Bedtime Story ✨",
-
-        description:
-            "A gentle bedtime story about shyness, courage, and discovering that even the softest little light can help someone feel less alone in the dark.",
-
-        image: "../firefly-story.png",
-
-        content: `
-
-            <p>
-                Deep inside a quiet meadow, where the flowers swayed gently beneath the moonlight,
-                lived a tiny little firefly named Lumi.
-            </p>
-
-            <p>
-                Every evening, the other fireflies danced through the sky,
-                glowing like tiny floating stars.
-            </p>
-
-            <p>
-                But Lumi stayed hidden beneath a leaf.
-            </p>
-
-            <p>
-                “What if my light isn’t bright enough?” she whispered softly.
-            </p>
-
-            <p>
-                So while the others twinkled bravely in the night,
-                Lumi kept her little glow tucked safely away.
-            </p>
-
-        `,
-
-        reflection: `
-
-            <h3>🌙 Little Reflection</h3>
-
-            <p>
-                Even the softest little light can help someone
-                feel less alone in the dark.
-            </p>
-
-        `
-    }
-
-};
-
 const params = new URLSearchParams(window.location.search);
 
 const storyId = params.get("id");
-
-const story = stories[storyId];
-
-if (story) {
-
-    document.title = story.title;
-
-    document.getElementById("story-title").innerHTML = story.title;
-
-    document.getElementById("story-category").innerHTML = story.category;
-
-    document.getElementById("story-description").innerHTML = story.description;
-
-    document.getElementById("story-image").src = story.image;
-
-    document.getElementById("story-content").innerHTML = story.content;
-
-    document.getElementById("story-reflection").innerHTML = story.reflection;
-}
 
 </script>
     
