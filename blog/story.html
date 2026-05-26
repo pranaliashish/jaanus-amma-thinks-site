@@ -74,6 +74,56 @@ const params = new URLSearchParams(window.location.search);
 
 const storyId = params.get("id");
 
+async function loadStory() {
+
+    const response = await fetch(`/blog/${storyId}.md`);
+
+    const markdown = await response.text();
+
+    const frontmatterMatch = markdown.match(/---([\s\S]*?)---/);
+
+    const content = markdown.replace(/---([\s\S]*?)---/, "").trim();
+
+    const frontmatter = frontmatterMatch[1];
+
+    function getField(field) {
+
+        const regex = new RegExp(`${field}:\\s*(.*)`);
+
+        const match = frontmatter.match(regex);
+
+        return match ? match[1].trim() : "";
+
+    }
+
+    const title = getField("title");
+
+    const category = getField("category");
+
+    const description = getField("description");
+
+    const cover = getField("cover");
+
+    document.title = title;
+
+    document.getElementById("story-title").innerHTML = title;
+
+    document.getElementById("story-category").innerHTML = category;
+
+    document.getElementById("story-description").innerHTML = description;
+
+    document.getElementById("story-image").src = cover;
+
+    document.getElementById("story-content").innerHTML =
+        content
+            .split("\n\n")
+            .map(paragraph => `<p>${paragraph}</p>`)
+            .join("");
+
+}
+
+loadStory();
+
 </script>
     
 </body>
