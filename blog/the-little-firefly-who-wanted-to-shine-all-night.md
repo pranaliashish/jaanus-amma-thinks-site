@@ -60,6 +60,10 @@ Even tiny lights need moments of rest to shine their brightest.
 
 And the meadow looked magical — filled with hundreds of fireflies blinking gently under the quiet night sky.
 
+
+
+<div class="little-reflection">
+
 ## *🌙 A Gentle Reflection Before Sleep*
 
 Even the smallest lights need time to rest.
@@ -70,3 +74,4 @@ Just like the little firefly, we shine brightest when we balance effort with res
 
 ### *Thank you for spending a quiet moment here at Jaanu’s Amma Thinks.* ✨
 
+</div>
