@@ -144,7 +144,7 @@ Not dreaming of becoming a sword.
 
 But **happy** being a spoon!
 
-
+<div class = "little-reflection">
 
 ## ***Gentle Goodnight Reflection** 🌙*
 
@@ -166,3 +166,4 @@ Goodnight, little one. You are enough, just as you are.
 
 *Thank you for spending a quiet moment at Jaanu's Amma Thinks* ✨
 
+</div>
