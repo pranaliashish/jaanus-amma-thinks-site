@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="../style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
@@ -114,11 +116,8 @@ async function loadStory() {
 
     document.getElementById("story-image").src = cover;
 
-    document.getElementById("story-content").innerHTML =
-        content
-            .split("\n\n")
-            .map(paragraph => `<p>${paragraph}</p>`)
-            .join("");
+   document.getElementById("story-content").innerHTML =
+    marked.parse(content);
 
 }
 
