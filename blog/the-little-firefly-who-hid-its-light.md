@@ -1,62 +1,73 @@
 ---
-title: The Little Firefly Who Hid Its Light
-date: 2026-05-22
+title: The Little Firefly Who Wanted To Shine All Night
+date: 2026-05-28
 category: Bedtime Story
-slug: little-firefly
-description: A gentle bedtime story about shyness, courage, and discovering that
-  even the softest little light can help someone feel less alone in the dark.
+description: A gentle bedtime story about rest, balance, and learning that even
+  tiny lights need moments of pause to shine brightly.
 cover: /images/uploads/firefly-story.png
 ---
-# The Little Firefly Who Hid Its Light
 
-Deep inside a quiet meadow, where the flowers swayed gently beneath the moonlight, lived a tiny little firefly named Lumi.
 
-Every evening, the other fireflies danced through the sky, glowing like tiny floating stars.
+In a quiet meadow filled with tall grass and tiny flowers, there lived a little firefly named Lumo.
 
-But Lumi stayed hidden beneath a leaf.
+Every evening, as the sky slowly turned dark, hundreds of fireflies began to glow softly across the meadow.
 
-“What if my light isn’t bright enough?” she whispered softly.
+They blinked their lights gently — on and off, on and off — like tiny twinkling stars floating close to the ground.
 
-So while the others twinkled bravely in the night, Lumi kept her little glow tucked safely away.
+But Lumo had a different idea.
 
-One evening, a small lost bunny wandered into the meadow.
+“*I don’t want my light to blink*,” he said proudly.
 
-The night felt dark and unfamiliar.
+“*I want to shine all night without stopping!*” 
 
-The bunny’s tiny eyes filled with tears.
+Lumo believed that if his light stayed on forever, everyone would notice how bright he was.
 
-“I can’t find my way home,” he sniffled.
+So that night, while the other fireflies blinked their lights peacefully, Lumo tried to keep his light shining without resting.
 
-From beneath her leaf, Lumi peeked out quietly.
+At first, he felt very proud.
 
-Her light was small.
+But after some time, Lumo began to feel tired.
 
-Very small.
+His tiny wings grew heavy, and his light started to flicker weakly.
 
-But she noticed something magical.
+Meanwhile, the other fireflies continued blinking calmly — glowing, resting, glowing again.
 
-The bunny looked toward her tiny glow immediately.
+An old firefly flying nearby noticed Lumo struggling.
 
-For a moment, Lumi’s little light became the only warm thing in the dark.
+“*Why are you trying so hard, little one*?” the old firefly asked gently.
 
-Taking a deep breath, she fluttered gently into the air.
+“*I want my light to shine all night*”, Lumo said. “*I don’t want to stop.*”
 
-Glow…
+The old firefly smiled kindly.
 
-Glow…
+“*Our lights are meant to glow and rest*”, he explained. “*That is how we keep shining for many nights.*”
 
-Glow…
+Lumo watched the other fireflies carefully.
 
-Slowly, softly, Lumi floated ahead while the bunny followed her through the moonlit flowers.
+Their lights blinked softly like a peaceful rhythm.
 
-And at last…
+*Glow… rest… 
 
-The bunny found home.
+Glow… rest.*
 
-“Thank you,” the bunny smiled.
+Slowly, Lumo allowed his light to follow the same rhythm.
 
-Lumi looked at her reflection in a tiny puddle nearby.
+And something beautiful happened.
 
-Her light was never too small after all.
+His light became brighter again.
 
-Because even the softest little glow can help someone feel less alone in the dark.
+That night, Lumo realized something important.
+
+Even tiny lights need moments of rest to shine their brightest.
+
+And the meadow looked magical — filled with hundreds of fireflies blinking gently under the quiet night sky.
+
+## *🌙 A Gentle Reflection Before Sleep*
+
+Even the smallest lights need time to rest.
+
+When we slow down and allow ourselves to relax, our bodies and hearts become strong again.
+
+Just like the little firefly, we shine brightest when we balance effort with rest.
+
+*Thank you for spending a quiet moment here at Jaanu’s Amma Thinks.* ✨
