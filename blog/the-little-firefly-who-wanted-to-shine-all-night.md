@@ -6,8 +6,6 @@ description: A gentle bedtime story about rest, balance, and learning that even
   tiny lights need moments of pause to shine brightly.
 cover: /images/uploads/firefly-story.png
 ---
-
-
 In a quiet meadow filled with tall grass and tiny flowers, there lived a little firefly named Lumo.
 
 Every evening, as the sky slowly turned dark, hundreds of fireflies began to glow softly across the meadow.
@@ -46,9 +44,9 @@ Lumo watched the other fireflies carefully.
 
 Their lights blinked softly like a peaceful rhythm.
 
-*Glow… rest… 
+*Glow… rest…* 
 
-Glow… rest.*
+*Glow… rest.*
 
 Slowly, Lumo allowed his light to follow the same rhythm.
 
