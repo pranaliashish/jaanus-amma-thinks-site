@@ -1032,29 +1032,46 @@ padding-bottom: 30px;
 /* =========================================
    STORY BODY
 ========================================= */
-
 .story-body {
 
-    max-width: 680px;
+    font-size: 1.05rem;
 
-    margin: 0 auto;
-
-    padding: 3rem 2rem;
-
-    font-size: 1.15rem;
-
-    line-height: 2.2;
+    line-height: 1.9;
 
     color: #5f5a67;
 
     font-family: 'Poppins', sans-serif;
 
     margin-top: 2rem;
+
+    text-align: left;
+
 }
 
 .story-body p {
 
     margin-bottom: 1.8rem;
+
+    max-width: 700px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    padding: 0 24px;
+
+}
+
+@media (max-width: 768px) {
+
+    .story-body {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+
+    }
+
 }
 
 .story-body h1,
