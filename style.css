@@ -1158,21 +1158,21 @@ padding-bottom: 30px;
 }
 
 .reflection-ending {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
-    color: #c97c95;
-    text-align: center;
-    margin-top: 2.5rem;
-    line-height: 1.8;
-}
 
-.little-reflection .reflection-ending {
     font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+
+    font-size: 1.8rem;
+
+    font-weight: 600;
+
     color: #c97c95;
+
     text-align: center;
+
     line-height: 1.8;
+
     margin-top: 2.5rem;
+
 }
 
 
