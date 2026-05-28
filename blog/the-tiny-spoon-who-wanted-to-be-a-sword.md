@@ -12,17 +12,33 @@ In a wooden kitchen drawer, among forks, knives, and shiny silver tools, lived a
 
 He was the smallest spoon in the whole drawer.
 
-Smaller than the soup spoons. Smaller than the serving spoons. Even smaller than the sugar spoon.
+Smaller than the soup spoons.
 
-His name was Pip. Pip was round and smooth and gentle.
+Smaller than the serving spoons.
 
-He helped stir warm milk. He carried honey into tea. He served tiny bites of pudding to sleepy children.
+Even smaller than the sugar spoon.
+
+His name was Pip.
+
+Pip was round and smooth and gentle.  
+
+He helped stir warm milk.
+
+He carried honey into tea.
+
+He served tiny bites of pudding to sleepy children.
 
 But Pip did not feel important.
 
 Every day, when the drawer opened, Pip watched the big kitchen knife.
 
-The knife was long, sharp, and strong. It chopped vegetables. It sliced bread. It made loud, confident sounds against the chopping board.
+The knife was long, sharp, and strong.
+
+It chopped vegetables.
+
+It sliced bread.
+
+It made loud, confident sounds against the chopping board.
 
 *Tak! Tak! Tak!*
 
@@ -40,11 +56,17 @@ Pip sighed.
 
 One afternoon, Pip asked the knife, “*What does it feel like to be important?*”
 
-The knife gleamed proudly. “*It feels powerful.*”
+The knife gleamed proudly.
 
-Pip looked at his round little shape. “*I wish I were sharp like you.*”
+“*It feels powerful.*”
 
-The knife chuckled. “*And I wish I could taste warm soup like you.*”
+Pip looked at his round little shape.
+
+“*I wish I were sharp like you.*”
+
+The knife chuckled.
+
+“*And I wish I could taste warm soup like you.*”
 
 Pip frowned. “*That doesn’t make sense.*”
 
@@ -58,11 +80,17 @@ The next morning, Pip made a decision.
 
 “*I will become a sword!*”
 
-He climbed out of the drawer and rolled across the kitchen. He found a rough stone near the window. He rubbed his edges against it.
+He climbed out of the drawer and rolled across the kitchen.
+
+He found a rough stone near the window.
+
+He rubbed his edges against it.
 
 *Scrape, scrape, scrape.*
 
-“*Ow!*” cried Pip. But he kept going.
+“*Ow!*” cried Pip.
+
+But he kept going.
 
 “*If I become sharper, people will admire me.*”
 
@@ -84,7 +112,11 @@ He was not sharp.
 
 He was just… damaged.
 
-That evening, the kitchen door opened. A little girl came in, rubbing her sleepy eyes. She had a cough and could not sleep.
+That evening, the kitchen door opened.
+
+A little girl came in, rubbing her sleepy eyes.
+
+She had a cough and could not sleep.
 
 Her mother warmed honey and medicine in a cup.
 
@@ -100,7 +132,11 @@ Pip felt her tiny hands hold him carefully.
 
 He carried sweetness to her. Slowly. Gently. Perfectly.
 
-The little girl drank. Her cough softened. Her breathing calmed. Soon, she fell asleep.
+The little girl drank.
+
+Her cough softened. Her breathing calmed.
+
+Soon, she fell asleep.
 
 Her mother kissed her forehead and whispered, “*Thank goodness for this little spoon.*”
 
@@ -118,7 +154,9 @@ Only Pip could carry just the right amount.
 
 Only Pip could help so gently.
 
-The next day, Pip looked at the knife. “*I wanted to be like you.*”
+The next day, Pip looked at the knife.
+
+“*I wanted to be like you.*”
 
 The knife smiled. “*And now?*”
 
@@ -134,7 +172,9 @@ And every time someone needed a careful stir, a spoonful of honey, or a tiny bit
 
 And little by little, he understood:
 
-Not everything important looks powerful. Not everything valuable looks big.
+Not everything important looks powerful.
+
+Not everything valuable looks big.
 
 And sometimes, the smallest thing can bring the greatest comfort.
 
@@ -142,13 +182,11 @@ That night, as the drawer closed and the kitchen grew quiet, Pip slept peacefull
 
 Not dreaming of becoming a sword.
 
-But **happy** being a spoon!
+But **happy** being a spoon.
 
+<div class="little-reflection">
 
-
-<div class = "little-reflection">
-
-## ***Gentle Goodnight Reflection** 🌙*
+## *🌙 Gentle Goodnight Reflection*
 
 Sometimes we look at others and think they are better, stronger, smarter, or more special.
 
@@ -164,13 +202,8 @@ You do not have to become someone else to be valuable.
 
 The world needs you exactly as you are.
 
-Goodnight, little one. You are enough, just as you are.
+Goodnight, little one. You are enough, just as you are. 🤍
 
-<div class = "reflection-ending">
-
-*Thank you for spending a quiet moment at Jaanu's Amma Thinks ✨*
+*Thank you for spending a quiet moment at Jaanu’s Amma Thinks ✨*
 
 </div>
-
-</div>
-
