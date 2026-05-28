@@ -68,4 +68,4 @@ When we slow down and allow ourselves to relax, our bodies and hearts become str
 
 Just like the little firefly, we shine brightest when we balance effort with rest.
 
-*Thank you for spending a quiet moment here at Jaanu’s Amma Thinks.* ✨
+*###Thank you for spending a quiet moment here at Jaanu’s Amma Thinks.* ✨
