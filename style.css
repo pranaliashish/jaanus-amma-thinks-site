@@ -945,17 +945,17 @@ padding-bottom: 30px;
 
 .story-intro {
 
-    font-size: 1.25rem;
+    font-size: 1.3rem;
 
-    line-height: 1.9;
+    line-height: 1.8;
 
     color: #6b6670;
 
-    max-width: 700px;
+    max-width: 750px;
 
     margin: 0 auto;
 
-    margin-bottom: 60px;
+    padding: 0 20px;
 }
 
 .story-hero-image {
