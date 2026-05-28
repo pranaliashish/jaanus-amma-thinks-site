@@ -166,11 +166,11 @@ The world needs you exactly as you are.
 
 Goodnight, little one. You are enough, just as you are.
 
-<p class = "reflection-ending">
+<div class = "reflection-ending">
 
 *Thank you for spending a quiet moment at Jaanu's Amma Thinks ✨*
 
-</p>
+</div>
 
 </div>
 
