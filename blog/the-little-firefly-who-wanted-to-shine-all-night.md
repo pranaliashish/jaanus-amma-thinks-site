@@ -62,7 +62,7 @@ And the meadow looked magical — filled with hundreds of fireflies blinking gen
 
 
 
-&nbsp;
+<div class="little-reflection">
 
 ## *🌙 A Gentle Reflection Before Sleep*
 
@@ -74,3 +74,4 @@ Just like the little firefly, we shine brightest when we balance effort with res
 
 ### *Thank you for spending a quiet moment here at Jaanu’s Amma Thinks.* ✨
 
+</div>
