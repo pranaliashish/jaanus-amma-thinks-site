@@ -62,7 +62,7 @@ And the meadow looked magical — filled with hundreds of fireflies blinking gen
 
 
 
-<div class="little-reflection">
+&nbsp;
 
 ## *🌙 A Gentle Reflection Before Sleep*
 
@@ -72,6 +72,5 @@ When we slow down and allow ourselves to relax, our bodies and hearts become str
 
 Just like the little firefly, we shine brightest when we balance effort with rest.
 
-### *Thank you for spending a quiet moment here at Jaanu’s Amma Thinks.* ✨
 
-</div>
+
