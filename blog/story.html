@@ -115,8 +115,14 @@ async function loadStory() {
 
     document.getElementById("story-image").src = cover;
 
-   document.getElementById("story-content").innerHTML =
+  document.getElementById("story-content").innerHTML =
     marked.parse(content);
+
+document.getElementById("story-content").innerHTML += `
+<div class="reflection-ending">
+    Thank you for spending a quiet moment at Jaanu's Amma Thinks ✨
+</div>
+`;
 
 }
 
