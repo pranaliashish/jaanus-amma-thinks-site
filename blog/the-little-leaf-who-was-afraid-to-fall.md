@@ -1,7 +1,12 @@
 ---
-title: The Little Leaf Who Was Afraid To Fall
+title: The Little Leaf Who Was Afraid To Fall | A Bedtime Story About Change for Kids
 date: 2026-05-29
 category: Bedtime Story
+description: A gentle bedtime story for children about change, letting go, and
+  new beginnings. Follow a little leaf's journey as she learns that even scary
+  changes can lead to beautiful new adventures. Perfect for helping kids
+  navigate transitions, fears, and growing up.
+cover: /images/uploads/leaf-story.png
 ---
 In the middle of a tall green tree lived a little leaf.
 
