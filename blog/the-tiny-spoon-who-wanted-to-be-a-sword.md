@@ -206,6 +206,4 @@ The world needs you exactly as you are.
 
 Goodnight, little one. You are enough, just as you are. 🤍
 
-*Thank you for spending a quiet moment at Jaanu’s Amma Thinks ✨*
-
 </div>
