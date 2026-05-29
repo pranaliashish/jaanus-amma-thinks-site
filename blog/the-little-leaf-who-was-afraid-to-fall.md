@@ -130,6 +130,8 @@ And high above, the tree stood proudly.
 
 Waiting for spring.
 
+<div class = "little-reflection">
+
 ## *Gentle takeaway for parents:*
 
 Children often fear change—new places, new people, new routines.
@@ -137,3 +139,5 @@ Children often fear change—new places, new people, new routines.
 This story helps them understand:
 
 *Change can feel scary, but it can also carry us gently into something beautiful.*
+
+*</div>*
