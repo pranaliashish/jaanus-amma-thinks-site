@@ -102,7 +102,7 @@ And along the way, it creates a beautiful sparkle for us to enjoy.
 
 ---
 
-<div class = "little reflection">
+<div class ="little-reflection">
 
 ## Try This Tonight 🌙
 
