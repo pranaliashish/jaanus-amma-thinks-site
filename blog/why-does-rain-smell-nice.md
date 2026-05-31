@@ -80,7 +80,21 @@ It happens when raindrops release natural scents from dry soil into the air.
 
 ---
 
-<div class ="little-reflection">
+## 🔬 Science Behind It
+
+Scientists call the smell of rain **petrichor**.
+
+When the ground has been dry for a while, tiny plants and soil release natural oils. At the same time, tiny microbes living in the soil create a substance called **geosmin**.
+
+When the first raindrops hit the ground, they release these scents into the air in tiny droplets.
+
+Our noses pick up those droplets, creating the fresh, earthy smell we notice after rain.
+
+That wonderful smell is called **petrichor**.
+
+---
+
+<div class = "little-reflection">
 
 ### 🌧️ Try It Tonight
 
