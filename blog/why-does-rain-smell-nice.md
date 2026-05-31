@@ -80,7 +80,7 @@ It happens when raindrops release natural scents from dry soil into the air.
 
 ---
 
-<div class = "little-reflection">
+<div class ="little-reflection">
 
 ### 🌧️ Try It Tonight
 
