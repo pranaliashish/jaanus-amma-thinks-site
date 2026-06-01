@@ -327,6 +327,11 @@ margin: 0 auto;
     overflow: hidden;
 }
 
+.category-card {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Premium Navbar */
 
 .navbar {
