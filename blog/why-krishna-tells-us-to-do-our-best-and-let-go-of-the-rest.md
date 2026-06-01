@@ -137,8 +137,6 @@ And growth is a beautiful result in itself.
 
 ---
 
----
-
 <div class = "little-reflection">
 
 ### *🌙 A Quiet Thought for Tonight*
