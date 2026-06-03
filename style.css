@@ -54,13 +54,15 @@ body {
 }
 
 .nav-logo {
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-dark);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 14px;
+}
+
+.nav-logo span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: #4d4b4f;
 }
 
 .nav-logo img {
