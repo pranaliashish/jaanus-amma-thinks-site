@@ -1201,4 +1201,195 @@ padding-bottom: 30px;
     }
 
 }
+
+/* =========================================
+CONTACT SECTION
+========================================= */
+
+.contact-section {
+
+```
+padding: 120px 8%;
+
+background:
+    radial-gradient(
+        circle at top right,
+        rgba(255,240,245,0.7),
+        transparent 35%
+    ),
+    linear-gradient(
+        180deg,
+        #fffdfc 0%,
+        #fff8f5 100%
+    );
+```
+
+}
+
+.contact-container {
+
+```
+max-width: 900px;
+
+margin: 0 auto;
+
+text-align: center;
+```
+
+}
+
+.contact-content {
+
+```
+background: rgba(255,255,255,0.72);
+
+backdrop-filter: blur(10px);
+
+border-radius: 36px;
+
+padding: 60px;
+
+box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+```
+
+}
+
+.contact-intro {
+
+```
+font-size: 1.35rem;
+
+color: #5f5966;
+
+margin-bottom: 25px;
+
+font-weight: 500;
+```
+
+}
+
+.contact-content p {
+
+```
+color: #6b6670;
+
+line-height: 2;
+
+margin-bottom: 22px;
+```
+
+}
+
+.contact-cards {
+
+```
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+gap: 25px;
+
+margin: 50px 0;
+```
+
+}
+
+.contact-card {
+
+```
+background: rgba(255,248,250,0.9);
+
+border-radius: 24px;
+
+padding: 30px;
+
+box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+
+transition: all 0.3s ease;
+```
+
+}
+
+.contact-card:hover {
+
+```
+transform: translateY(-6px);
+
+box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+```
+
+}
+
+.contact-card h3 {
+
+```
+margin-bottom: 16px;
+
+color: #4d4b4f;
+```
+
+}
+
+.contact-card p {
+
+```
+margin-bottom: 18px;
+
+font-size: 0.95rem;
+```
+
+}
+
+.contact-card a {
+
+```
+color: #d97f97;
+
+text-decoration: none;
+
+font-weight: 600;
+
+word-break: break-word;
+```
+
+}
+
+.contact-card a:hover {
+
+```
+color: #c96b86;
+```
+
+}
+
+.contact-signoff {
+
+```
+margin-top: 40px;
+
+font-style: italic;
+```
+
+}
+
+@media (max-width: 768px) {
+
+```
+.contact-section {
+
+    padding: 80px 7%;
+}
+
+.contact-content {
+
+    padding: 35px 25px;
+}
+
+.contact-intro {
+
+    font-size: 1.15rem;
+}
+
+}
+
 ```
