@@ -63,9 +63,10 @@ body {
     gap: 0.5rem;
 }
 
-.nav-logo i {
-    color: #ffd700;
-    font-size: 2rem;
+.nav-logo img {
+    height: 65px;
+    width: auto;
+    display: block;
 }
 
 .nav-menu {
