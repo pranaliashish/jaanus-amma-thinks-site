@@ -10,16 +10,23 @@ Copy everything below and paste it into your `style.css` file in GitHub.
 }
 
 :root {
-    --peach: #f8d7da;
-    --cream: #fff8e7;
-    --lavender: #e8f4f8;
-    --soft-pink: #ffe4e1;
-    --soft-purple: #f3e8ff;
-    --soft-green: #e8f5e8;
-    --text-dark: #4a4a4a;
-    --text-light: #7a7a7a;
-    --shadow: 0 10px 30px rgba(0,0,0,0.1);
-    --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+
+    --midnight: #11243d;
+
+    --navy: #1b2d4a;
+
+    --gold: #d4a24c;
+
+    --soft-gold: #e6c98d;
+
+    --cream: #fffdf9;
+
+    --warm-white: #fffaf5;
+
+    --text-dark: #3f3b36;
+
+    --text-light: #746e68;
+
 }
 
 body {
@@ -37,8 +44,9 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255,253,249,0.94);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(212,162,76,0.12);
     z-index: 1000;
     padding: 1rem 0;
     box-shadow: var(--shadow);
@@ -57,11 +65,11 @@ body {
 
     font-family: 'Amatic SC', cursive;
 
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     font-weight: 700;
 
-    color: var(--text-dark);
+     color: #2d3748;
 
     display: flex;
 
@@ -92,7 +100,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #ff6b9d;
+    color: #b8862b; 
     transform: translateY(-2px);
 }
 
@@ -103,7 +111,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: #ff6b9d;
+    background: #d4a24c;
     transition: width 0.3s ease;
 }
 
@@ -206,7 +214,12 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    background: linear-gradient(
+        135deg,
+        #c9963b,
+        #e4c27a
+    );
+
     color: white;
     box-shadow: var(--shadow);
 }
@@ -220,11 +233,11 @@ body {
     background: rgba(255, 255, 255, 0.35);
 backdrop-filter: blur(4px);
     color: var(--text-dark);
-    border: 2px solid #ff9a9e;
+    border: 2px solid #d4a24c;
 }
 
 .btn-secondary:hover {
-    background: #ff9a9e;
+   background: #d4a24c; 
     color: white;
     transform: translateY(-3px);
 }
