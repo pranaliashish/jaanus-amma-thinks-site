@@ -788,7 +788,7 @@ margin: 0 auto;
     .hero-content {
         max-width: 100%;
         margin: 0 auto;
-        transform: translateY(-60px);
+        transform: translateY(-20px);
     }
 
     .hero-title {
