@@ -695,6 +695,11 @@ margin: 0 auto;
     background-position: center 120px;
 
     background-repeat: no-repeat;
+
+        margin-top: 0;
+
+        padding-top: 0;
+
 }
 
     .hero::before {
@@ -716,6 +721,21 @@ margin: 0 auto 1.2rem;
 
         line-height: 1.08;
 text-shadow: 0 2px 10px rgba(255,255,255,0.35);
+
+        color: #e2c07a;
+
+        text-shadow:
+
+            0 1px 0 rgba(255,255,255,0.35),
+
+            0 2px 0 rgba(220,180,100,0.6),
+
+            0 4px 10px rgba(0,0,0,0.25),
+
+            0 8px 25px rgba(0,0,0,0.18);
+
+        -webkit-text-stroke:
+            1px rgba(110,70,20,0.25);
     }
 
     .hero-subtitle {
@@ -727,10 +747,29 @@ margin: 0 auto 30px;
 
         line-height: 1.6;
 
-        color: #5f5966;
-
+        color: #fff8ee;
+font-weight: 500;
         margin-bottom: 2rem;
-         text-shadow: 0 1px 8px rgba(255,255,255,0.25);
+          text-shadow:
+
+            0 2px 6px rgba(0,0,0,0.45),
+
+            0 4px 12px rgba(0,0,0,0.20);
+
+        background:
+            rgba(0,0,0,0.18);
+
+        backdrop-filter:
+            blur(4px);
+
+        padding:
+            12px 16px;
+
+        border-radius:
+            16px;
+
+        display:
+            inline-block;
     }
 
     /* Buttons */
@@ -741,18 +780,26 @@ padding-bottom: 30px;
 
         align-items: center;
 
-        gap: 18px;
+         width: 100%;
+
+        max-width: 340px;
+
+        margin: 0 auto;
+
+        gap: 12px;
     }
 
     .btn {
 
-        width: 92%;
+        width: 100%;
 
         box-sizing: border-box;
 
-        max-width: 320px;
+        max-width: 100%;
 
-        padding: 1rem 2rem;
+        padding: 16px 24px;
+
+       font-size: 1.1rem; 
     }
 
     .btn-secondary {
@@ -778,6 +825,14 @@ padding-bottom: 30px;
 
     .wave-divider svg {
         height: 70px;
+    }
+
+     .hero-divider {
+
+        justify-content: center;
+
+        margin: 14px auto 22px;
+
     }
 }
 
