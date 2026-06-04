@@ -692,7 +692,8 @@ margin: 0 auto;
 
     cursor: pointer;
 
-    padding-right: 16px;
+    padding-right: 0;
+    margin-left: 10px;
     }
 
     .hamburger span {
@@ -720,6 +721,7 @@ margin: 0 auto;
 
     .nav-logo span {
         white-space: nowrap;
+        font-size: 1.15rem;
     }
 
     .nav-logo i {
@@ -728,8 +730,13 @@ margin: 0 auto;
 
     .nav-logo {
     flex: 1;
-}
+    min-width: 0;
+    }
 
+    .nav-logo img {
+    height: 50px;
+    }
+    
 .hamburger {
     flex-shrink: 0;
 }
