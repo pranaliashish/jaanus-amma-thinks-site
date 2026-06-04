@@ -743,7 +743,17 @@ margin: 0 auto;
 * {
     outline: 1px solid red;
 }
-    
+    .hero-content {
+    background: rgba(255,0,0,0.15);
+}
+
+.hero-text {
+    background: rgba(0,255,0,0.15);
+}
+
+.hero-buttons {
+    background: rgba(0,0,255,0.15);
+}
     /* Hero */
 
    .hero {
