@@ -9,6 +9,17 @@ Copy everything below and paste it into your `style.css` file in GitHub.
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
 :root {
 
     --midnight: #11243d;
@@ -740,41 +751,30 @@ margin: 0 auto;
 .hamburger {
     flex-shrink: 0;
 }
-* {
-    outline: 1px solid red;
-}
-    .hero-content {
-    background: rgba(255,0,0,0.15);
-}
 
-.hero-text {
-    background: rgba(0,255,0,0.15);
-}
-
-.hero-buttons {
-    background: rgba(0,0,255,0.15);
-}
-
-    .hero-subtitle {
-    background: rgba(255,0,255,0.2);
-    }
-    
     /* Hero */
 
    .hero {
 
     min-height: auto;
-    padding: 110px 20px 80px;
+
     width: 100%;
-    overflow: hidden;
+    max-width: 100vw;
+
+    overflow-x: hidden;
+
+    padding: 110px 15px 80px;
+
+    background-size: cover;
+
+    box-sizing: border-box;
+
 
     text-align: center;
 
     background:
         
         url("new-mobile-hero.png");
-
-    background-size: cover;
 
        background-color: #fff8f5;
 
