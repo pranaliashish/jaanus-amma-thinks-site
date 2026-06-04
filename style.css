@@ -134,10 +134,6 @@ body {
     overflow: hidden;
 
     background-image:
-        linear-gradient(
-            rgba(255,248,245,0.22),
-            rgba(255,248,245,0.34)
-        ),
         url("new-hero.png");
 
     background-size: cover;
@@ -587,7 +583,7 @@ margin: 0 auto;
 
     text-align: center;
 
-    background: none;
+    background:
         
         url("new-mobile-hero.png");
 
