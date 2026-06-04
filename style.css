@@ -597,6 +597,10 @@ margin: 0 auto;
     position: relative;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* =========================================
    FINAL MOBILE RESPONSIVE FIX
 ========================================= */
@@ -638,28 +642,73 @@ margin: 0 auto;
 
   .nav-container {
 
-    flex-direction: column;
+    flex-direction: row;
 
-    gap: 1rem;
+    justify-content: space-between;
 
-    padding: 1rem;
-}
+    align-items: center;
+
+    padding: 0;
+  }
 
 .nav-menu {
 
+    display: none;
+
+    flex-direction: column;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    background: rgba(255,253,249,0.98);
+
+    backdrop-filter: blur(14px);
+
+    padding: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+    .nav-menu.active {
+    display: flex;
+    }
+
+    .hamburger {
+
     display: flex;
 
-    justify-content: center;
+    flex-direction: column;
 
-    flex-wrap: wrap;
+    gap: 5px;
 
-    gap: 1rem;
+    cursor: pointer;
+    }
 
-    padding: 0;
+    .hamburger span {
 
-    margin: 0;
-}
-    
+    width: 26px;
+
+    height: 3px;
+
+    background: var(--navy);
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+    }
+
+    .hamburger {
+    display: flex;
+    }
     .nav-logo {
         font-size: 1.45rem;
         text-align: center;
