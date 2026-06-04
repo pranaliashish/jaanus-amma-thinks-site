@@ -740,7 +740,10 @@ margin: 0 auto;
 .hamburger {
     flex-shrink: 0;
 }
-    
+
+    * {
+    outline: 1px solid red;
+    }
     /* Hero */
 
    .hero {
