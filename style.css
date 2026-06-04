@@ -754,6 +754,11 @@ margin: 0 auto;
 .hero-buttons {
     background: rgba(0,0,255,0.15);
 }
+
+    .hero-subtitle {
+    background: rgba(255,0,255,0.2);
+    }
+    
     /* Hero */
 
    .hero {
