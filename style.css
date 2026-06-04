@@ -817,14 +817,25 @@ margin: 0 auto 1.2rem;
     }
 
     .hero-subtitle {
-
     color: white;
+
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 1rem;
+    line-height: 1.7;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 
     text-shadow:
         0 2px 6px rgba(0,0,0,0.55),
         0 4px 12px rgba(0,0,0,0.35);
-
-}
+    }
 
     .hero-content,
 .hero-text,
