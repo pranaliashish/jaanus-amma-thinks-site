@@ -204,7 +204,7 @@ body {
     position: absolute;
 
     inset: 0;
-
+/*
     background:
     linear-gradient(
         to right,
@@ -212,7 +212,7 @@ body {
         rgba(12,20,40,0.20),
         rgba(12,20,40,0)
     );
-
+*/
     z-index: 1;
 }
 
@@ -587,11 +587,8 @@ margin: 0 auto;
 
     text-align: center;
 
-    background-image:
-        linear-gradient(
-            rgba(255,248,245,0.42),
-            rgba(255,248,245,0.55)
-        ),
+    background: none;
+        
         url("new-mobile-hero.png");
 
     background-size: contain;
