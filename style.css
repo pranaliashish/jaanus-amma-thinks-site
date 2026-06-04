@@ -767,7 +767,7 @@ margin: 0 auto;
 
     padding: 110px 15px 80px;
 
-    background-size: cover;
+    background-size: contain;
 
     box-sizing: border-box;
 
