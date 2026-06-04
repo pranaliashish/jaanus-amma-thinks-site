@@ -97,14 +97,14 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: var(--text-dark);
+    color: var(--navy);
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .nav-link:hover {
-    color: #b8862b; 
+    color: var(--gold);
     transform: translateY(-2px);
 }
 
