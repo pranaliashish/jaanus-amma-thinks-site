@@ -154,33 +154,94 @@ body {
 }
 
 .hero-title {
+
     font-family: 'Dancing Script', cursive;
 
-     font-size: clamp(3.5rem, 6vw, 5.5rem);
+    font-size: clamp(3.8rem, 6vw, 5.8rem);
 
     line-height: 1.05;
 
-   color: #e2c07a; 
+    color: #e2c07a;
 
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+
+    letter-spacing: 0.5px;
 
     text-shadow:
-0 0 18px rgba(255,255,255,0.15),
-0 2px 8px rgba(0,0,0,0.12);
+
+        0 1px 0 rgba(255,255,255,0.35),
+
+        0 2px 0 rgba(220,180,100,0.6),
+
+        0 4px 10px rgba(0,0,0,0.25),
+
+        0 8px 25px rgba(0,0,0,0.18);
+
+    -webkit-text-stroke: 1px rgba(110,70,20,0.25);
+
 }
 
 .hero-subtitle {
-    font-size: 0.95rem;
 
-    line-height: 2;
+    font-size: 1.15rem;
 
-   color: #f5efe5;
+    line-height: 1.9;
 
-    max-width: 420px;
+    color: #fff8ee;
 
-    margin-bottom: 2.5rem;
+    font-weight: 500;
 
-    text-shadow: 0 2px 10px rgba(255,255,255,0.4);
+    text-shadow:
+
+        0 2px 6px rgba(0,0,0,0.45),
+
+        0 4px 12px rgba(0,0,0,0.20);
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.hero-content::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    left: -120px;
+
+    top: -120px;
+
+    background:
+
+        radial-gradient(
+            rgba(10,20,40,0.32),
+            transparent 70%
+        );
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+.hero-divider {
+
+    color: #d4a24c;
+
+    font-size: 2rem;
+
+    margin: 10px 0 25px;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,0.2);
 }
 
 .hero-image {
