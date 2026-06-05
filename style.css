@@ -1716,6 +1716,53 @@ margin-bottom: 22px;
 text-transform: uppercase;
 }
 
+.story-card-contact {
+
+background: #fff8ee;
+}
+
+.collaboration-card {
+
+background: #f2f5fb;
+}
+
+.instagram-card {
+
+background: #f8f2fc;
+}
+
+.contact-card a {
+
+display: inline-block;
+
+margin-top: 18px;
+
+padding: 12px 28px;
+
+border-radius: 999px;
+
+background: linear-gradient(
+135deg,
+#d4a24c,
+#e6c98d
+);
+
+color: white !important;
+
+text-decoration: none;
+
+font-weight: 600;
+
+transition: all 0.3s ease;
+}
+
+.contact-card a:hover {
+
+transform: translateY(-3px);
+
+box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
 @media (max-width: 768px) {
 
 ```
