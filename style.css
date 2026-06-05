@@ -1689,8 +1689,23 @@ color: #c96b86;
 margin-top: 40px;
 
 font-style: italic;
+
+    max-width: 700px;
+
+margin: 0 auto;
+
+text-align: center;
+
+line-height: 2.1;
 ```
 
+}
+
+.contact-signoff strong {
+
+color: var(--navy);
+
+font-size: 1.15rem;
 }
 
 .contact-tag {
@@ -1758,6 +1773,19 @@ transition: all 0.3s ease;
 transform: translateY(-3px);
 
 box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.contact-divider {
+
+margin: 50px 0 35px;
+
+text-align: center;
+
+color: #d4a24c;
+
+font-size: 1.2rem;
+
+letter-spacing: 10px;
 }
 
 @media (max-width: 768px) {
