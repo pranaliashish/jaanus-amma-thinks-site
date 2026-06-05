@@ -1711,6 +1711,12 @@ font-style: italic;
     width: 100px;
     height: auto;
 } 
+
+    .about-text p,
+.story-content p,
+.hero-subtitle {
+    font-family: 'Coming Soon', cursive;
+}
 }
 
 ```
