@@ -1717,18 +1717,15 @@ text-transform: uppercase;
 }
 
 .story-card-contact {
-
-background: #fff8ee;
+    background: #f8f0df;
 }
 
 .collaboration-card {
-
-background: #f2f5fb;
+    background: #e9eef8;
 }
 
 .instagram-card {
-
-background: #f8f2fc;
+    background: #f0e8f8;
 }
 
 .contact-card a {
