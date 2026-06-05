@@ -1810,10 +1810,10 @@ letter-spacing: 10px;
 }
 
  .footer {
-    background: #faf7f4;
+    background:  #0f2347;
     padding: 70px 20px 50px;
     text-align: center;
-    border-top: 1px solid rgba(212,173,96,0.15);
+    border-top: 1px solid rgba(212,173,96,0.25);
 }
 
 .footer-content {
@@ -1830,13 +1830,13 @@ letter-spacing: 10px;
 .footer h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    color: #1f355e;
+    color: #d4ad60;
     margin-bottom: 20px;
     font-weight: 600;
 }
 
 .footer-tagline {
-    color: #5f6475;
+    color: rgba(255,255,255,0.85);
     line-height: 1.8;
     max-width: 550px;
     margin: 0 auto 30px;
@@ -1852,7 +1852,7 @@ letter-spacing: 10px;
 
 .footer-links a {
     text-decoration: none;
-    color: #1f355e;
+    color:  #f3e5c3;
     font-weight: 600;
 }
 
@@ -1863,7 +1863,7 @@ letter-spacing: 10px;
 .footer-instagram {
     display: inline-block;
     background: #d4ad60;
-    color: white;
+    color: #0f2347;
     text-decoration: none;
     padding: 12px 26px;
     border-radius: 999px;
@@ -1880,12 +1880,12 @@ letter-spacing: 10px;
 
 .footer-closing {
     font-style: italic;
-    color: #666;
+    color: rgba(255,255,255,0.85);
     margin-bottom: 15px;
 }
 
 .footer-copy {
-    color: #888;
+    color: rgba(255,255,255,0.6);
     font-size: 0.9rem;
 }
 }
