@@ -46,7 +46,7 @@ body {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+   font-family: 'Nunito', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
     overflow-x: hidden;
@@ -433,27 +433,41 @@ margin: 0 auto;
 }
 
 .story-category {
+
     display: inline-block;
-    background: #ffe5ec;
-    color: #ff6b81;
+
+    background: rgba(212,162,76,0.15);
+
+    color: #d4a24c;
+
     padding: 6px 14px;
+
     border-radius: 30px;
+
     font-size: 0.85rem;
+
     margin-bottom: 16px;
-    font-family: 'Poppins', sans-serif;
+
+    font-family: inherit;
+
 }
 
 .story-content h3 {
+
     font-size: 1.4rem;
-    color: #444;
+
+    color: #1b2d4a;
+
     margin-bottom: 12px;
-    font-family: 'Poppins', sans-serif;
+
 }
 
 .story-content p {
-    color: #777;
+
+    color: #5c6470;
+
     line-height: 1.7;
-    font-family: 'Poppins', sans-serif;
+
 }
 
 /* Featured Story Cards Animation */
@@ -542,7 +556,7 @@ margin: 0 auto;
 }
 
 .category-card {
-    background: rgba(255, 255, 255, 0.72);
+
     backdrop-filter: blur(10px);
 
     padding: 32px 22px;
@@ -554,6 +568,23 @@ margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 
     transition: all 0.3s ease;
+
+}
+
+.categories-grid .category-card:nth-child(1) {
+    background: #fff8ee;
+}
+
+.categories-grid .category-card:nth-child(2) {
+    background: #eef5ff;
+}
+
+.categories-grid .category-card:nth-child(3) {
+    background: #f3fff2;
+}
+
+.categories-grid .category-card:nth-child(4) {
+    background: #f8f1ff;
 }
 
 .category-card:hover {
@@ -571,11 +602,11 @@ margin: 0 auto;
 }
 
 .category-card h3 {
-    color: #4a4a4a;
+
+    color: #1b2d4a;
 
     font-size: 1.2rem;
 
-    font-family: 'Poppins', sans-serif;
 }
 
 .category-card {
@@ -1008,9 +1039,9 @@ padding-bottom: 30px;
 
     display: inline-block;
 
-    background: rgba(255, 228, 236, 0.65);
+    background: rgba(212,162,76,0.12);
 
-    color: #d97f97;
+    color: #d4a24c;
 
     padding: 10px 20px;
 
@@ -1027,6 +1058,7 @@ padding-bottom: 30px;
     margin-bottom: 24px;
 
     backdrop-filter: blur(8px);
+
 }
 
 .about-text h2 {
