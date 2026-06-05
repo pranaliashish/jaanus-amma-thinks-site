@@ -1706,6 +1706,9 @@ line-height: 2.1;
 color: var(--navy);
 
 font-size: 1.15rem;
+
+    display: block;
+    margin: 12px 0;
 }
 
 .contact-tag {
