@@ -1693,6 +1693,29 @@ font-style: italic;
 
 }
 
+.contact-tag {
+
+display: inline-block;
+
+padding: 10px 22px;
+
+border-radius: 999px;
+
+background: #fff3dd;
+
+color: #d4a24c;
+
+font-size: 0.9rem;
+
+font-weight: 600;
+
+letter-spacing: 1px;
+
+margin-bottom: 22px;
+
+text-transform: uppercase;
+}
+
 @media (max-width: 768px) {
 
 ```
