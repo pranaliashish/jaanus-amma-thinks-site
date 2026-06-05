@@ -1828,10 +1828,11 @@ letter-spacing: 10px;
 }
 
 .footer h3 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.4rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
     color: #1f355e;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .footer-tagline {
