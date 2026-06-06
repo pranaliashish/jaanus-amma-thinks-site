@@ -1143,26 +1143,26 @@ padding-bottom: 30px;
 
     padding: 90px 8% 100px;
 
-    background:
+   background:
 
-        radial-gradient(
-            circle at top left,
-            rgba(255, 214, 230, 0.75),
-            transparent 35%
-        ),
+    radial-gradient(
+        circle at top left,
+        rgba(212,162,76,0.10),
+        transparent 35%
+    ),
 
-        radial-gradient(
-            circle at top right,
-            rgba(255, 235, 245, 0.6),
-            transparent 32%
-        ),
+    radial-gradient(
+        circle at top right,
+        rgba(27,45,74,0.06),
+        transparent 32%
+    ),
 
-        linear-gradient(
-            180deg,
-            #fff6fa 0%,
-            #fff9fc 45%,
-            #fffdfc 100%
-        );
+    linear-gradient(
+        180deg,
+        #fffaf7 0%,
+        #fffdfb 45%,
+        #fffdfc 100%
+    );
 
     position: relative;
 
@@ -1230,9 +1230,8 @@ padding-bottom: 30px;
 
     display: inline-block;
 
-    background: rgba(255, 228, 236, 0.65);
-
-    color: #d97f97;
+   background: rgba(212,162,76,0.12);
+color: #d4a24c;
 
     padding: 10px 20px;
 
@@ -1257,7 +1256,7 @@ padding-bottom: 30px;
 
     line-height: 1.1;
 
-    color: #4d4b4f;
+    color: #1b2d4a;
 
     margin-bottom: 28px;
 
@@ -1275,7 +1274,7 @@ padding-bottom: 30px;
 
     line-height: 1.8;
 
-    color: #6b6670;
+    color: #5c6470;
 
     max-width: 750px;
 
@@ -1300,7 +1299,7 @@ padding-bottom: 30px;
 
     background:
         radial-gradient(
-            rgba(255, 220, 235, 0.45),
+           rgba(212,162,76,0.18),
             transparent 70%
         );
 
@@ -1366,8 +1365,7 @@ padding-bottom: 30px;
 
     color: #5f5a67;
 
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Nunito', sans-serif;
     margin-top: 2rem;
 
     text-align: left;
@@ -1413,7 +1411,7 @@ padding-bottom: 30px;
 
 .story-body strong {
 
-    color: #e08aa2;
+    color: #d4a24c;
 }
 
 .story-body::first-letter {
@@ -1422,7 +1420,7 @@ padding-bottom: 30px;
 
     font-family: 'Dancing Script', cursive;
 
-    color: #d98ca4;
+    color: #d4a24c;
 
     float: left;
 
@@ -1443,7 +1441,7 @@ padding-bottom: 30px;
 
     padding: 2.5rem;
 
-    background: rgba(255, 240, 245, 0.75);
+    background: #F8F1E5;
 
     border-radius: 28px;
 
@@ -1460,7 +1458,7 @@ padding-bottom: 30px;
 
     font-size: 2.2rem;
 
-    color: #c97c95;
+    color: #1b2d4a;;
 
     margin-bottom: 1rem;
 }
@@ -1491,7 +1489,7 @@ padding-bottom: 30px;
 
     font-weight: 600;
 
-    color: #c97c95;
+    color: #d4a24c;;
 
     text-align: center;
 
