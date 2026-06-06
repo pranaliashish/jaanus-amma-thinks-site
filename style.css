@@ -16,10 +16,6 @@ body {
     overflow-x: hidden;
 }
 
-* {
-    max-width: 100%;
-}
-
 :root {
 
     --midnight: #11243d;
@@ -803,7 +799,7 @@ margin: 0 auto;
 
     width: 100%;
 
-    padding: 0 15px 80px;
+    padding: 0 0 80px;
 
     background-image: url("new-mobile-hero.png");
 
@@ -826,11 +822,15 @@ margin: 0 auto;
         display: none;
     }
 
-    .hero-content {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 27px;
-    }
+   .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+
+    padding-top: 180px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 27px;
+}
 
     .hero-title {
 
