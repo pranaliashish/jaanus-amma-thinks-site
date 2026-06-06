@@ -1808,7 +1808,7 @@ letter-spacing: 10px;
 
     font-size: 1.15rem;
 }
-
+}
 /* =========================================
 FOOTER SECTION
 ========================================= */
@@ -1891,7 +1891,6 @@ FOOTER SECTION
 .footer-copy {
     color: rgba(255,255,255,0.6);
     font-size: 0.9rem;
-}
 }
 
 ```
