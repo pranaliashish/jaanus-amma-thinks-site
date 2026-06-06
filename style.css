@@ -9,6 +9,12 @@ Copy everything below and paste it into your `style.css` file in GitHub.
     box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     width: 100%;
@@ -826,7 +832,7 @@ margin: 0 auto;
     max-width: 100%;
     margin: 0 auto;
 
-    padding-top: 180px;
+    padding-top: 260px;
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 27px;
@@ -1893,4 +1899,19 @@ FOOTER SECTION
     font-size: 0.9rem;
 }
 
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+body {
+    position: relative;
+}
+
+section,
+div,
+img {
+    max-width: 100%;
+}
 ```
