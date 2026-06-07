@@ -226,7 +226,33 @@ body {
 }
 
 .hero-content::before {
-    display: none;
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    left: -120px;
+
+    top: -120px;
+
+    background:
+
+        radial-gradient(
+
+            rgba(10,20,40,0.32),
+
+            transparent 70%
+
+        );
+
+    z-index: -1;
+
+    pointer-events: none;
+
 }
 
 .hero-divider {
