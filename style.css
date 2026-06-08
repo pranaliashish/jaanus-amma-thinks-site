@@ -824,11 +824,16 @@ margin: 0 auto;
     }
 
    .hero-content {
-    max-width: 520px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    padding-top: 150px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-bottom: 27px;
     position: relative;
     z-index: 2;
-    margin: 0 auto; /* Added to keep the main content block from clinging to a side */
-    text-align: center; /* Ensures text aligns correctly inside the bounded block */
+  
 }
 
 
