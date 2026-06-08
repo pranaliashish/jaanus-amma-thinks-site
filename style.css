@@ -806,7 +806,7 @@ margin: 0 auto;
 
     background-size: cover;
 
-    background-position: center 15%;
+    background-position: center 10%;
 
     background-repeat: no-repeat;
 
@@ -826,7 +826,7 @@ margin: 0 auto;
    .hero-content {
     max-width: 100%;
 
-    padding-top: 80px;
+    padding-top: 60px;
     padding-left: 27px;
     padding-right: 27px;
     padding-bottom: 27px;
