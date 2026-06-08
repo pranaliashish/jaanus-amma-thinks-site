@@ -842,7 +842,7 @@ margin: 0 auto;
 
         max-width: 90%;
 margin: 0 auto 1.2rem;
-margin-top: 50px;
+margin-top: 30px;
         line-height: 1.08;
 
         color: #e2c07a;
@@ -863,7 +863,7 @@ margin-top: 50px;
 
     .hero-subtitle {
     color: white;
-
+text-align: left;
     width: 100%;
     max-width: 100%;
         margin-top: 40px; 
