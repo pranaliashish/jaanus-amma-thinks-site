@@ -226,28 +226,17 @@ body {
 }
 
 .hero-content::before {
-
     content: "";
-
     position: absolute;
+    width: 100%; /* Changed from 500px to perfectly match your block */
+    height: 100%; /* Changed from 500px */
+    left: 0; /* Changed from -120px to prevent the rightward push */
+    top: 0; /* Changed from -120px */
+    background: radial-gradient(rgba(10,20,40,0.32), transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
 
-    width: 500px;
-
-    height: 500px;
-
-    left: -120px;
-
-    top: -120px;
-
-    background:
-
-        radial-gradient(
-
-            rgba(10,20,40,0.32),
-
-            transparent 70%
-
-        );
 
     z-index: -1;
 
