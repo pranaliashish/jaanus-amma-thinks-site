@@ -968,7 +968,7 @@ padding-bottom: 30px;
 
     background:
         radial-gradient(circle at top left,
-        rgba(255,240,245,0.7),
+        rgba(212,162,76,0.10),
         transparent 40%),
 
         linear-gradient(
@@ -1014,7 +1014,7 @@ padding-bottom: 30px;
 
 
 
-    background: rgba(255, 225, 235, 0.55);
+    background: rgba(212,162,76,0.18) ;
 
 
 
@@ -1221,13 +1221,9 @@ padding-bottom: 30px;
 
 
     background:
-
         radial-gradient(
-
-            rgba(255, 225, 235, 0.35),
-
+            rgba(212,162,76,0.12),
             transparent 70%
-
         );
 
     top: -200px;
@@ -1558,7 +1554,7 @@ padding: 120px 8%;
 background:
     radial-gradient(
         circle at top right,
-        rgba(255,240,245,0.7),
+        rgba(212,162,76,0.08),
         transparent 35%
     ),
     linear-gradient(
