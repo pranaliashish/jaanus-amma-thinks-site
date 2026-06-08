@@ -153,7 +153,7 @@ body {
     background-image:
         url("new-hero.png");
 
-    background-size: cover;
+    background-size: 92%;
     background-position: center 25%;
     background-repeat: no-repeat;
 
