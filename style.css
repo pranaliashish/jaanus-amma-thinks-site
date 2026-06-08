@@ -165,6 +165,9 @@ body {
 
     position: relative;
     z-index: 2;
+     margin: 0 auto; /* Added to keep the main content block from clinging to a side */
+    text-align: center; /* Ensures text aligns correctly inside the bounded block */
+}
 }
 
 .hero-text {
