@@ -2101,3 +2101,49 @@ height: auto;
 html {
     scroll-behavior: smooth;
 }
+
+.bookshelf-button {
+
+    display: inline-block;
+
+    background: linear-gradient(
+        135deg,
+        #f2d58a,
+        #e0b85c
+    );
+
+    color: #6d4f1c;
+
+    padding: 14px 28px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 4px 12px rgba(212,162,76,0.15);
+
+}
+
+.bookshelf-button:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(212,162,76,0.25);
+
+}
+
+.arrival-note {
+
+    font-size: 0.9rem;
+
+    color: #8d8d8d;
+
+    margin-top: 12px;
+
+}
