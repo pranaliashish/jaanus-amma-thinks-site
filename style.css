@@ -1984,7 +1984,7 @@ body {
             #fdf7ee
         );
 
-    padding: 40px;
+    padding: 32px;
 
     border-radius: 32px;
 
@@ -2014,7 +2014,7 @@ body {
 
 .book-card img {
 
-    width: 260px;
+    width: 300px;
 
     max-width: 100%;
 
