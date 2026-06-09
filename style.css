@@ -859,6 +859,9 @@ margin-top: 30px;
 
         -webkit-text-stroke:
             1px rgba(110,70,20,0.25);
+    
+    background: red;
+
     }
 
     .hero-subtitle {
