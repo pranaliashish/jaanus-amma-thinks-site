@@ -841,8 +841,8 @@ margin: 0 auto;
         font-size:  37px;
 
         max-width: 240px;
-margin: 0 auto 1.2rem;
-margin-top: 30px;
+margin: 30px auto 1.2rem;
+    text-align: center;
         line-height: 1.08;
 
         color: #e2c07a;
