@@ -2062,4 +2062,19 @@ body {
 
     font-weight: 600;
 }
+
+.bookshelf-divider {
+
+    text-align: center;
+
+    color: #d4a24c;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 12px;
+
+    margin: 50px 0;
+
+    opacity: 0.85;
+}
 ```
