@@ -1927,6 +1927,7 @@ body {
             #fffdf8 0%,
             #f8f2e8 100%
         );  
+    position: relative;
 }
 
 .bookshelf .section-header {
@@ -2076,5 +2077,24 @@ body {
     margin: 50px 0;
 
     opacity: 0.85;
+}
+
+.bookshelf-stars {
+
+    position: absolute;
+
+    top: 60px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: rgba(212,162,76,0.3);
+
+    font-size: 1.4rem;
+
+    letter-spacing: 25px;
+
+    pointer-events: none;
 }
 ```
