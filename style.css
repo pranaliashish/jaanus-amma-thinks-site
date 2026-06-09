@@ -240,12 +240,6 @@ body {
 }
 
 
-    z-index: -1;
-
-    pointer-events: none;
-
-}
-
 .hero-divider {
 
     display: flex;
@@ -1927,7 +1921,12 @@ body {
 
 .bookshelf {
     padding: 100px 0;
-    background: #fffdf8;
+    background: 
+       linear-gradient(
+            180deg,
+            #fffdf8 0%,
+            #f8f2e8 100%
+        );  
 }
 
 .bookshelf .section-header {
