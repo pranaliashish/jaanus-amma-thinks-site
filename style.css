@@ -859,8 +859,6 @@ margin-top: 30px;
 
         -webkit-text-stroke:
             1px rgba(110,70,20,0.25);
-    
-    background: red;
 
     }
 
@@ -873,7 +871,7 @@ text-align: left;
     font-size: 1rem;
     line-height: 1.7;
 
-    padding: 0 40px 30px;
+    padding: 0 40px 60px;
 
     box-sizing: border-box;
 
