@@ -1923,6 +1923,21 @@ body {
     position: relative;
 }
 
+/*BOOKSHELF SECTION*/
 
+.bookshelf {
+    padding: 100px 0;
+    background: #fffdf8;
+}
+
+.bookshelf .section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.bookshelf h2 {
+    color: #1f2f55;
+}
 
 ```
