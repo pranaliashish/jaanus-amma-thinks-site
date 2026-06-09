@@ -1977,7 +1977,9 @@ body {
 }
 
 .book-card {
-
+display: flex;
+align-items: center;
+gap: 50px;
     background:
         linear-gradient(
             180deg,
@@ -2015,8 +2017,8 @@ body {
 
 .book-card img {
 
-    width: 300px;
-
+    width: 280px;
+height: auto;
     max-width: 100%;
 
     border-radius: 18px;
@@ -2079,33 +2081,23 @@ body {
     opacity: 0.85;
 }
 
-
-.star {
-    position: absolute;
-    color: rgba(212,162,76,0.35);
-    pointer-events: none;
+.book-details {
+    flex: 1;
 }
 
-.star1 {
-    top: 120px;
-    right: 80px;
-    font-size: 1.4rem;
+@media (max-width: 768px) {
+
+    .book-card {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
 }
 
-.star2 {
-    top: 550px;
-    left: 100px;
-    font-size: 1.1rem;
-}
-
-.star3 {
-    bottom: 500px;
-    right: 120px;
-    font-size: 1.3rem;
-}
-
-.star4 {
-    bottom: 150px;
-    left: 80px;
-    font-size: 1.1rem;
+html {
+    scroll-behavior: smooth;
 }
