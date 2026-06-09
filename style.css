@@ -1939,4 +1939,26 @@ body {
     color: #1f2f55;
 }
 
+.bookshelf-tag {
+
+    display: inline-block;
+
+    background: rgba(212,162,76,0.12);
+
+    color: #d4a24c;
+
+    padding: 10px 22px;
+
+    border-radius: 999px;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+
+    margin-bottom: 22px;
+
+    text-transform: uppercase;
+}
 ```
