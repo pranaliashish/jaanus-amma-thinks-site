@@ -2161,3 +2161,39 @@ html {
     margin-top: 20px;
 
 }
+
+/* STORY CIRCLE */
+
+.story-circle-section {
+    padding: 90px 20px;
+    background: #f7f2e8;
+}
+
+.story-circle-section .section-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.story-circle-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #0d1b2a;
+    margin-bottom: 20px;
+}
+
+.story-circle-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+.story-circle-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* MailerLite form container */
+.ml-embedded {
+    background: transparent;
+}
