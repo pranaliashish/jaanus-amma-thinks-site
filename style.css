@@ -2196,4 +2196,6 @@ html {
 /* MailerLite form container */
 .ml-embedded {
     background: transparent;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border-radius: 16px;
 }
