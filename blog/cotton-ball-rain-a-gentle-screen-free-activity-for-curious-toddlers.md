@@ -19,9 +19,8 @@ If you're looking for an easy screen-free activity for a quiet afternoon, give C
 
 ## **What You'll Need:**
 
-* A few cotton balls
-
-* A bowl, basket, or container
+- A few cotton balls
+- A bowl, basket, or container
 
 That's it!
 
@@ -33,13 +32,10 @@ Invite your toddler to hold a cotton ball and drop it into the bowl.
 
 Then encourage them to:
 
-* Toss the cotton balls gently into the air
-
-* Watch them float down like raindrops
-
-* Collect them and place them back in the bowl
-
-* Make it "rain" again and again
+- Toss the cotton balls gently into the air
+- Watch them float down like raindrops
+- Collect them and place them back in the bowl
+- Make it "rain" again and again
 
 
 
@@ -105,17 +101,14 @@ Want to extend the activity?
 
 Try:
 
-* Using two bowls and transferring cotton balls from one to the other
-
-* Sorting cotton balls by size if you have different varieties
-
-* Pretending the cotton balls are clouds, snowflakes, or feathers
-
-* Using kitchen tongs for older toddlers who enjoy an extra challenge
+- Using two bowls and transferring cotton balls from one to the other
+- Sorting cotton balls by size if you have different varieties
+- Pretending the cotton balls are clouds, snowflakes, or feathers
+- Using kitchen tongs for older toddlers who enjoy an extra challenge
 
 
 
-<div class = "little-reflection">
+&nbsp;
 
 ## A Gentle Reminder
 
@@ -131,4 +124,3 @@ And sometimes, those simple moments become the most meaningful ones.
 
 What ordinary household item has unexpectedly become your toddler's favorite toy lately?
 
-</div>
