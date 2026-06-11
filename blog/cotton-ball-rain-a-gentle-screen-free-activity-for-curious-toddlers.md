@@ -108,7 +108,7 @@ Try:
 
 
 
-&nbsp;
+<div class = "little-reflection">
 
 ## A Gentle Reminder
 
@@ -124,3 +124,4 @@ And sometimes, those simple moments become the most meaningful ones.
 
 What ordinary household item has unexpectedly become your toddler's favorite toy lately?
 
+</div>
