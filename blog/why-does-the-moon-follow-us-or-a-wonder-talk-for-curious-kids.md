@@ -5,8 +5,9 @@ category: Wonder Talks
 description: Why does the Moon seem to follow your car at night? Explore this
   fascinating question with Jaanu and Amma in this child-friendly Wonder Talk
   about space and perspective.
+cover: /images/uploads/moon.png
 ---
-#  🌙 A Jaanu–Amma Wonder Talk
+# 🌙 A Jaanu–Amma Wonder Talk
 
 **Jaanu:** Amma, why does the Moon follow our car?
 
@@ -58,7 +59,7 @@ It feels like a quiet friend traveling through the night sky with us.
 
 ---
 
- 
+
 
 ## **✨ Tiny Wonder**
 
@@ -70,7 +71,7 @@ That's so far away that when we move a short distance, the Moon appears to stay 
 
 
 
-##  **🔬 Science Behind It**
+## **🔬 Science Behind It**
 
 Objects that are close to us seem to move quickly when we travel past them.
 
@@ -88,7 +89,7 @@ Scientists call this effect **parallax**—the way objects appear to shift depen
 
 <div class = "little-reflection">
 
-##  ++🌙 Try It Tonight++
+## ++🌙 Try It Tonight++
 
 The next time you're outside after sunset:
 
@@ -107,4 +108,3 @@ Sometimes the most magical things in nature aren't magic at all.
 They're science helping us see the world with wonder.
 
 </div>
-
