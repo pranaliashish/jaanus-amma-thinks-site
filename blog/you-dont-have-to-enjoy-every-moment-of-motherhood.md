@@ -31,7 +31,7 @@ Loving your child and struggling with motherhood can exist at the same time.
 
 One does not cancel out the other.
 
-## The Difference Between Loving Motherhood and Loving Your Child
+## **The Difference Between Loving Motherhood and Loving Your Child**
 
 Many mothers quietly worry:
 
@@ -51,7 +51,7 @@ These feelings are not contradictions.
 
 They are part of being human.
 
-## The Moments We Don't Talk About
+## **The Moments We Don't Talk About**
 
 Social media often shows motherhood at its sweetest:
 
@@ -77,7 +77,7 @@ Missing parts of your old life.
 
 These moments deserve compassion too.
 
-## What New Mothers Need Most
+## **What New Mothers Need Most**
 
 Not more pressure.
 
@@ -97,7 +97,7 @@ Permission to have difficult days.
 
 Permission to be a whole person—not just a mother.
 
-</div class = "little-reflection">
+<div class = "little-reflection">
 
 ## A Gentle Reminder
 
