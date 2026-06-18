@@ -102,7 +102,7 @@ And along the way, it creates a beautiful sparkle for us to enjoy.
 
 ---
 
-<div class ="little-reflection">
+<div class = "little-reflection">
 
 ## Try This Tonight 🌙
 
@@ -125,3 +125,11 @@ And now, tonight, it has finally arrived.
 ✨ The universe is full of wonders waiting to be noticed.
 
 </div>
+
+## ✨ Continue Wondering
+
+- [Why Does The Moon Follow Us?](/blog/story.html?id=why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids)
+
+- [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
+
+- [Why Do Birds Fly In A V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
