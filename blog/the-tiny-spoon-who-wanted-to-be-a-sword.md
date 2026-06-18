@@ -186,7 +186,7 @@ But **happy** being a spoon.
 
 
 
-<div class = "little-reflection">
+<div class ="little-reflection">
 
 ## *🌙 Gentle Goodnight Reflection*
 
@@ -207,3 +207,11 @@ The world needs you exactly as you are.
 Goodnight, little one. You are enough, just as you are. 🤍
 
 </div>
+
+## ✨ More Gentle Stories
+
+- [The Little Firefly Who Wanted To Shine All Night](/blog/story.html?id=the-little-firefly-who-wanted-to-shine-all-night)
+
+- [The Little Cloud Who Held Everything Inside](/blog/story.html?id=the-little-cloud-who-held-everything-inside)
+
+- [The Little Clock Who Wanted Time To Stop](/blog/story.html?id=the-little-clock-who-wanted-time-to-stop)
