@@ -121,3 +121,11 @@ Then share:
 ✨ Sometimes the best science lessons begin with simply noticing the world around us.
 
 </div>
+
+## ✨ Continue Wondering
+
+- [Why Do Stars Twinkle?](/blog/story.html?id=why-do-stars-twinkle)
+
+- [Why Does The Moon Follow Us?](/blog/story.html?id=why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids)
+
+- [Why Do Birds Fly In A V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
