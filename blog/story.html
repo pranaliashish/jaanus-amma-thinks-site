@@ -8,25 +8,7 @@
 
     <title>Story</title>
 <meta name="description" content="">
-    function setMetaProperty(property, content) {
-
-    let tag = document.querySelector(
-        `meta[property="${property}"]`
-    );
-
-    if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute("property", property);
-        document.head.appendChild(tag);
-    }
-
-    tag.content = content;
-}
-
-setMetaProperty("og:title", title);
-setMetaProperty("og:description", description);
-setMetaProperty("og:image", cover);
-setMetaProperty("og:type", "article");
+    
     <link rel="stylesheet" href="../style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -74,8 +56,7 @@ setMetaProperty("og:type", "article");
                 <img id="story-image"
                      src=""
                      alt="Story Image">
-document.getElementById("story-image")
-        .alt = title;
+
             </div>
 
             <div class="story-body" id="story-content">
@@ -125,7 +106,36 @@ async function loadStory() {
 
     const cover = getField("cover");
 
-    document.title = title;
+   document.title = title;
+
+let metaDescription = document.querySelector(
+    'meta[name="description"]'
+);
+
+metaDescription.content = description;
+
+function setMetaProperty(property, content) {
+
+    let tag = document.querySelector(
+        `meta[property="${property}"]`
+    );
+
+    if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("property", property);
+        document.head.appendChild(tag);
+    }
+
+    tag.content = content;
+}
+
+setMetaProperty("og:title", title);
+setMetaProperty("og:description", description);
+setMetaProperty(
+    "og:image",
+    window.location.origin + cover
+);
+setMetaProperty("og:type", "article");
 
     document.getElementById("story-title").innerHTML = title;
 
@@ -133,7 +143,8 @@ async function loadStory() {
 
     document.getElementById("story-description").innerHTML = description;
 
-    document.getElementById("story-image").src = cover;
+   document.getElementById("story-image").src = cover;
+document.getElementById("story-image").alt = title;
 
   document.getElementById("story-content").innerHTML =
     marked.parse(content);
