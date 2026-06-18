@@ -108,3 +108,11 @@ Sometimes the most magical things in nature aren't magic at all.
 They're science helping us see the world with wonder.
 
 </div>
+
+## ✨ Continue Wondering
+
+- [Why Do Stars Twinkle?](/blog/story.html?id=why-do-stars-twinkle)
+
+- [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
+
+- [Why Do Birds Fly In A V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
