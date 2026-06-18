@@ -140,4 +140,12 @@ This story helps them understand:
 
 *Change can feel scary, but it can also carry us gently into something beautiful.*
 
-*</div>*
+</div>
+
+## ✨ More Gentle Stories
+
+- [The Little Cloud Who Held Everything Inside](/blog/story.html?id=the-little-cloud-who-held-everything-inside)
+
+- [The Tiny Spoon Who Wanted To Be A Sword](/blog/story.html?id=the-tiny-spoon-who-wanted-to-be-a-sword)
+
+- [The Little Firefly Who Wanted To Shine All Night](/blog/story.html?id=the-little-firefly-who-wanted-to-shine-all-night)
