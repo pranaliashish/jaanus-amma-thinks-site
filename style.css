@@ -2193,6 +2193,31 @@ html {
     margin: 0 auto;
 }
 
+.story-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.story-content ul li {
+    margin: 1rem 0;
+}
+
+.story-content ul li a {
+    display: block;
+    background: #f7f2e8;
+    padding: 14px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #5a5668;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+}
+
+.story-content ul li a:hover {
+    transform: translateY(-2px);
+}
+}
+
 /* MailerLite form container */
 .ml-embedded {
     background: transparent;
