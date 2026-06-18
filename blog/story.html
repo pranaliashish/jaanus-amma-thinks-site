@@ -7,7 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Story</title>
+<meta name="description" content="">
+    function setMetaProperty(property, content) {
 
+    let tag = document.querySelector(
+        `meta[property="${property}"]`
+    );
+
+    if (!tag) {
+        tag = document.createElement("meta");
+        tag.setAttribute("property", property);
+        document.head.appendChild(tag);
+    }
+
+    tag.content = content;
+}
+
+setMetaProperty("og:title", title);
+setMetaProperty("og:description", description);
+setMetaProperty("og:image", cover);
+setMetaProperty("og:type", "article");
     <link rel="stylesheet" href="../style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -55,7 +74,8 @@
                 <img id="story-image"
                      src=""
                      alt="Story Image">
-
+document.getElementById("story-image")
+        .alt = title;
             </div>
 
             <div class="story-body" id="story-content">
