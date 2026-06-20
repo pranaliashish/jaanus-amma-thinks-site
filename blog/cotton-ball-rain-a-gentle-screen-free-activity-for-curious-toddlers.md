@@ -125,11 +125,3 @@ And sometimes, those simple moments become the most meaningful ones.
 What ordinary household item has unexpectedly become your toddler's favorite toy lately?
 
 </div>
-
-## 🌿 Try Another Activity
-
-- [5 Screen-Free Nature Activities For Curious Toddlers](/blog/story.html?id=5-screen-free-nature-activities-for-curious-toddlers)
-
-- [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
-
-- [Why Do Birds Fly In A V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
