@@ -122,10 +122,3 @@ And every time we watch them fly, we're witnessing one of the world's greatest a
 ✨
 
 </div>
-
-## ✨ Continue Wondering
-
-- [Why Does the Moon Follow Us?](/blog/story.html?id=why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids)
-- [Why Do Birds Fly in a V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
-- [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
-
