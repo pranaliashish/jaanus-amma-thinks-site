@@ -142,10 +142,3 @@ This story helps them understand:
 
 </div>
 
-## ✨ More Gentle Stories
-
-- [The Little Cloud Who Held Everything Inside](/blog/story.html?id=the-little-cloud-who-held-everything-inside)
-
-- [The Tiny Spoon Who Wanted To Be A Sword](/blog/story.html?id=the-tiny-spoon-who-wanted-to-be-a-sword)
-
-- [The Little Firefly Who Wanted To Shine All Night](/blog/story.html?id=the-little-firefly-who-wanted-to-shine-all-night)
