@@ -136,11 +136,3 @@ And sometimes, the simplest moments become the ones they remember longest.
 Happy exploring, little adventurers. 🌿✨
 
 </div>
-
-## 🌿 Try Another Activity
-
-- [Cotton Ball Rain: A Gentle Screen-Free Activity](/blog/story.html?id=cotton-ball-rain-a-gentle-screen-free-activity-for-curious-toddlers)
-
-- [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
-
-- [Why Do Birds Fly In A V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
