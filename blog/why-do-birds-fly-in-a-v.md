@@ -91,12 +91,5 @@ Ask:
 
 Just like birds flying together, many things become easier when we help one another.
 
-</div>
+## </div>
 
-## ✨ Continue Wondering
-
-- [Why Do Stars Twinkle?](/blog/story.html?id=why-do-stars-twinkle)
-
-- [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
-
-- [Why Does The Moon Follow Us?](/blog/story.html?id=why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids)
