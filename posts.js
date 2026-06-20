@@ -73,4 +73,53 @@ const allPosts = [
 
     slug: "the-little-moon-who-was-afraid-to-change-or-a-gentle-bedtime-story-about-growth-and-self-worth"
 }
+
+     {
+    title: "Why Does Rain Smell Nice?",
+
+    category: "Wonder Talks",
+
+    description:
+        "A cozy Wonder Talk exploring why rain smells so wonderful. Discover the secret of petrichor through a gentle conversation between Jaanu and Amma.",
+    image: "rain-smell.png",
+
+    slug: "why-does-rain-smell-nice"
+},
+
+     {
+    title: "Why Do Birds Fly In a 'V'?",
+
+    category: "Wonder Talks",
+
+    description:
+        "A heartwarming Wonder Talk that explores why birds fly in a V formation and what it can teach us about teamwork, kindness, and helping one another.",
+    image: "birds-v.png",
+
+    slug: "why-do-birds-fly-in-a-v"
+},
+
+
+    {
+    title: "Why Does the Moon Follow Us? | A Wonder Talk for Curious Kids",
+
+    category: "Wonder Talks",
+
+    description:
+        "Why does the Moon seem to follow your car at night? Explore this fascinating question with Jaanu and Amma in this child-friendly Wonder Talk about space and perspective.",
+    image: "moon.png",
+
+    slug: "why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids"
+},
+
+     {
+    title: "How Do Birds Know Where to Go When They Migrate?",
+
+    category: "Wonder Talks",
+
+    description:
+        "Discover how migrating birds find their way across thousands of kilometers using the Sun, stars, landmarks, and Earth's magnetic field in this child-friendly Wonder Talk.",
+    image: "birds-wonder.png",
+
+    slug: "how-do-birds-know-where-to-go-when-they-migrate-or-a-wonder-talk-for-curious-kids"
+}
   ];
