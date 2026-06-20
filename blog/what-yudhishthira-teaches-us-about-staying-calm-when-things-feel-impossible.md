@@ -7,8 +7,6 @@ description: Discover a timeless lesson from the Mahabharata's Yaksha Prashna
   inspire both parents and children today.
 cover: /images/uploads/yudhishthira.png
 ---
-
-
 The Mahabharata is filled with mighty warriors, powerful weapons, and great battles.
 
 But one of Yudhishthira's most remarkable moments happened not on a battlefield, but beside a quiet lake.
@@ -157,4 +155,12 @@ Yudhishthira reminds us that wisdom often arrives in the small pause between the
 
 Sometimes a calm mind can solve problems that strength alone cannot.
 
- *</div>*
+</div>
+
+
+
+ ## 🪔 Continue Exploring
+
+- [Why Krishna Tells Us To Do Our Best And Let Go Of The Rest](/blog/story.html?id=why-krishna-tells-us-to-do-our-best-and-let-go-of-the-rest)  
+- [What Bharata Teaches Us About Doing the Right Thing When Nobody Is Watching](/blog/story.html?id=what-bharata-teaches-us-about-doing-the-right-thing-when-nobody-is-watching)  
+- [The Day I Realized My Child Was Watching Me More Than Listening To Me](/blog/story.html?id=the-day-i-realized-my-child-was-watching-me-more-than-listening-to-me)
