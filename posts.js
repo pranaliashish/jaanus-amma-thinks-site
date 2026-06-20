@@ -232,6 +232,18 @@ const allPosts = [
     image: "motherhood-2.png",
 
     slug: "you-dont-have-to-enjoy-every-moment-of-motherhood"
+},
+
+    {
+    title: "The Invisible Work of Motherhood: A Gentle Reminder for New Moms",
+
+    category: "Motherhood Reflections",
+
+    description:
+        "Feeling like you're not doing enough as a new mom? Discover why the most important work of motherhood is often invisible—and why it matters more than you think.",
+    image: "motherhood-3.png",
+
+    slug: "the-invisible-work-of-motherhood-a-gentle-reminder-for-new-moms"
 }
 
   ];
