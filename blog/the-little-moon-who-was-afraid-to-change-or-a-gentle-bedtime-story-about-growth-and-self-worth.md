@@ -133,10 +133,3 @@ But we are still worthy of love in every phase of who we are.
 **Even the moon does not stay full forever. ✨**
 
 </div>
-
-## ✨ More Gentle Stories
-
-- [The Little Cloud Who Held Everything Inside](/blog/story.html?id=the-little-cloud-who-held-everything-inside)
-- [The Little Leaf Who Was Afraid To Fall](/blog/story.html?id=the-little-leaf-who-was-afraid-to-fall)
-- [The Little Firefly Who Wanted To Shine All Night](/blog/story.html?id=the-little-firefly-who-wanted-to-shine-all-night)
-
