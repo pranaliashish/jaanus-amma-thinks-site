@@ -74,6 +74,18 @@ const allPosts = [
     slug: "the-little-moon-who-was-afraid-to-change-or-a-gentle-bedtime-story-about-growth-and-self-worth"
 },
 
+   {
+    title: "Why Do Stars Twinkle?",
+
+    category: "Wonder Talks",
+
+    description:
+        "Have you ever wondered why stars twinkle in the night sky? Join Jaanu and Amma as they explore this magical question through a gentle conversation, simple science, and a little bedtime wonder. Perfect for curious children and peaceful nighttime learning.",
+    image: "stars-twinkle.png",
+
+    slug: "why-do-stars-twinkle"
+},
+
      {
     title: "Why Does Rain Smell Nice?",
 
