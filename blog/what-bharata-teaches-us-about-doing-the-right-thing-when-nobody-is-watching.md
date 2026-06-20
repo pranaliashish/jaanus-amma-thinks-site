@@ -118,7 +118,6 @@ Sometimes the noblest choices are the ones no one else sees.
 ## 🪔 Continue Exploring
 
 - [Why Krishna Tells Us To Do Our Best And Let Go Of The Rest](/blog/story.html?id=why-krishna-tells-us-to-do-our-best-and-let-go-of-the-rest)
-
+- [What Yudhishthira Teaches Us About Staying Calm When Things Feel Impossible] ([https://jaanusammathinks.com/blog/story?id=what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible](https://jaanusammathinks.com/blog/story?id=what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible))
 - [The Day I Realized My Child Was Watching Me More Than Listening To Me](/blog/story.html?id=the-day-i-realized-my-child-was-watching-me-more-than-listening-to-me)
 
-- [You Don't Have To Enjoy Every Moment Of Motherhood](/blog/story.html?id=you-dont-have-to-enjoy-every-moment-of-motherhood)
