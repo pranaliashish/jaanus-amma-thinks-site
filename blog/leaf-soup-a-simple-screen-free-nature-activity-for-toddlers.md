@@ -27,10 +27,11 @@ If you're looking for an easy screen-free activity that encourages creativity, s
 
 - A bowl, bucket, or large container
 - A spoon, stick, or small ladle for stirring
-- Leaves, flowers, grass, pebbles, or other nature treasures
-  ---
+- Leaves, pebbles, grass or other nature treasures
 
-  
+---
+
+
 
 ## How to Play
 
