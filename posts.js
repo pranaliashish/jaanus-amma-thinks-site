@@ -159,4 +159,29 @@ const allPosts = [
 
     slug: "what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible"
      }
+
+ {
+    title: "5 Screen-Free Nature Activities for Curious Toddlers 🌿",
+
+    category: "Toddler Activities",
+
+    description:
+        "Five simple nature activities that encourage curiosity, creativity, and screen-free play for toddlers. 🌿✨",
+    image: "nature-activities.png",
+
+    slug: "5-screen-free-nature-activities-for-curious-toddlers"
+},
+
+
+    {
+    title: "Cotton Ball Rain: A Gentle Screen-Free Activity for Curious Toddlers",
+
+    category: "Toddler Activities",
+
+    description:
+        "Looking for an easy screen-free toddler activity? Try Cotton Ball Rain—a simple play idea that builds fine motor skills, focus, coordination, and imagination using just cotton balls and a bowl",
+    image: "activities-2.png",
+
+    slug: "cotton-ball-rain-a-gentle-screen-free-activity-for-curious-toddlers"
+}
   ];
