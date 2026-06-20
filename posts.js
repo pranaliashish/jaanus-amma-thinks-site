@@ -211,3 +211,4 @@ const allPosts = [
 }
 
   ];
+window.allPosts = allPosts;
