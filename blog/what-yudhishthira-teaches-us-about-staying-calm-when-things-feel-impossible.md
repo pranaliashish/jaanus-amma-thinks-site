@@ -156,11 +156,3 @@ Yudhishthira reminds us that wisdom often arrives in the small pause between the
 Sometimes a calm mind can solve problems that strength alone cannot.
 
 </div>
-
-
-
- ## 🪔 Continue Exploring
-
-- [Why Krishna Tells Us To Do Our Best And Let Go Of The Rest](/blog/story.html?id=why-krishna-tells-us-to-do-our-best-and-let-go-of-the-rest)  
-- [What Bharata Teaches Us About Doing the Right Thing When Nobody Is Watching](/blog/story.html?id=what-bharata-teaches-us-about-doing-the-right-thing-when-nobody-is-watching)  
-- [The Day I Realized My Child Was Watching Me More Than Listening To Me](/blog/story.html?id=the-day-i-realized-my-child-was-watching-me-more-than-listening-to-me)
