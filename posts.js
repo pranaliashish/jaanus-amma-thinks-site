@@ -197,6 +197,18 @@ const allPosts = [
     slug: "cotton-ball-rain-a-gentle-screen-free-activity-for-curious-toddlers"
 },
 
+     {
+    title: "Leaf Soup: A Simple Screen-Free Nature Activity for Toddlers",
+
+    category: "Toddler Activities",
+
+    description:
+        "Try Leaf Soup, a fun and easy screen-free toddler activity using leaves, flowers, and nature treasures. Encourages sensory play, imagination, creativity, and outdoor exploration.",
+    image: "soup-activity.png",
+
+    slug: "leaf-soup-a-simple-screen-free-nature-activity-for-toddlers"
+},
+
   {
     title: "The Day I Realized My Child Was Watching Me More Than Listening to Me",
 
