@@ -72,7 +72,7 @@ const allPosts = [
     image: "moon-story.png",
 
     slug: "the-little-moon-who-was-afraid-to-change-or-a-gentle-bedtime-story-about-growth-and-self-worth"
-}
+},
 
      {
     title: "Why Does Rain Smell Nice?",
@@ -121,7 +121,7 @@ const allPosts = [
     image: "birds-wonder.png",
 
     slug: "how-do-birds-know-where-to-go-when-they-migrate-or-a-wonder-talk-for-curious-kids"
-}
+},
 
   {
     title: "Why Krishna Tells Us to Do Our Best and Let Go of the Rest | Wisdom from the Gita for Children",
@@ -158,7 +158,7 @@ const allPosts = [
     image: "yudhishthira.png",
 
     slug: "what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible"
-     }
+     },
 
  {
     title: "5 Screen-Free Nature Activities for Curious Toddlers 🌿",
@@ -183,5 +183,31 @@ const allPosts = [
     image: "activities-2.png",
 
     slug: "cotton-ball-rain-a-gentle-screen-free-activity-for-curious-toddlers"
+},
+
+  {
+    title: "The Day I Realized My Child Was Watching Me More Than Listening to Me",
+
+    category: "Motherhood Reflections",
+
+    description:
+        "A heartfelt reflection on the powerful truth that children learn more from what we do than what we say. 🤍",
+    image: "mother-actions.png",
+
+    slug: "the-day-i-realized-my-child-was-watching-me-more-than-listening-to-me"
+},
+
+
+    {
+    title: "You Don't Have to Enjoy Every Moment of Motherhood",
+
+    category: "Motherhood Reflections",
+
+    description:
+        "A gentle reminder for new mothers: loving your child and finding motherhood difficult can exist at the same time. Read this encouraging reflection for overwhelmed moms.",
+    image: "motherhood-2.png",
+
+    slug: "you-dont-have-to-enjoy-every-moment-of-motherhood"
 }
+
   ];
