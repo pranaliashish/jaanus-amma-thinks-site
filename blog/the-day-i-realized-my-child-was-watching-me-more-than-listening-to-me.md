@@ -148,11 +148,3 @@ And that love is present in more moments than you realize.
 Goodnight, Mama. 🤍
 
 </div>
-
-## 🤍 More Reflections
-
-- [You Don't Have To Enjoy Every Moment Of Motherhood](/blog/story.html?id=you-dont-have-to-enjoy-every-moment-of-motherhood)
-
-- [Why Krishna Tells Us To Do Our Best And Let Go Of The Rest](/blog/story.html?id=why-krishna-tells-us-to-do-our-best-and-let-go-of-the-rest)
-
-- [What Bharata Teaches Us About Doing The Right Thing When Nobody Is Watching](/blog/story.html?id=what-bharata-teaches-us-about-doing-the-right-thing-when-nobody-is-watching)
