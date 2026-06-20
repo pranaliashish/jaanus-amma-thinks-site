@@ -114,10 +114,3 @@ Sometimes the noblest choices are the ones no one else sees.
 💛
 
 </div>
-
-## 🪔 Continue Exploring
-
-- [Why Krishna Tells Us To Do Our Best And Let Go Of The Rest](/blog/story.html?id=why-krishna-tells-us-to-do-our-best-and-let-go-of-the-rest)
-- [What Yudhishthira Teaches Us About Staying Calm When Things Feel Impossible](/blog/story.html?id=what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible)
-- [The Day I Realized My Child Was Watching Me More Than Listening To Me](/blog/story.html?id=the-day-i-realized-my-child-was-watching-me-more-than-listening-to-me)
-
