@@ -122,4 +122,41 @@ const allPosts = [
 
     slug: "how-do-birds-know-where-to-go-when-they-migrate-or-a-wonder-talk-for-curious-kids"
 }
+
+  {
+    title: "Why Krishna Tells Us to Do Our Best and Let Go of the Rest | Wisdom from the Gita for Children",
+
+    category: "Ancient Indian Wisdom",
+
+    description:
+        "A simple lesson from the Bhagavad Gita about effort, worry, and learning to do our best without being afraid of the outcome. 🌿",
+    image: "krishna-arjuna.png",
+
+    slug: "why-krishna-tells-us-to-do-our-best-and-let-go-of-the-rest"
+},
+
+     {
+    title: "What Bharata Teaches Us About Doing the Right Thing When Nobody Is Watching",
+
+    category: "Ancient Indian Wisdom",
+
+    description:
+        "Discover the timeless lesson of integrity from Bharata in the Ramayana and how his example can help parents and children build strong character in everyday life.",
+    image: "bharata.png",
+
+    slug: "what-bharata-teaches-us-about-doing-the-right-thing-when-nobody-is-watching"
+},
+
+    
+     {
+    title: "What Yudhishthira Teaches Us About Staying Calm When Things Feel Impossible",
+
+    category: "Ancient Indian Wisdom",
+
+    description:
+        "Explore the famous Yaksha Prashna episode from the Mahabharata and discover how Yudhishthira's calm response offers a powerful lesson in patience, wisdom, and thoughtful decision-making.",
+    image: "yudhishthira.png",
+
+    slug: "what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible"
+     }
   ];
