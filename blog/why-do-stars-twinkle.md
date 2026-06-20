@@ -1,5 +1,5 @@
 ---
-title: Why Do Stars Twinkle? ✨ | A Jaanu–Amma Wonder Talk for Curious Kids
+title: Why Do Stars Twinkle? ✨ | A Wonder Talk for Curious Kids
 date: 2026-05-31
 category: Wonder Talks
 description: Have you ever wondered why stars twinkle in the night sky? Join
@@ -129,7 +129,6 @@ And now, tonight, it has finally arrived.
 ## ✨ Continue Wondering
 
 - [Why Does The Moon Follow Us?](/blog/story.html?id=why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids)
-
 - [Why Does Rain Smell Nice?](/blog/story.html?id=why-does-rain-smell-nice)
-
 - [Why Do Birds Fly In A V?](/blog/story.html?id=why-do-birds-fly-in-a-v)
+
