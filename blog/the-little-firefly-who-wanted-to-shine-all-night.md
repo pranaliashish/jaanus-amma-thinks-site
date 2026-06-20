@@ -72,12 +72,6 @@ When we slow down and allow ourselves to relax, our bodies and hearts become str
 
 Just like the little firefly, we shine brightest when we balance effort with rest.
 
+
+
 </div>
-
-## ✨ More Gentle Stories
-
-- [The Tiny Spoon Who Wanted To Be A Sword](/blog/story.html?id=the-tiny-spoon-who-wanted-to-be-a-sword)
-
-- [The Little Cloud Who Held Everything Inside](/blog/story.html?id=the-little-cloud-who-held-everything-inside)
-
-- [The Little Leaf Who Was Afraid To Fall](/blog/story.html?id=the-little-leaf-who-was-afraid-to-fall)
