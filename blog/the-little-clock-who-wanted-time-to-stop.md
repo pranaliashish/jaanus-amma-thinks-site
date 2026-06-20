@@ -231,7 +231,6 @@ It can help start age-appropriate conversations about grief, remembrance, and he
 ## ✨ More Gentle Stories
 
 - [The Little Cloud Who Held Everything Inside](/blog/story.html?id=the-little-cloud-who-held-everything-inside)
-
 - [The Little Leaf Who Was Afraid To Fall](/blog/story.html?id=the-little-leaf-who-was-afraid-to-fall)
-
 - [The Little Firefly Who Wanted To Shine All Night](/blog/story.html?id=the-little-firefly-who-wanted-to-shine-all-night)
+
