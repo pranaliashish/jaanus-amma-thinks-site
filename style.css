@@ -2215,7 +2215,7 @@ html {
     margin: 0;
 }
 
-.story-body ul li p a {
+.story-body ul li a {
     display: block;
     background: #f7f2e8;
     padding: 14px 18px;
@@ -2227,10 +2227,9 @@ html {
 .story-content ul li a:hover {
     transform: translateY(-2px);
 }
-.story-body ul li p a:hover {
+.story-body ul li a:hover {
     transform: translateY(-2px);
     transition: all 0.2s ease;
-}
 }
 
 /* MailerLite form container */
