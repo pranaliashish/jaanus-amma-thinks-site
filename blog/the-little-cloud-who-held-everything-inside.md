@@ -141,10 +141,3 @@ If your child is experiencing big feelings, this story can help them understand 
 
 </div>
 
-## ✨ More Gentle Stories
-
-- [The Little Leaf Who Was Afraid To Fall](/blog/story.html?id=the-little-leaf-who-was-afraid-to-fall)
-
-- [The Little Firefly Who Wanted To Shine All Night](/blog/story.html?id=the-little-firefly-who-wanted-to-shine-all-night)
-
-- [The Little Clock Who Wanted Time To Stop](/blog/story.html?id=the-little-clock-who-wanted-time-to-stop)
