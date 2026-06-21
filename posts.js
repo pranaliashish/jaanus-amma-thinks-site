@@ -221,6 +221,18 @@ const allPosts = [
     slug: "leaf-soup-a-simple-screen-free-nature-activity-for-toddlers"
 },
 
+    {
+    title: "The Sock Matching Basket: A Simple Indoor Activity for Toddlers",
+
+    category: "Toddler Activities",
+
+    description:
+        "Turn laundry time into learning time with this easy indoor toddler activity. Matching socks helps build observation skills, concentration, and problem-solving through everyday play.",
+    image: "sock-activity.png",
+
+    slug: "the-sock-matching-basket-a-simple-indoor-activity-for-toddlers"
+},
+   
   {
     title: "The Day I Realized My Child Was Watching Me More Than Listening to Me",
 
