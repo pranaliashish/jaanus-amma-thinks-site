@@ -135,6 +135,18 @@ const allPosts = [
     slug: "how-do-birds-know-where-to-go-when-they-migrate-or-a-wonder-talk-for-curious-kids"
 },
 
+   {
+    title: "Why Does the Sun Change Color at Sunset?",
+
+    category: "Wonder Talks",
+
+    description:
+        "Why does the Sun turn orange and red at sunset? Explore this beautiful question with Jaanu and Amma in a child-friendly Wonder Talk about light, colors, and the science of sunsets.",
+    image: "sunset.png",
+
+    slug: "why-does-the-sun-change-color-at-sunset-or-a-wonder-talk-for-curious-kids"
+},
+
   {
     title: "Why Krishna Tells Us to Do Our Best and Let Go of the Rest | Wisdom from the Gita for Children",
 
