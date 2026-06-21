@@ -172,6 +172,18 @@ const allPosts = [
     slug: "what-yudhishthira-teaches-us-about-staying-calm-when-things-feel-impossible"
      },
 
+   {
+    title: "What Hanuman Teaches Us About Remembering Our Strength",
+
+    category: "Ancient Indian Wisdom",
+
+    description:
+        "Discover a timeless lesson from the Ramayana about confidence, courage, and self-belief through the story of Hanuman's great leap to Lanka.",
+    image: "hanuman.png",
+
+    slug: "what-hanuman-teaches-us-about-remembering-our-strength"
+     },
+   
  {
     title: "5 Screen-Free Nature Activities for Curious Toddlers 🌿",
 
