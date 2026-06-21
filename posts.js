@@ -74,6 +74,18 @@ const allPosts = [
     slug: "the-little-moon-who-was-afraid-to-change-or-a-gentle-bedtime-story-about-growth-and-self-worth"
 },
 
+     {
+    title: "The Boy Who Borrowed Tomorrow 🌙",
+
+    category: "Bedtime Story",
+
+    description:
+        "Help children navigate worries about the future with this heartwarming bedtime story about Avi, a magical Tomorrow Keeper, and the lesson of living one day at a time.",
+    image: "tomorrow-story.png",
+
+    slug: "the-boy-who-borrowed-tomorrow-or-a-bedtime-story-about-worry-and-living-in-the-present"
+},
+
    {
     title: "Why Do Stars Twinkle?",
 
