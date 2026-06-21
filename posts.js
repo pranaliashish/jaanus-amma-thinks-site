@@ -268,6 +268,18 @@ const allPosts = [
     image: "motherhood-3.png",
 
     slug: "the-invisible-work-of-motherhood-a-gentle-reminder-for-new-moms"
+},
+
+   {
+    title: "5 Tiny Habits That Make Busy Motherhood Feel a Little Easier",
+
+    category: "Motherhood Reflections",
+
+    description:
+        "Simple, realistic tips for busy moms. Discover five tiny habits that can reduce stress, simplify daily routines, and make motherhood feel a little more manageable.",
+    image: "motherhood-4.png",
+
+    slug: "5-tiny-habits-that-make-busy-motherhood-feel-a-little-easier"
 }
 
   ];
