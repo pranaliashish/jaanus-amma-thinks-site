@@ -87,6 +87,18 @@ const allPosts = [
 },
 
    {
+    title: "The Little Pocket That Held Rain 🌧️",
+
+    category: "Bedtime Story",
+
+    description:
+        "Help children explore empathy and emotional awareness through this touching bedtime story about Mira, a mysterious pocket, and the feelings we sometimes carry inside.",
+    image: "rain-story.png",
+
+    slug: "the-little-pocket-that-held-rain-or-a-bedtime-story-about-feelings-and-empathy"
+},
+   
+   {
     title: "Why Do Stars Twinkle?",
 
     category: "Wonder Talks",
