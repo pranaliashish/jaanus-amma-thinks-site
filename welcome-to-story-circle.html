@@ -1,65 +1,227 @@
-<section class="welcome-story-circle">
+<!DOCTYPE html>
 
-```
-<div class="welcome-container">
+<html lang="en">
 
-    <div class="welcome-icon">🌙</div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <h1>Welcome to Story Circle</h1>
+<title>Welcome to Story Circle | Jaanu's Amma Thinks</title>
 
-    <p class="welcome-intro">
-        Your seat is officially ready.
-    </p>
+<link rel="stylesheet" href="style.css">
 
-    <p>
-        Thank you for joining this little community of story-lovers, wonder-seekers, and curious minds.
-    </p>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 
-    <p>
-        As promised, I've put together a special Story Circle Starter Pack for your family.
-    </p>
+<style>
 
-    <a href="/downloads/jaanus-amma-thinks-story-circle-starter-pack.pdf"
-       class="download-button">
-       Download Your Story Circle Starter Pack 🌙
-    </a>
+.story-circle-welcome {
 
-    <div class="starter-pack-preview">
+    min-height: 100vh;
 
-        <p>Inside you'll find:</p>
+    display: flex;
 
-        <p>✨ An exclusive bedtime story unavailable on the website</p>
+    align-items: center;
 
-        <p>✨ A Wonder Talk to spark curiosity</p>
+    justify-content: center;
 
-        <p>✨ A Tiny Wonder Hunt activity</p>
+    padding: 120px 20px;
 
-        <p>✨ A gentle bedtime reflection</p>
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(212,162,76,0.10),
+            transparent 40%
+        ),
+        linear-gradient(
+            180deg,
+            #fffaf7 0%,
+            #fffdfc 100%
+        );
+}
 
-    </div>
-  
+.welcome-card {
+
+    max-width: 760px;
+
+    background: rgba(255,255,255,0.85);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 36px;
+
+    padding: 60px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 35px rgba(0,0,0,0.06);
+}
+
+.welcome-moon {
+
+    font-size: 3rem;
+
+    margin-bottom: 20px;
+}
+
+.welcome-card h1 {
+
+    font-family: 'Dancing Script', cursive;
+
+    font-size: 4rem;
+
+    color: #1b2d4a;
+
+    margin-bottom: 20px;
+}
+
+.welcome-card p {
+
+    font-family: 'Nunito', sans-serif;
+
+    color: #6b6670;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+
+    font-size: 1.08rem;
+}
+
+.download-button {
+
+    display: inline-block;
+
+    margin: 30px 0;
+
+    background: linear-gradient(
+        135deg,
+        #c9963b,
+        #e4c27a
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px 36px;
+
+    border-radius: 999px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.download-button:hover {
+
+    transform: translateY(-3px);
+}
+
+.starter-pack-box {
+
+    margin: 35px 0;
+
+    background: #f8f1e5;
+
+    padding: 30px;
+
+    border-radius: 24px;
+}
+
+.starter-pack-box p {
+
+    margin-bottom: 12px;
+}
+
+.signature {
+
+    margin-top: 40px;
+}
+
+.signature strong {
+
+    color: #1b2d4a;
+}
+
+@media (max-width: 768px) {
+
+    .welcome-card {
+
+        padding: 35px 25px;
+    }
+
+    .welcome-card h1 {
+
+        font-size: 2.8rem;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="story-circle-welcome">
+
+<div class="welcome-card">
+
+<div class="welcome-moon">🌙</div>
+
+<h1>Welcome to Story Circle</h1>
+
 <p>
-  A welcome email is also on its way to your inbox!
+Your seat is officially ready.
 </p>
-  
-    <p>
-        I hope it brings a little warmth, wonder, and connection to your evenings.
-    </p>
 
-    <p>
-        From time to time, I'll also send thoughtful stories, gentle ideas, and little sparks of wonder for curious children and the grown-ups who love them.
-    </p>
+<p>
+Thank you for joining this little community of story-lovers, wonder-seekers, and curious minds.
+</p>
 
-    <div class="signature">
+<p>
+As promised, your free Story Circle Starter Pack is waiting for you.
+</p>
 
-        <p>With warmth,</p>
+<a href="/downloads/jaanus-amma-thinks-story-circle-starter-pack.pdf"
+class="download-button">
+Download Your Story Circle Starter Pack 🌙 </a>
 
-        <p><strong>Pranali</strong></p>
+<p>
+A welcome email is also on its way to your inbox.
+</p>
 
-        <p>Jaanu's Amma Thinks 🌙</p>
+<div class="starter-pack-box">
 
-    </div>
+<p><strong>Inside you'll find:</strong></p>
+
+<p>✨ An exclusive bedtime story unavailable on the website</p>
+
+<p>✨ A Wonder Talk to spark curiosity</p>
+
+<p>✨ A Tiny Wonder Hunt activity</p>
+
+<p>✨ A gentle bedtime reflection</p>
+
+</div>
+
+<p>
+I hope it brings a little warmth, wonder, and connection to your evenings.
+</p>
+
+<div class="signature">
+
+<p>With warmth,</p>
+
+<p><strong>Pranali</strong></p>
+
+<p>Jaanu's Amma Thinks 🌙</p>
+
+</div>
 
 </div>
 
 </section>
+
+</body>
+
+</html>
