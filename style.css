@@ -2238,3 +2238,48 @@ html {
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     border-radius: 16px;
 }
+
+.story-circle-button {
+
+
+display: inline-block;
+
+margin-top: 15px;
+
+padding: 14px 28px;
+
+background: #D4A24C;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 999px;
+
+font-weight: 600;
+
+transition: all 0.2s ease;
+
+
+}
+
+.story-circle-button:hover {
+
+
+transform: translateY(-2px);
+
+opacity: 0.95;
+
+
+}
+
+.story-circle-cta {
+
+
+text-align: center;
+
+margin: 50px 0;
+
+
+}
+
