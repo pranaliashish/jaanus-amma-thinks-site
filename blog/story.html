@@ -201,12 +201,31 @@ document.getElementById("story-image").alt = title;
     marked.parse(content);
 
 document.getElementById("story-content").innerHTML +=
-generateRelatedPosts(category, storyId) +
-`
+
+
+<div class="story-circle-cta">
+
+<h3>🌙 Enjoyed this story?</h3>
+
+<p>
+    Receive a free Story Circle Starter Pack featuring an exclusive bedtime story, Wonder Talk, Tiny Wonder Hunt, and gentle bedtime reflection.
+</p>
+
+<a href="/#story-circle" class="story-circle-button">
+    Get My Free Starter Pack 🌙
+</a>
+
+</div>
+
++
+generateRelatedPosts(category, storyId)
++
+
 <div class="reflection-ending">
     Thank you for spending a quiet moment at Jaanu's Amma Thinks ✨
 </div>
-`;
+;
+
 }
 
 loadStory();
