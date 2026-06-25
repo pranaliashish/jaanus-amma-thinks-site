@@ -97,6 +97,18 @@ const allPosts = [
 
     slug: "the-little-pocket-that-held-rain-or-a-bedtime-story-about-feelings-and-empathy"
 },
+
+   {
+    title: "The Little Raincloud Who Was Afraid to Cry 🌧️",
+
+    category: "Bedtime Story",
+
+    description:
+        "Help children understand that it's okay to cry with this heartwarming bedtime story about a little raincloud who discovers that tears can nourish growth, healing, and hope.",
+    image: "raincloud-story.png",
+
+    slug: "the-little-raincloud-who-was-afraid-to-cry-or-a-gentle-bedtime-story-about-feelings-and-tears.md"
+}, 
    
    {
     title: "Why Do Stars Twinkle?",
