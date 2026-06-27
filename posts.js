@@ -183,6 +183,18 @@ const allPosts = [
     slug: "why-does-the-sun-change-color-at-sunset-or-a-wonder-talk-for-curious-kids"
 },
 
+   {
+    title: "Why Do Leaves Fall From Trees?",
+
+    category: "Wonder Talks",
+
+    description:
+        "Why do trees lose their leaves? Join Jaanu and Amma as they explore the science behind falling leaves in this gentle Wonder Talk that blends curiosity, nature, and learning.",
+    image: "leaves-fall.png",
+
+    slug: "why-do-leaves-fall-from-trees-or-a-wonder-talk-for-curious-kids"
+},
+   
   {
     title: "Why Krishna Tells Us to Do Our Best and Let Go of the Rest | Wisdom from the Gita for Children",
 
