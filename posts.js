@@ -304,6 +304,18 @@ const allPosts = [
 
     slug: "the-sock-matching-basket-a-simple-indoor-activity-for-toddlers"
 },
+
+   {
+    title: "Window Nature Gallery: A Simple Indoor Nature Activity for Toddlers",
+
+    category: "Toddler Activities",
+
+    description:
+        "Create beautiful window art using leaves, petals, and other nature treasures. A simple indoor toddler activity that encourages creativity, fine motor skills, and a love for nature.",
+    image: "window-activity.png",
+
+    slug: "window-nature-gallery-a-simple-indoor-nature-activity-for-toddlers"
+},
    
   {
     title: "The Day I Realized My Child Was Watching Me More Than Listening to Me",
