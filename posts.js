@@ -243,6 +243,18 @@ const allPosts = [
 
     slug: "what-hanuman-teaches-us-about-remembering-our-strength"
      },
+
+    {
+    title: "What Arjuna Teaches Us About Focus",
+
+    category: "Ancient Indian Wisdom",
+
+    description:
+        "Discover the timeless lesson of focus from the Mahabharata through Arjuna and Guru Dronacharya's famous test. A gentle story that helps children and parents understand the power of paying attention.",
+    image: "arjuna.png",
+
+    slug: "what-arjuna-teaches-us-about-focus-or-an-ancient-indian-wisdom-story-for-children"
+     },
    
  {
     title: "5 Screen-Free Nature Activities for Curious Toddlers 🌿",
