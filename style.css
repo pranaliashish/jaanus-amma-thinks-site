@@ -2301,6 +2301,9 @@ margin: 50px 0;
         #fff8ef 100%
     );
 
+    padding-top:80px;
+
+padding-bottom:100px;
 }
 
 .story-circle-book{
@@ -2312,10 +2315,7 @@ margin: 50px 0;
 
     margin:45px auto;
 
-    filter:
-drop-shadow(0 20px 40px rgba(17,36,61,.10))
-drop-shadow(0 8px 18px rgba(212,162,76,.18));
-
+filter:drop-shadow(0 28px 45px rgba(17,36,61,.18));
     transition:.35s ease;
 
 }
@@ -2493,5 +2493,39 @@ justify-content:center;
     box-shadow:0 12px 35px rgba(17,36,61,.05);
 
     border:1px solid #efe3cf;
+
+}
+
+/* ==========================================
+   BREVO FORM STYLING
+========================================== */
+
+#sib-container{
+
+    border-radius:22px !important;
+
+    box-shadow:0 18px 40px rgba(17,36,61,.08);
+
+    overflow:hidden;
+
+}
+
+.sib-form-block__button{
+
+    transition:.3s ease !important;
+
+}
+
+.sib-form-block__button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(212,162,76,.35);
+
+}
+
+#EMAIL{
+
+    border-radius:14px !important;
 
 }
