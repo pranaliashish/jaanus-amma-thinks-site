@@ -2295,7 +2295,11 @@ margin: 50px 0;
 
 .story-circle-section{
 
-    background:#fffaf5;
+    background:linear-gradient(
+        180deg,
+        #fffdf9 0%,
+        #fff8ef 100%
+    );
 
 }
 
@@ -2308,7 +2312,9 @@ margin: 50px 0;
 
     margin:45px auto;
 
-    filter:drop-shadow(0 20px 35px rgba(0,0,0,.18));
+    filter:
+drop-shadow(0 20px 40px rgba(17,36,61,.10))
+drop-shadow(0 8px 18px rgba(212,162,76,.18));
 
     transition:.35s ease;
 
