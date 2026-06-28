@@ -116,12 +116,10 @@
      <span>Jaanu's Amma Thinks</span>           
 </div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#blog" class="nav-link">Stories</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#bookshelf" class="nav-link">Little Treasures</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+    <li class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+    </li>
+</ul>
             <div class="hamburger">
     <span></span>
     <span></span>
@@ -355,11 +353,10 @@ Join today and receive your <strong>free Story Circle Starter Pack</strong>, lov
             and little moments that quietly become memories. 
         </p>
 
-        <div class="footer-links">
-            <a href="#blog">Stories</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
+       <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/bedtime-stories.html">Bedtime Stories</a>
+</div>
 
         <a class="footer-instagram"
            href="https://instagram.com/jaanus_amma_thinks"
@@ -383,126 +380,7 @@ Join today and receive your <strong>free Story Circle Starter Pack</strong>, lov
     </div>
 
 </footer>
-<script>
 
-const stories = [
-
-    {
-    title: "The Tiny Spoon Who Wanted To Be A Sword",
-
-    category: "Bedtime Story",
-
-    description:
-        "A gentle bedtime story about discovering that true strength does not come from being powerful like others — but from embracing the quiet kindness we were made to give.",
-
-    image: "tiny-spoon-story.png",
-
-    slug: "the-tiny-spoon-who-wanted-to-be-a-sword"
-},
-
-       {
-    title: "Why Does the Moon Follow Us? | A Wonder Talk for Curious Kids",
-
-    category: "Wonder Talks",
-
-    description:
-        "Why does the Moon seem to follow your car at night? Explore this fascinating question with Jaanu and Amma in this child-friendly Wonder Talk about space and perspective.",
-    image: "moon.png",
-
-    slug: "why-does-the-moon-follow-us-or-a-wonder-talk-for-curious-kids"
-},
-
-       {
-    title: "5 Screen-Free Nature Activities for Curious Toddlers 🌿",
-
-    category: "Toddler Activities",
-
-    description:
-        "Five simple nature activities that encourage curiosity, creativity, and screen-free play for toddlers. 🌿✨",
-    image: "nature-activities.png",
-
-    slug: "5-screen-free-nature-activities-for-curious-toddlers"
-},
-    
-   {
-    title: "The Day I Realized My Child Was Watching Me More Than Listening to Me",
-
-    category: "Motherhood Reflections",
-
-    description:
-        "A heartfelt reflection on the powerful truth that children learn more from what we do than what we say. 🤍",
-    image: "mother-actions.png",
-
-    slug: "the-day-i-realized-my-child-was-watching-me-more-than-listening-to-me"
-},
-
-      {
-    title: "What Bharata Teaches Us About Doing the Right Thing When Nobody Is Watching",
-
-    category: "Ancient Indian Wisdom",
-
-    description:
-        "Discover the timeless lesson of integrity from Bharata in the Ramayana and how his example can help parents and children build strong character in everyday life.",
-    image: "bharata.png",
-
-    slug: "what-bharata-teaches-us-about-doing-the-right-thing-when-nobody-is-watching"
-},
-    
-    {
-    title: "The Little Leaf Who Was Afraid To Fall",
-
-    category: "Bedtime Story",
-
-    description:
-        "A gentle bedtime story about change, courage, and learning to trust new beginnings. 🍂",
-    image: "leaf-story.png",
-
-    slug: "the-little-leaf-who-was-afraid-to-fall"
-},
-
-
-     {
-    title: "Why Does Rain Smell Nice?",
-
-    category: "Wonder Talks",
-
-    description:
-        "A cozy Wonder Talk exploring why rain smells so wonderful. Discover the secret of petrichor through a gentle conversation between Jaanu and Amma.",
-    image: "rain-smell.png",
-
-    slug: "why-does-rain-smell-nice"
-} 
-];
-
-const storyGrid = document.getElementById("story-grid");
-
-stories.forEach(story => {
-
-    storyGrid.innerHTML += `
-
-        <a href="blog/story.html?id=${story.slug}" class="story-card">
-
-                <img src="${story.image}" alt="${story.title}">
-
-            <div class="story-content">
-
-                <span class="story-category">
-                    ${story.category}
-                </span>
-
-                <h3>${story.title}</h3>
-
-                <p>${story.description}</p>
-
-            </div>
-
-        </a>
-
-    `;
-
-});
-
-</script>
 <script>
 
 const hamburger =
