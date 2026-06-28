@@ -2461,3 +2461,37 @@ justify-content:center;
 }
 
 }
+
+.free-gift{
+
+    color:#d4a24c;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+    margin-top:40px;
+
+    margin-bottom:18px;
+
+}
+
+.story-circle-intro{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    margin-top:35px;
+
+    box-shadow:0 12px 35px rgba(17,36,61,.05);
+
+    border:1px solid #efe3cf;
+
+}
