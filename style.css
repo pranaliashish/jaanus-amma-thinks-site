@@ -2494,13 +2494,14 @@ justify-content:center;
 }
 
 .gift-title{
-    text-align:center;
-    font-size:1.5rem;
-    font-weight:700;
-    color:var(--gold);
-    letter-spacing:2px;
+    font-family:'Poppins', sans-serif !important;
+    font-size:1.5rem !important;
+    font-weight:700 !important;
+    color:var(--gold) !important;
     text-transform:uppercase;
-    margin:40px 0 15px;
+    letter-spacing:2px;
+    text-align:center;
+    margin:30px 0 15px;
 }
 
 .gift-subtitle{
