@@ -2496,6 +2496,13 @@ justify-content:center;
 
 }
 
+@media (max-width:768px){
+
+.story-circle-wrapper{
+    padding-top:60px;
+}
+
+}
 /* ==========================================
    BREVO FORM STYLING
 ========================================== */
@@ -2527,5 +2534,49 @@ justify-content:center;
 #EMAIL{
 
     border-radius:14px !important;
+
+}
+
+/* Mobile Brevo Fix */
+
+@media (max-width:768px){
+
+.story-circle-form{
+
+width:100%;
+
+padding:0;
+
+}
+
+.sib-form{
+
+width:100% !important;
+
+display:flex;
+
+justify-content:center;
+
+}
+
+#sib-form-container{
+
+width:100% !important;
+
+max-width:100% !important;
+
+}
+
+#sib-container{
+
+width:100% !important;
+
+max-width:100% !important;
+
+margin:auto !important;
+
+box-sizing:border-box;
+
+}
 
 }
