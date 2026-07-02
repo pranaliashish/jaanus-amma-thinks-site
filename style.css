@@ -2515,6 +2515,26 @@ justify-content:center;
     color:#666;
 }
 
+.story-circle-trust{
+
+    text-align:center;
+
+    margin:15px 0 40px;
+
+}
+
+.story-circle-trust p{
+
+    margin:10px 0;
+
+    color:#5d6470;
+
+    font-size:1rem;
+
+    font-weight:500;
+
+}
+
 @media (max-width:768px){
 
 .story-circle-wrapper{
