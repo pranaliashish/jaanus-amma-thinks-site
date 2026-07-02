@@ -2580,3 +2580,43 @@ box-sizing:border-box;
 }
 
 }
+
+.story-circle-blessing{
+    text-align:center;
+    padding:70px 25px;
+    max-width:700px;
+    margin:auto;
+}
+
+.blessing-stars{
+    font-size:28px;
+    color:var(--gold);
+    letter-spacing:12px;
+    margin-bottom:25px;
+}
+
+.blessing-text{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.6rem;
+    line-height:1.8;
+    color:var(--navy);
+    font-style:italic;
+    margin-bottom:35px;
+}
+
+.blessing-sign{
+    font-family:'Poppins',sans-serif;
+    color:#666;
+    line-height:1.8;
+}
+
+.blessing-sign span{
+    font-family:'Dancing Script',cursive;
+    font-size:2rem;
+    color:var(--gold);
+}
+
+.blessing-sign small{
+    font-size:.95rem;
+    color:#777;
+}
