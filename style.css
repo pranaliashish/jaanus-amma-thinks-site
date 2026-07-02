@@ -2290,7 +2290,7 @@ margin: 50px 0;
 .story-circle-wrapper{
     max-width:1100px;
     margin:0 auto;
-    padding:120px 25px 90px;
+    padding:50px 25px 90px;
 }
 
 .story-circle-section{
@@ -2498,12 +2498,13 @@ justify-content:center;
 
 .gift-title{
     text-align:center;
-    font-size:2.4rem;
+    font-size:1.3rem;
 font-weight:700;
 line-height:1.2;
     color:var(--navy);
-    letter-spacing:1px;
+    letter-spacing:2px;
     margin-bottom:12px;
+    text-transform:uppercase
 }
 
 .gift-subtitle{
@@ -2518,7 +2519,7 @@ line-height:1.2;
 @media (max-width:768px){
 
 .story-circle-wrapper{
-    padding-top:60px;
+    padding-top:40px;
 }
 
 }
