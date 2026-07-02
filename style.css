@@ -2496,6 +2496,24 @@ justify-content:center;
 
 }
 
+.gift-title{
+    text-align:center;
+    font-size:2.2rem;
+    font-weight:600;
+    color:var(--navy);
+    letter-spacing:1px;
+    margin-bottom:12px;
+}
+
+.gift-subtitle{
+    text-align:center;
+    max-width:550px;
+    margin:0 auto 35px;
+    font-size:1.05rem;
+    line-height:1.7;
+    color:#666;
+}
+
 @media (max-width:768px){
 
 .story-circle-wrapper{
