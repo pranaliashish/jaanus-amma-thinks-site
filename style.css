@@ -2494,10 +2494,10 @@ justify-content:center;
 }
 
 .gift-title{
-    font-family:'Poppins', sans-serif !important;
-    font-size:1.5rem !important;
-    font-weight:700 !important;
-    color:var(--gold) !important;
+    font-family:'Poppins', sans-serif;
+    font-size:1.5rem;
+    font-weight:700;
+    color:var(--gold);
     text-transform:uppercase;
     letter-spacing:2px;
     text-align:center;
