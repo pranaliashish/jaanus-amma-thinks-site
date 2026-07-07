@@ -56,13 +56,6 @@
 
 }
 
-.featured-bookshelf{
-
-    padding:120px 20px;
-
-    background:#fff9f2;
-
-}
 
 .bookshelf-display{
 
@@ -199,43 +192,6 @@
 
 }
 
-.shelf-row{
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    gap:100px;
-
-    max-width:1200px;
-    margin:80px auto;
-
-}
-
-.book-column{
-
-    flex:1;
-    text-align:center;
-
-}
-
-.recommendation-card{
-
-    flex:1;
-text-align:left;
-
-    max-width:480px;
-}
-
-.recommendation-card h2{
-
-    font-size:3rem;
-
-    color:var(--navy);
-
-    margin-bottom:30px;
-
-}
 
 .book-description{
 
@@ -314,5 +270,65 @@ margin:auto;
 line-height:1.8;
 
 color:#666;
+
+}
+
+.bookshelf-stage{
+
+padding:40px 30px 120px;
+
+background:#fff9f2;
+
+}
+
+.bookshelf-scene{
+
+max-width:1350px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+
+1fr
+420px
+1fr;
+
+align-items:end;
+
+column-gap:60px;
+
+position:relative;
+
+padding-bottom:80px;
+
+}
+
+.wooden-shelf{
+
+position:absolute;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+height:28px;
+
+border-radius:5px;
+
+background:
+
+linear-gradient(
+to bottom,
+#c79658,
+#996634
+);
+
+box-shadow:
+
+0 10px 18px rgba(0,0,0,.18);
 
 }
