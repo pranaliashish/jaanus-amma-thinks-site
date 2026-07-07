@@ -605,7 +605,7 @@ z-index:20;
 .vase{
 
 width:300px;
-
+bottom:72px;
 }
 
 .house{
@@ -613,6 +613,10 @@ width:300px;
 width:250px;
 
 margin-left:-8px;
+
+    left:250px;
+
+    bottom:75px;
 }
 
 .stack-books{
@@ -620,6 +624,7 @@ margin-left:-8px;
 width:300px;
 
 margin-left:-10px;
-
+left:290px;
+    bottom:75px;
 }
 
