@@ -98,22 +98,6 @@
 
 }
 
-.featured-book{
-
-    width:320px;
-
-    position:relative;
-
-    z-index:5;
-
-    transition:.35s;
-
-    filter:
-        drop-shadow(
-            0 18px 30px rgba(0,0,0,.25)
-        );
-
-}
 
 .featured-book:hover{
 
@@ -351,7 +335,7 @@ drop-shadow(0 22px 30px rgba(0,0,0,.22));
 
 transition:.35s;
 
-   margin-bottom:-18px; 
+   margin-bottom:-24px; 
 }
 
 .hero-book:hover{
