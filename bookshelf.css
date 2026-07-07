@@ -301,7 +301,7 @@ column-gap:60px;
 
 position:relative;
 
-padding-bottom:140px;
+padding-bottom:110px;
 
 }
 
@@ -335,7 +335,7 @@ box-shadow:
 
 .hero-book{
 
-width:360px;
+width:330px;
 
 display:block;
 
@@ -351,6 +351,7 @@ drop-shadow(0 22px 30px rgba(0,0,0,.22));
 
 transition:.35s;
 
+   margin-bottom:-18px; 
 }
 
 .hero-book:hover{
@@ -446,5 +447,85 @@ color:#555;
 margin-bottom:35px;
 
 max-width:420px;
+
+}
+
+.scene-left{
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-start;
+
+padding-top:30px;
+
+}
+
+.favourite-note{
+
+background:#f6e7c8;
+
+padding:35px 28px;
+
+border-radius:6px;
+
+font-family:'Dancing Script',cursive;
+
+font-size:2.1rem;
+
+line-height:1.3;
+
+color:#3b2b1b;
+
+box-shadow:
+
+0 12px 25px rgba(0,0,0,.12);
+
+position:relative;
+
+transform:rotate(-6deg);
+
+}
+
+.favourite-note span{
+
+display:block;
+
+margin-top:15px;
+
+font-size:2rem;
+
+text-align:center;
+
+color:var(--gold);
+
+}
+
+.favourite-note::before{
+
+content:"";
+
+position:absolute;
+
+width:90px;
+
+height:24px;
+
+background:#e7c28d;
+
+opacity:.65;
+
+top:-12px;
+
+left:50%;
+
+transform:
+
+translateX(-50%)
+
+rotate(10deg);
+
+border-radius:3px;
 
 }
