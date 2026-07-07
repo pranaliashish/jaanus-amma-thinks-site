@@ -275,7 +275,7 @@ color:#666;
 
 .bookshelf-stage{
 
-padding:40px 30px 120px;
+padding:10px 30px 80px;
 
 background:#fff9f2;
 
@@ -301,7 +301,7 @@ column-gap:60px;
 
 position:relative;
 
-padding-bottom:80px;
+padding-bottom:140px;
 
 }
 
@@ -315,7 +315,7 @@ right:0;
 
 bottom:0;
 
-height:28px;
+height:20px;
 
 border-radius:5px;
 
@@ -330,5 +330,43 @@ to bottom,
 box-shadow:
 
 0 10px 18px rgba(0,0,0,.18);
+
+}
+
+.hero-book{
+
+width:360px;
+
+display:block;
+
+margin:auto;
+
+position:relative;
+
+z-index:5;
+
+filter:
+
+drop-shadow(0 22px 30px rgba(0,0,0,.22));
+
+transition:.35s;
+
+}
+
+.hero-book:hover{
+
+transform:
+
+translateY(-8px);
+
+}
+
+.scene-center{
+
+display:flex;
+
+justify-content:center;
+
+align-items:flex-end;
 
 }
