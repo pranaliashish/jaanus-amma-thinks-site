@@ -605,7 +605,7 @@ z-index:20;
 .vase{
 
 width:300px;
-bottom:150px;
+bottom:0px;
     left:0px
 }
 
@@ -617,7 +617,7 @@ margin-left:-8px;
 
     left:50px;
 
-    bottom:150px;
+    bottom:0px;
 }
 
 .stack-books{
@@ -626,6 +626,6 @@ width:300px;
 
 margin-left:-10px;
 left:70px;
-    bottom:150px;
+    bottom:0px;
 }
 
