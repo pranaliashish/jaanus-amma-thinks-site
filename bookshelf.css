@@ -605,9 +605,9 @@ z-index:20;
 
 position:absolute;
 
-width:300px;
+width:400px;
 
-left:0;
+left:-50px;
 
 bottom:-70px;
 
@@ -621,7 +621,7 @@ width:300px;
 
 left:55px;
 
-bottom:-50px;
+bottom:-70px;
 
 }
 
@@ -633,6 +633,6 @@ width:350px;
 
 left:120px;
 
-bottom:-50px;
+bottom:-80px;
 
 }
