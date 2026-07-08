@@ -605,11 +605,11 @@ z-index:20;
 
 position:absolute;
 
-width:70px;
+width:300px;
 
 left:0;
 
-bottom:0;
+bottom:-10px;
 
 }
 
@@ -617,7 +617,7 @@ bottom:0;
 
 position:absolute;
 
-width:95px;
+width:300px;
 
 left:55px;
 
@@ -629,7 +629,7 @@ bottom:0;
 
 position:absolute;
 
-width:90px;
+width:350px;
 
 left:120px;
 
