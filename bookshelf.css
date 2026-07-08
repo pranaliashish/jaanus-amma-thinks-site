@@ -589,43 +589,50 @@ transform:skewX(18deg);
 
 position:absolute;
 
-left:290px;
+left:140px;
 
-bottom:72px;
+bottom:55px;
 
-display:flex;
+width:220px;
 
-align-items:flex-end;
-
-gap:14px;
+height:140px;
 
 z-index:20;
 
 }
+
 .vase{
 
-width:300px;
-bottom:0px;
-    left:0px
+position:absolute;
+
+width:70px;
+
+left:0;
+
+bottom:0;
+
 }
 
 .house{
 
-width:250px;
+position:absolute;
 
-margin-left:-8px;
+width:95px;
 
-    left:50px;
+left:55px;
 
-    bottom:0px;
+bottom:0;
+
 }
 
 .stack-books{
 
-width:300px;
+position:absolute;
 
-margin-left:-10px;
-left:70px;
-    bottom:0px;
+width:90px;
+
+left:120px;
+
+bottom:6px;
+
 }
-
