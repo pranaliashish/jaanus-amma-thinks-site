@@ -640,3 +640,17 @@ bottom:-50px;
 
     z-index:2;
 }
+
+.arrow{
+
+    position:absolute;
+
+    width:90px;
+
+    left:260px;
+
+    top:130px;
+
+    z-index:25;
+
+}
