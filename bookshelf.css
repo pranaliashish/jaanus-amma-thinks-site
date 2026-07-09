@@ -459,7 +459,7 @@ max-width:360px;
 
 align-self:center;
 
-padding-left:20px;
+padding-left:10px;
 
 }
 
@@ -579,7 +579,7 @@ transform:skewX(-18deg);
 
 .right{
 
-right:70px;
+right:100px;
 
 transform:skewX(18deg);
 
