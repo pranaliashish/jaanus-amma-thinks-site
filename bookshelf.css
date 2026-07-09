@@ -523,7 +523,7 @@ box-shadow:
 
 position:relative;
 
-transform:rotate(-6deg);
+transform: rotate(-6deg) translate(50px, -10px);
 
 }
 
