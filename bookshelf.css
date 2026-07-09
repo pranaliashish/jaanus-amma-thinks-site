@@ -459,7 +459,7 @@ max-width:360px;
 
 align-self:center;
 
-padding-left:10px;
+padding-left:0px;
 
 }
 
@@ -579,7 +579,7 @@ transform:skewX(-18deg);
 
 .right{
 
-right:100px;
+right:150px;
 
 transform:skewX(18deg);
 
@@ -607,9 +607,9 @@ position:absolute;
 
 width:400px;
 
-left:-130px;
+left:-110px;
 
-bottom:-90px;
+bottom:-100px;
 
 }
 
@@ -621,7 +621,7 @@ width:300px;
 
 left:0px;
 
-bottom:-60px;
+bottom:-70px;
 
 }
 
