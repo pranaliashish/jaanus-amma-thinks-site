@@ -373,7 +373,7 @@ border-radius:4px;
 }
 .hero-book{
 
-width:330px;
+width:300px;
 
 display:block;
 
@@ -389,7 +389,7 @@ drop-shadow(0 22px 30px rgba(0,0,0,.22));
 
 transition:.35s;
 
-   margin-bottom:-110px; 
+   margin-bottom:-120px; 
 }
 
 .hero-book:hover{
