@@ -601,29 +601,30 @@ z-index:20;
 
 }
 
-.vase{
-
-position:absolute;
-
-width:400px;
-
-left:-140px;
-
-bottom:-80px;
-
-}
-
 .house{
 
 position:absolute;
 
 width:300px;
 
-left:0px;
+left:-20px;
 
 bottom:-40px;
 
 }
+
+.vase{
+
+position:absolute;
+
+width:400px;
+
+left:-160px;
+
+bottom:-80px;
+
+}
+
 
 .stack-books{
 
