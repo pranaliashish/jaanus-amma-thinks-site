@@ -642,15 +642,11 @@ bottom:-50px;
 }
 
 .arrow{
-
     position:absolute;
-
-    width:90px;
-
-    left:260px;
-
-    top:130px;
-
+    width:140px;      /* start here */
+    top:135px;
+    left:235px;
     z-index:25;
-
+    transform: rotate(10deg);
+    pointer-events:none;
 }
