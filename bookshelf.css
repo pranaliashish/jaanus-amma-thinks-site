@@ -274,14 +274,14 @@ margin:auto;
 display:grid;
 
 grid-template-columns:
-
-1fr
 420px
-1fr;
+220px
+420px
+380px;
 
 align-items:end;
 
-column-gap:60px;
+column-gap:40px;
 
 position:relative;
 
