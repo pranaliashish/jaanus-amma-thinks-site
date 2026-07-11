@@ -374,7 +374,7 @@ border-radius:4px;
 .hero-book{
 
 width:300px;
-left:-100px;
+left:-130px;
 display:block;
 
 margin:auto;
@@ -535,7 +535,7 @@ position:relative;
 
 transform:rotate(-6deg);
 
-margin-left:-80px;
+margin-left:-100px;
 
 margin-bottom:40px;
 
@@ -623,7 +623,7 @@ position:absolute;
 
 width:300px;
 
-left:50px;
+left:100px;
 
 bottom:30px;
 
@@ -636,7 +636,7 @@ position:absolute;
 
 width:330px;
 
-left:-90px;
+left:-40px;
 
 bottom:5px;
 
@@ -650,7 +650,7 @@ position:absolute;
 
 width:180px;
 
-left:180px;
+left:230px;
 
 bottom:30px;
 
