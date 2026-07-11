@@ -643,7 +643,7 @@ bottom:-50px;
 
 .arrow{
     position:absolute;
-    width:200px;      /* start here */
+    width:215px;      /* start here */
     top:120px;
     left:320px;
     z-index:25;
