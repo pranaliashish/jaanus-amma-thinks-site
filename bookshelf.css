@@ -713,6 +713,20 @@ z-index:3;
 
 }
 
+.standing-books{
+
+position:absolute;
+
+width:200px;
+
+right:10px;
+
+bottom:17px;
+
+z-index:2;
+
+}
+
 .creeper{
 
 position:absolute;
