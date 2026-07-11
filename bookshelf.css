@@ -643,9 +643,9 @@ bottom:-50px;
 
 .arrow{
     position:absolute;
-    width:140px;      /* start here */
-    top:135px;
-    left:235px;
+    width:250px;      /* start here */
+    top:150px;
+    left:350px;
     z-index:25;
     transform: rotate(10deg);
     pointer-events:none;
