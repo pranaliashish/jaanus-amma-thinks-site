@@ -621,11 +621,11 @@ z-index:20;
 
 position:absolute;
 
-width:350px;
+width:300px;
 
-left:-50px;
+left:0px;
 
-bottom:-50px;
+bottom:0px;
 
     z-index:1;
 }
@@ -634,11 +634,11 @@ bottom:-50px;
 
 position:absolute;
 
-width:380px;
+width:330px;
 
-left:-190px;
+left:-140px;
 
-bottom:-75px;
+bottom:-25px;
 
     z-index:3;
 }
@@ -648,11 +648,11 @@ bottom:-75px;
 
 position:absolute;
 
-width:230px;
+width:180px;
 
-left:80px;
+left:130px;
 
-bottom:-50px;
+bottom:0px;
 
     z-index:2;
 }
