@@ -155,8 +155,8 @@
 
     color:white;
 
-    padding:18px 42px;
-
+    padding:15px 34px;
+font-size:.95rem;
     border-radius:50px;
 
     text-decoration:none;
@@ -205,7 +205,7 @@
 
 .price{
 
-    font-size:3rem;
+    font-size:2.3rem;
 
     color:var(--navy);
 
@@ -421,13 +421,13 @@ padding-right:20px;
 
 .bookshelf-title{
 
-font-size:4rem;
+font-size:3.2rem;
 
 line-height:1;
 
 color:var(--navy);
 
-margin-bottom:30px;
+margin-bottom:20px;
 
 }
 
@@ -435,23 +435,23 @@ margin-bottom:30px;
 
 font-family:'Dancing Script',cursive;
 
-font-size:2.1rem;
-
+font-size:1.7rem;
+line-height:1.5;
 color:var(--gold);
 
-margin-bottom:30px;
+margin-bottom:28px;
 
 }
 
 .bookshelf-copy{
 
-font-size:1.1rem;
+font-size:0.95rem;
 
-line-height:1.9;
+line-height:1.8;
 
 color:#555;
 
-max-width:360px;
+max-width:320px;
 
 }
 
@@ -465,27 +465,27 @@ padding-left:0px;
 
 .scene-right h2{
 
-font-size:2.5rem;
+font-size:2rem;
 
-line-height:1.15;
+line-height:1.05;
 
 color:var(--navy);
 
-margin-bottom:25px;
+margin-bottom:20px;
 
 }
 
 .scene-right p{
 
-font-size:1rem;
+font-size:0.95rem;
 
-line-height:1.9;
+line-height:1.75;
 
 color:#555;
 
 margin-bottom:35px;
 
-max-width:400px;
+max-width:320px;
 
 }
 
@@ -672,18 +672,17 @@ bottom:-50px;
     pointer-events:none;
 }
 
-.bookshelf-title{
-
-font-size:3.4rem;
-
-line-height:1.05;
-
-}
 
 .scene-intro{
 
 align-self:center;
 
-max-width:360px;
+max-width:300px;
 
 }
+
+.scene-intro,
+.scene-right{
+    padding-top:40px;
+}
+
