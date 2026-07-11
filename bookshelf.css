@@ -310,14 +310,14 @@ position:absolute;
 left:0;
 right:0;
 
-height:18px;
+height:22px;
 
 background:
 
 url("images/wood-texture.jpg") center/cover,
         linear-gradient(to bottom,#c88e50,#9b6432);
 
-border-radius:6px 6px 0 0;
+border-radius:10px 10px 0 0;
 
 }
 
@@ -330,30 +330,29 @@ right:0;
 
 top:18px;
 
-height:22px;
+height:34px;
 
 background:
 
-linear-gradient(
-to bottom,
-#a66e37,
-#835225
-);
+url("images/wood-texture.jpg") center/cover;
 
-border-radius:0 0 6px 6px;
+filter:brightness(.82);
+
+
+border-radius:0 0 10px 10px;
 
 box-shadow:
 
-0 12px 20px rgba(0,0,0,.18);
-
+0 6px 18px rgba(0,0,0,.18),
+0 18px 35px rgba(0,0,0,.08);
 }
 .bracket{
 
 position:absolute;
 
-width:32px;
+width:38px;
 
-height:34px;
+height:42px;
 
 background:
 
@@ -363,11 +362,30 @@ to bottom,
 #6e431d
 );
 
-top:40px;
+top:52px;
 
-border-radius:4px;
+border-radius:5px;
 
 }
+
+.shelf-top::after{
+
+content:"";
+
+position:absolute;
+
+left:0;
+right:0;
+bottom:0;
+
+height:2px;
+
+background:
+
+rgba(255,255,255,.22);
+
+}
+
 .hero-book{
 
 width:300px;
