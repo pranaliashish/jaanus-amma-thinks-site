@@ -267,21 +267,21 @@ background:#fff9f2;
 
 .bookshelf-scene{
 
-max-width:1350px;
+max-width:1600px;
 
 margin:auto;
 
 display:grid;
 
 grid-template-columns:
-420px
-220px
-420px
-380px;
+ 360px
+        220px
+        360px
+        340px;
 
 align-items:end;
 
-column-gap:40px;
+column-gap:50px;
 
 position:relative;
 
@@ -538,6 +538,8 @@ transform:rotate(-6deg);
 margin-left:170px;
 
 margin-bottom:40px;
+
+    margin-top:-120px;
 
 }
 
