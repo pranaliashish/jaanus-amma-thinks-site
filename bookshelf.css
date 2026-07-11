@@ -660,10 +660,10 @@ bottom:-50px;
 .arrow{
     position:absolute;
     width:215px;      /* start here */
-    top:120px;
+    top:70px;
     left:20px;
     z-index:25;
-    transform: rotate(10deg);
+    transform: rotate(45deg);
     pointer-events:none;
 }
 
