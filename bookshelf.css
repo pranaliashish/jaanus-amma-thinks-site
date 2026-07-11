@@ -314,11 +314,8 @@ height:18px;
 
 background:
 
-linear-gradient(
-to bottom,
-#d8aa6d,
-#bc8447
-);
+url("images/wood-texture.jpg") center/cover,
+        linear-gradient(to bottom,#c88e50,#9b6432);
 
 border-radius:6px 6px 0 0;
 
