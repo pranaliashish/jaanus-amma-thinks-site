@@ -636,7 +636,7 @@ position:absolute;
 
 width:330px;
 
-left:-40px;
+left:-20px;
 
 bottom:5px;
 
@@ -661,7 +661,7 @@ bottom:30px;
     position:absolute;
     width:215px;      /* start here */
     top:30px;
-    left:70px;
+    left:60px;
     z-index:25;
     transform: rotate(45deg);
     pointer-events:none;
