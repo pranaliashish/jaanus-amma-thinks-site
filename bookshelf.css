@@ -374,7 +374,7 @@ border-radius:4px;
 .hero-book{
 
 width:300px;
-
+left:200px;
 display:block;
 
 margin:auto;
@@ -535,7 +535,7 @@ position:relative;
 
 transform:rotate(-6deg);
 
-margin-left:170px;
+margin-left:140px;
 
 margin-bottom:40px;
 
@@ -666,7 +666,7 @@ bottom:-50px;
     position:absolute;
     width:215px;      /* start here */
     top:120px;
-    left:320px;
+    left:280px;
     z-index:25;
     transform: rotate(10deg);
     pointer-events:none;
