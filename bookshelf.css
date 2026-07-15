@@ -291,80 +291,117 @@ padding-bottom:110px;
 
 .wooden-shelf{
 
-position:absolute;
+    position:absolute;
 
-left:0;
-right:0;
-bottom:0;
+    left:-20px;
+    right:-20px;
 
-height:52px;
+    bottom:0;
 
-pointer-events:none;
+    height:62px;
 
+    pointer-events:none;
+filter:
+
+drop-shadow(0 8px 14px rgba(0,0,0,.10))
+
+drop-shadow(0 22px 35px rgba(0,0,0,.08));
 }
 
 .shelf-top{
 
-position:absolute;
+    position:absolute;
 
-left:0;
-right:0;
+    left:0;
+    right:0;
 
-height:22px;
+    height:24px;
+ background:
+        linear-gradient(rgba(255,255,255,.08), rgba(255,255,255,.08)),
+        url("images/oak-texture-2.jpg");
 
-background:
+    background-size:
+        auto,
+        450px auto;
 
-url("images/wood-texture.jpg") center/cover,
-        linear-gradient(to bottom,#c88e50,#9b6432);
+    background-repeat:
+        no-repeat,
+        repeat-x;
+    
+    border-radius:10px 10px 0 0;
 
-border-radius:10px 10px 0 0;
+}
+
+.shelf-top::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    right:0;
+
+    bottom:0;
+
+    height:2px;
+
+    background:
+        rgba(255,255,255,.20);
 
 }
 
 .shelf-front{
 
-position:absolute;
+    position:absolute;
 
-left:0;
-right:0;
+    left:0;
+    right:0;
 
-top:18px;
+    top:24px;
 
-height:34px;
+    height:38px;
 
-background:
+   background:
+        linear-gradient(rgba(0,0,0,.18), rgba(0,0,0,.18)),
+        url("images/oak-texture-2.jpg");
 
-url("images/wood-texture.jpg") center/cover;
+    background-size:
+        auto,
+        450px auto;
 
-filter:brightness(.82);
+    background-repeat:
+        no-repeat,
+        repeat-x;
 
+    border-radius:0 0 10px 10px;
 
-border-radius:0 0 10px 10px;
+    box-shadow:
 
-box-shadow:
+        0 5px 12px rgba(0,0,0,.12),
 
-0 6px 18px rgba(0,0,0,.18),
-0 18px 35px rgba(0,0,0,.08);
+        0 18px 35px rgba(0,0,0,.08);
+
 }
+
 .bracket{
 
-position:absolute;
+    position:absolute;
 
-width:38px;
+    width:42px;
 
-height:42px;
+    height:48px;
 
-background:
+    top:60px;
 
-linear-gradient(
-to bottom,
-#9b6737,
-#6e431d
-);
+    background:
+        url("images/oak-texture-2.jpg");
 
-top:52px;
+    background-size:450px auto;
 
-border-radius:5px;
+    filter:
+        brightness(.65);
+
+    border-radius:4px;
 
 }
 
