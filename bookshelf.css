@@ -327,8 +327,8 @@ drop-shadow(0 22px 35px rgba(0,0,0,.08));
     background-repeat:
         no-repeat,
         repeat-x;
+    border-radius:3px 3px 0 0;
     
-     border-radius:2px;
 }
 
 .shelf-top::after{
@@ -377,7 +377,7 @@ rgba(255,255,255,.18);
         0 5px 12px rgba(0,0,0,.14),
 
         0 18px 35px rgba(0,0,0,.14);
-  border-radius:2px;
+ border-radius:0 0 3px 3px;
 }
 
 .shelf-front::before{
@@ -404,8 +404,9 @@ background:rgba(0,0,0,.08);
 
     height:48px;
 
-    top:60px;
-
+    top:50px;
+left:25px;
+    right:25px;
     background:
         url("images/oak-texture-2.jpg");
 
