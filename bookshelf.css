@@ -798,3 +798,35 @@ z-index:2;
 drop-shadow(0 5px 5px rgba(0,0,0,.12));
 
 }
+
+.bookshelf-two{
+
+padding:170px 30px 120px;
+
+background:#fff9f2;
+
+}
+
+.bookshelf-two-scene{
+
+max-width:1600px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+
+360px
+420px
+420px;
+
+column-gap:70px;
+
+align-items:end;
+
+position:relative;
+
+padding-bottom:110px;
+
+}
