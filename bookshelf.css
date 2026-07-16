@@ -830,3 +830,65 @@ position:relative;
 padding-bottom:110px;
 
 }
+
+.bookshelf-two-left{
+
+text-align:center;
+
+max-width:360px;
+
+margin:auto;
+
+padding-bottom:40px;
+
+}
+
+.love-note{
+
+font-family:'Dancing Script',cursive;
+
+font-size:2.2rem;
+
+line-height:1.25;
+
+color:var(--gold);
+
+margin-bottom:40px;
+
+transform:rotate(-3deg);
+
+}
+
+.second-book-space{
+
+width:230px;
+
+height:300px;
+
+margin:0 auto 40px;
+
+border:2px dashed #d9c49d;
+
+border-radius:10px;
+
+background:#fffdf8;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#c7a96a;
+
+font-family:'Dancing Script',cursive;
+
+font-size:2rem;
+
+}
+
+.second-book-space::before{
+
+content:"Book coming soon 📚";
+
+}
