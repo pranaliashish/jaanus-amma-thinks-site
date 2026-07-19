@@ -1,0 +1,537 @@
+/* =========================================================
+   BOOKSHELF PAGE — "For Your Bookshelf"
+   A family reading room, not a product grid.
+   Relies on the CSS variables already defined in style.css
+   (--navy, --gold, --soft-gold, --cream, --midnight, etc.)
+========================================================= */
+
+:root {
+    --oak-mid: #a97c4f;
+    --oak-dark: #7a5636;
+    --walnut: #4e3524;
+    --parchment: #faf3e4;
+    --shelf-glow: rgba(212,162,76,0.16);
+
+    --spine-terracotta: #c98a6b;
+    --spine-sage: #8c9c7f;
+    --spine-dustyblue: #8fa3b3;
+    --spine-sand: #d8bd8a;
+}
+
+.bookshelf-page {
+    background:
+        radial-gradient(circle at top left, rgba(212,162,76,0.08), transparent 40%),
+        linear-gradient(180deg, #fffaf7 0%, #fffdfc 100%);
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+/* ---------- Intro ---------- */
+.bookshelf-intro {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 8% 60px;
+}
+
+.bookshelf-intro-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: clamp(2.6rem, 5vw, 4rem);
+    color: var(--navy);
+    margin: 22px 0 14px;
+    line-height: 1.1;
+}
+
+.bookshelf-intro-title .heart { color: var(--gold); }
+
+.bookshelf-intro-tagline {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4rem;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.bookshelf-intro-copy {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: var(--text-light);
+}
+
+/* ---------- Reading room / bookcase ---------- */
+.reading-room {
+    padding: 20px 5% 10px;
+}
+
+.bookcase {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bookcase::before {
+    /* ambient warmth behind the whole piece of furniture */
+    content: "";
+    position: absolute;
+    top: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 90%;
+    background: radial-gradient(ellipse at center, var(--shelf-glow), transparent 72%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.bookcase-frame {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(255,253,249,0.5), rgba(255,253,249,0));
+    border-left: 10px solid var(--oak-dark);
+    border-right: 10px solid var(--oak-dark);
+    border-radius: 6px;
+    padding: 0 26px;
+    box-shadow: 0 30px 60px rgba(17,36,61,0.10);
+}
+
+.bookcase-top-cap {
+    height: 16px;
+    margin: 0 -26px;
+    background-color: var(--oak-mid);
+    background-image: linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)), url("images/oak-texture-2.jpg");
+    background-size: cover, 900px auto;
+    background-repeat: no-repeat, repeat-x;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.14);
+}
+
+/* ---------- Shelf tiers ---------- */
+.shelf-tier {
+    position: relative;
+    padding: 30px 10px 0;
+}
+
+.shelf-tier--upper {
+    opacity: 0.88;
+    filter: saturate(0.9) brightness(0.98);
+    transform: scale(0.94);
+    transform-origin: top center;
+}
+
+.tier-sign {
+    display: inline-block;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.35rem;
+    letter-spacing: 0.5px;
+    color: var(--cream);
+    background-color: var(--oak-mid);
+    background-image: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)), url("images/oak-texture-2.jpg");
+    background-size: cover, 500px auto;
+    padding: 4px 18px;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.18);
+    transform: rotate(-1.5deg);
+    margin-left: 14px;
+}
+
+.tier-sign--upper {
+    font-size: 1.1rem;
+    opacity: 0.85;
+}
+
+/* ---------- Shelf plank ---------- */
+.tier-shelf-plank {
+    height: 24px;
+    margin-top: 26px;
+    background-color: var(--oak-mid);
+    background-image: linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)), url("images/oak-texture-2.jpg");
+    background-size: cover, 900px auto;
+    background-repeat: no-repeat, repeat-x;
+    border-radius: 3px;
+    box-shadow:
+        0 10px 20px rgba(0,0,0,0.16),
+        inset 0 2px 0 rgba(255,255,255,0.12);
+    position: relative;
+}
+
+.tier-shelf-plank::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 100%;
+    height: 7px;
+    background: var(--walnut);
+    opacity: 0.45;
+    border-radius: 0 0 3px 3px;
+}
+
+.tier-shelf-plank--base {
+    margin-bottom: 4px;
+}
+
+/* ---------- Shelf contents row ---------- */
+.shelf-items,
+.spine-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 44px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    padding: 10px 0 22px;
+    min-height: 210px;
+}
+
+.spine-row { min-height: 190px; gap: 10px; }
+
+/* ---------- Reading-corner props ---------- */
+.reading-corner {
+    position: absolute;
+    bottom: 22px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    z-index: 1;
+}
+
+.reading-corner--left { left: -6px; }
+.reading-corner--right { right: -6px; }
+
+.prop { display: block; filter: drop-shadow(0 5px 6px rgba(0,0,0,0.12)); }
+.prop-plant { width: 130px; }
+.prop-stack { width: 90px; }
+.prop-house { width: 120px; }
+.prop-standing { width: 110px; }
+.prop-lantern {
+    width: 130px;
+    animation: lanternGlow 5s ease-in-out infinite;
+}
+.prop-teacup, .prop-glasses { opacity: 0.9; }
+.prop-glasses { transform: rotate(-4deg) translateY(-4px); }
+
+@keyframes lanternGlow {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(230,201,141,0.45)); }
+    50%      { filter: drop-shadow(0 0 16px rgba(230,201,141,0.75)); }
+}
+
+/* ---------- Books on the shelf ---------- */
+.book {
+    --tilt: -2deg;
+    position: relative;
+    width: 190px;
+    cursor: pointer;
+    transform: rotate(var(--tilt));
+    transition: transform 0.35s ease, filter 0.35s ease;
+    z-index: 3;
+}
+
+.book:nth-of-type(2n) { --tilt: 1.5deg; }
+
+.book:hover,
+.book:focus-visible {
+    transform: rotate(0deg) translateY(-12px);
+    filter: drop-shadow(0 20px 22px rgba(0,0,0,0.2));
+    outline: none;
+}
+
+.book--ajar { --tilt: -4deg; }
+
+.book-cover {
+    position: relative;
+    aspect-ratio: 3 / 4.4;
+    border-radius: 4px 8px 8px 4px;
+    overflow: visible;
+    box-shadow: 0 12px 18px rgba(0,0,0,0.16);
+    background: var(--parchment);
+}
+
+.book-cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px 8px 8px 4px;
+}
+
+.book-cover::after {
+    /* page-edge illusion on the right side of every cover */
+    content: "";
+    position: absolute;
+    top: 3%; right: -1px; bottom: 3%;
+    width: 6px;
+    background: repeating-linear-gradient(180deg, #fff8ec 0 2px, #f1e6d1 2px 4px);
+    box-shadow: inset 2px 0 3px rgba(0,0,0,0.08);
+    border-radius: 0 3px 3px 0;
+}
+
+.book-cover--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    text-align: center;
+    color: var(--cream);
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    background: linear-gradient(160deg, var(--spine-terracotta), #a9694c);
+}
+
+/* ---------- Lived-in accessories ---------- */
+.accessory { position: absolute; pointer-events: none; }
+
+.ribbon-bookmark {
+    top: -16px;
+    left: 22%;
+    width: 15px;
+    height: 62px;
+    background: linear-gradient(180deg, var(--gold), #b9843a);
+    clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: rotate(-5deg);
+}
+
+.pressed-flower {
+    top: -10px;
+    right: 18%;
+    transform: rotate(12deg);
+}
+
+.doodle-bookmark {
+    top: -20px;
+    right: 12%;
+    transform: rotate(8deg);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.12));
+}
+
+/* ---------- "Still being written" spines ---------- */
+.spine {
+    position: relative;
+    width: 44px;
+    border-radius: 3px 3px 0 0;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 4px;
+    cursor: default;
+    box-shadow:
+        0 8px 14px rgba(0,0,0,0.12),
+        inset 2px 0 rgba(255,255,255,0.3),
+        inset -2px 0 rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.spine-text {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    color: var(--midnight);
+}
+
+.spine:hover, .spine:focus-visible {
+    transform: rotate(180deg) translateY(-6px);
+    outline: none;
+}
+
+.spine.terracotta { background: var(--spine-terracotta); height: 175px; }
+.spine.sage       { background: var(--spine-sage);       height: 195px; }
+.spine.sand       { background: var(--spine-sand);       height: 185px; }
+.spine.dustyblue  { background: var(--spine-dustyblue);  height: 205px; }
+
+.spine-hint {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    writing-mode: horizontal-tb;
+    transform: translateX(-50%) translateY(6px) rotate(180deg);
+    background: var(--midnight);
+    color: var(--cream);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.72rem;
+    white-space: nowrap;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.25s ease;
+}
+
+.spine:hover .spine-hint,
+.spine:focus-visible .spine-hint {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) rotate(180deg);
+}
+
+/* ---------- Note under the bookcase ---------- */
+.future-note {
+    text-align: center;
+    max-width: 480px;
+    margin: 34px auto 60px;
+    color: var(--text-light);
+    font-size: 0.98rem;
+    line-height: 1.8;
+}
+
+.future-note a {
+    color: var(--gold);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212,162,76,0.4);
+}
+
+.future-note a:hover { border-bottom-color: var(--gold); }
+
+/* ---------- The reveal: a book lifting off the shelf, not a popup ---------- */
+.book-reveal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17,36,61,0.45);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 2000;
+}
+
+.book-reveal-overlay.open { opacity: 1; pointer-events: auto; }
+
+.book-reveal {
+    position: fixed;
+    background: var(--parchment);
+    border-radius: 4px 8px 8px 4px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+    overflow: hidden;
+    z-index: 2001;
+    transition:
+        top 0.5s cubic-bezier(0.2,0.8,0.2,1),
+        left 0.5s cubic-bezier(0.2,0.8,0.2,1),
+        width 0.5s cubic-bezier(0.2,0.8,0.2,1),
+        height 0.5s cubic-bezier(0.2,0.8,0.2,1),
+        border-radius 0.5s ease,
+        opacity 0.35s ease;
+}
+
+.book-reveal.open { border-radius: 18px; }
+
+.book-reveal.closing { opacity: 0; }
+
+.book-reveal-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.35s ease 0.22s;
+}
+
+.book-reveal.settled .book-reveal-content { opacity: 1; }
+
+.book-reveal-cover {
+    flex: 0 0 40%;
+    background: var(--warm-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+}
+
+.book-reveal-cover .book-cover { width: 100%; max-width: 220px; }
+
+.book-reveal-body {
+    flex: 1;
+    padding: 36px 40px 36px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.book-reveal-body h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.1rem;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.book-reveal-description {
+    color: var(--text-light);
+    line-height: 1.85;
+    margin-bottom: 20px;
+}
+
+.book-reveal-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 22px;
+}
+
+.book-reveal-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.75);
+    color: var(--navy);
+    font-size: 0.95rem;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.book-reveal-close:hover { background: #fff; transform: scale(1.08); }
+.book-reveal-close:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* ---------- Focus visibility (accessibility floor) ---------- */
+.book:focus-visible .book-cover,
+.spine:focus-visible {
+    outline: 2px solid var(--gold);
+    outline-offset: 4px;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    .prop-lantern { animation: none; }
+    .book, .spine, .book-reveal { transition: none !important; }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+    .reading-corner { position: static; margin: 0 10px 14px; }
+    .shelf-tier { padding-top: 24px; }
+    .bookcase-frame { padding: 0 14px; }
+}
+
+@media (max-width: 768px) {
+    .bookshelf-page { padding-top: 90px; }
+    .bookshelf-intro { padding: 0 7% 40px; }
+
+    .shelf-items, .spine-row { gap: 24px; min-height: 0; }
+    .book { width: 140px; }
+    .spine { width: 34px; }
+    .spine.terracotta { height: 130px; }
+    .spine.sage       { height: 145px; }
+    .spine.sand       { height: 138px; }
+    .spine.dustyblue  { height: 150px; }
+    .spine-text { font-size: 0.9rem; }
+
+    .reading-corner { flex-wrap: wrap; justify-content: center; }
+    .prop-plant, .prop-house, .prop-standing { width: 80px; }
+    .prop-stack { width: 60px; }
+    .prop-lantern { width: 90px; }
+
+    .tier-sign { font-size: 1.1rem; margin-left: 4px; }
+
+    .book-reveal-content { flex-direction: column; }
+    .book-reveal-cover { flex: 0 0 auto; padding: 20px; }
+    .book-reveal-cover .book-cover { max-width: 140px; margin: 0 auto; }
+    .book-reveal-body { padding: 10px 24px 24px; text-align: center; }
+}
+
+@media (max-width: 480px) {
+    .book { width: 120px; }
+}
