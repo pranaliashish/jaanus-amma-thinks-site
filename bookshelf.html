@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Your Bookshelf | Jaanu's Amma Thinks</title>
+<meta name="description" content="A cozy family reading corner filled with gentle bedtime stories, parenting guides, and printable treasures — created with love by Jaanu's Amma Thinks.">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0d1b2a">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bookshelf.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SFJCXJMJNE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-SFJCXJMJNE');
+</script>
+
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="Logo.png" alt="Jaanu's Amma Thinks">
+            <span>Jaanu's Amma Thinks</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="index.html#blog" class="nav-link">Stories</a></li>
+            <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="bookshelf.html" class="nav-link" aria-current="page">Little Treasures</a></li>
+            <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<main class="bookshelf-page">
+
+    <section class="bookshelf-intro">
+        <span class="bookshelf-tag">📚 FOR YOUR BOOKSHELF</span>
+        <h1 class="bookshelf-intro-title">For Your Bookshelf <span class="heart">♡</span></h1>
+        <p class="bookshelf-intro-tagline">
+            Stories to read together. Guides to return to. Little treasures for childhood.
+        </p>
+        <p class="bookshelf-intro-copy">
+            Welcome to our little reading corner — the kind of room where a cup of tea goes
+            cold because the story got too good to put down. Every book here was made with
+            one hope: that it becomes part of your family's happiest memories.
+        </p>
+    </section>
+
+    <section class="reading-room" aria-label="The bookshelf">
+        <div class="bookcase">
+            <div class="bookcase-frame">
+
+                <div class="bookcase-top-cap" aria-hidden="true"></div>
+
+                <!-- Upper tier: a little further away, a little dimmer — books still being written -->
+                <div class="shelf-tier shelf-tier--upper">
+                    <span class="tier-sign tier-sign--upper">Still Being Written</span>
+
+                    <div class="reading-corner reading-corner--left" aria-hidden="true">
+                        <img src="images/house.png" class="prop prop-house" alt="" loading="lazy">
+                    </div>
+
+                    <div class="spine-row" id="future-shelf"></div>
+
+                    <div class="reading-corner reading-corner--right" aria-hidden="true">
+                        <img src="images/standing-books.png" class="prop prop-standing" alt="" loading="lazy">
+                    </div>
+
+                    <div class="tier-shelf-plank" aria-hidden="true"></div>
+                </div>
+
+                <!-- Main tier: within easy reach — the two books ready to bring home, and the corner where someone's clearly been reading -->
+                <div class="shelf-tier shelf-tier--main">
+                    <span class="tier-sign">Amma's Favourites ♡</span>
+
+                    <div class="reading-corner reading-corner--left" aria-hidden="true">
+                        <img src="images/plant.png" class="prop prop-plant" alt="" loading="lazy">
+                        <img src="images/books-stack.png" class="prop prop-stack" alt="" loading="lazy">
+                    </div>
+
+                    <div class="shelf-items" id="favourites-shelf">
+                        <!-- Books render here from the BOOKS list in the script below -->
+                    </div>
