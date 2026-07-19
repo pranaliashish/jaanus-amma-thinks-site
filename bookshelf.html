@@ -98,3 +98,273 @@
                     <div class="shelf-items" id="favourites-shelf">
                         <!-- Books render here from the BOOKS list in the script below -->
                     </div>
+
+                    <div class="reading-corner reading-corner--right" aria-hidden="true">
+                        <img src="images/lantern.png" class="prop prop-lantern" alt="" loading="lazy">
+                        <div class="prop prop-teacup">
+                            <svg viewBox="0 0 60 50" width="52" height="44" aria-hidden="true">
+                                <ellipse cx="30" cy="42" rx="26" ry="5" fill="#e9dcc3"/>
+                                <path d="M10 18 h34 v14 a17 17 0 0 1 -17 17 a17 17 0 0 1 -17 -17 z" fill="#fffaf5" stroke="#d8c7a3" stroke-width="1.5"/>
+                                <path d="M44 22 q10 0 10 9 q0 8 -10 8" fill="none" stroke="#d8c7a3" stroke-width="2.5"/>
+                                <ellipse cx="27" cy="19" rx="18" ry="4" fill="#c98a6b" opacity="0.55"/>
+                                <path d="M18 10 q3 -6 0 -10 M27 8 q3 -6 0 -10 M36 10 q3 -6 0 -10" stroke="#e6c98d" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.45"/>
+                            </svg>
+                        </div>
+                        <div class="prop prop-glasses">
+                            <svg viewBox="0 0 80 30" width="66" height="25" aria-hidden="true">
+                                <circle cx="18" cy="15" r="13" fill="none" stroke="#8a6a45" stroke-width="2.5"/>
+                                <circle cx="62" cy="15" r="13" fill="none" stroke="#8a6a45" stroke-width="2.5"/>
+                                <path d="M31 13 q9 -5 18 0" fill="none" stroke="#8a6a45" stroke-width="2.5"/>
+                                <path d="M5 15 q-6 0 -8 4" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M75 15 q6 0 8 4" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="tier-shelf-plank tier-shelf-plank--base" aria-hidden="true"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <p class="future-note">
+        More little books are being written with care.
+        <a href="index.html#story-circle">Join the Story Circle</a> to hear when they arrive.
+    </p>
+
+</main>
+
+<!-- The "open the book" reveal is built by script below (not a plain popup — the chosen book lifts from its place on the shelf) -->
+<div class="book-reveal-overlay" id="revealOverlay" aria-hidden="true"></div>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <h3>Jaanu's Amma Thinks 🌙</h3>
+
+        <p class="footer-tagline">
+            Stories for sleepy evenings, wonder-filled conversations,
+            and little moments that quietly become memories.
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html#blog">Stories</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+        <a class="footer-instagram"
+           href="https://instagram.com/jaanus_amma_thinks"
+           target="_blank">
+           🌙 Follow on Instagram
+        </a>
+
+        <div class="footer-divider">
+            ✦ ✦ ✦
+        </div>
+
+        <p class="footer-closing">
+            For curious children, sleepy evenings,
+            and hearts full of wonder.
+        </p>
+
+        <p class="footer-copy">
+            © 2026 Jaanu's Amma Thinks
+        </p>
+
+    </div>
+
+</footer>
+
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+});
+</script>
+
+<script>
+/* =========================================================
+   THE BOOKSHELF DATA
+   Add a book by adding an object to BOOKS. Add a "still being
+   written" spine by adding to FUTURE_BOOKS. The shelf, the
+   reveal panel, and all interactions render themselves from
+   these two lists — nothing else needs to change.
+========================================================= */
+
+const BOOKS = [
+    {
+        id: "big-feelings",
+        title: "Big Feelings, Gentle Nights",
+        price: "₹399",
+        description: "A collection of five original bedtime stories that help children understand and express their emotions through wonder.",
+        cover: "images/big-feelings-book.png",
+        link: "#", // TODO: replace with your checkout / delivery link (e.g. Gumroad, Payhip, Instamojo)
+        accessory: "bookmark" // ribbon + a small pressed flower tucked in the page
+    },
+    {
+        id: "calm-toddler",
+        title: "10 Ways to Calm a Toddler",
+        price: "₹149",
+        description: "Gentle, practical ideas to calm big feelings, ease tricky moments, and bring a little more peace into your everyday parenting.",
+        cover: null, // No mockup yet — a soft lettered cover renders automatically.
+                      // Once ready, set this to the image path (e.g. "images/calm-toddler-book.png")
+                      // and the real cover will appear in its place, accessory and all.
+        link: "#", // TODO: replace with your checkout / delivery link
+        accessory: "doodle" // a child's crayon-doodle bookmark peeking out
+    }
+];
+
+const FUTURE_BOOKS = [
+    { title: "Wonder Talks", tone: "dustyblue" },
+    { title: "Ancient Indian Wisdom", tone: "sage" },
+    { title: "Seasonal Stories", tone: "sand" },
+    { title: "Nature Stories", tone: "terracotta" }
+];
+
+const DOODLE_SVG = `<svg viewBox="0 0 50 60" width="30" height="36" aria-hidden="true">
+    <rect x="2" y="2" width="46" height="56" rx="3" fill="#fdf6e6" stroke="#e3d6b8" stroke-width="1"/>
+    <path d="M14 20 C18 12, 30 12, 34 20" stroke="#e08a5b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <circle cx="24" cy="32" r="7" fill="none" stroke="#e6b34c" stroke-width="2.5"/>
+    <path d="M24 20 L24 16 M13 26 L9 24 M35 26 L39 24" stroke="#e6b34c" stroke-width="2" stroke-linecap="round"/>
+</svg>`;
+
+const FLOWER_SVG = `<svg viewBox="0 0 40 40" width="24" height="24" aria-hidden="true">
+    <g opacity="0.85">
+        <ellipse cx="20" cy="11" rx="6" ry="9" fill="#c98a6b" transform="rotate(0 20 20)"/>
+        <ellipse cx="20" cy="11" rx="6" ry="9" fill="#c98a6b" transform="rotate(72 20 20)"/>
+        <ellipse cx="20" cy="11" rx="6" ry="9" fill="#c98a6b" transform="rotate(144 20 20)"/>
+        <ellipse cx="20" cy="11" rx="6" ry="9" fill="#c98a6b" transform="rotate(216 20 20)"/>
+        <ellipse cx="20" cy="11" rx="6" ry="9" fill="#c98a6b" transform="rotate(288 20 20)"/>
+        <circle cx="20" cy="20" r="4" fill="#e6c98d"/>
+    </g>
+</svg>`;
+
+function accessoryMarkup(kind) {
+    if (kind === "bookmark") {
+        return `<span class="accessory ribbon-bookmark" aria-hidden="true"></span><span class="accessory pressed-flower">${FLOWER_SVG}</span>`;
+    }
+    if (kind === "doodle") {
+        return `<span class="accessory doodle-bookmark">${DOODLE_SVG}</span>`;
+    }
+    return "";
+}
+
+function coverMarkup(book) {
+    const inner = book.cover
+        ? `<img src="${book.cover}" alt="${book.title} cover">`
+        : `<span class="placeholder-title">${book.title}</span>`;
+    const cls = book.cover ? "book-cover" : "book-cover book-cover--placeholder";
+    return `<div class="${cls}">${inner}${accessoryMarkup(book.accessory)}</div>`;
+}
+
+function renderBooks() {
+    const shelf = document.getElementById("favourites-shelf");
+    BOOKS.forEach(book => {
+        const el = document.createElement("div");
+        el.className = "book" + (book.accessory === "bookmark" ? " book--ajar" : "");
+        el.tabIndex = 0;
+        el.setAttribute("role", "button");
+        el.setAttribute("aria-label", `Open ${book.title}`);
+        el.innerHTML = coverMarkup(book);
+
+        el.addEventListener("click", () => openReveal(book, el));
+        el.addEventListener("keypress", e => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                openReveal(book, el);
+            }
+        });
+
+        shelf.appendChild(el);
+    });
+}
+
+function renderFutureBooks() {
+    const row = document.getElementById("future-shelf");
+    FUTURE_BOOKS.forEach(item => {
+        const el = document.createElement("div");
+        el.className = `spine ${item.tone}`;
+        el.tabIndex = 0;
+        el.innerHTML = `<span class="spine-text">${item.title}</span><span class="spine-hint" role="tooltip">Written with care, coming soon 🤍</span>`;
+        row.appendChild(el);
+    });
+}
+
+/* ---- The reveal: the chosen book lifts from the shelf and opens ---- */
+const overlay = document.getElementById("revealOverlay");
+let currentPanel = null;
+let lastFocused = null;
+
+function openReveal(book, sourceEl) {
+    lastFocused = sourceEl;
+    const rect = sourceEl.getBoundingClientRect();
+
+    const panel = document.createElement("div");
+    panel.className = "book-reveal";
+    panel.style.top = rect.top + "px";
+    panel.style.left = rect.left + "px";
+    panel.style.width = rect.width + "px";
+    panel.style.height = rect.height + "px";
+
+    panel.innerHTML = `
+        <button class="book-reveal-close" aria-label="Close">✕</button>
+        <div class="book-reveal-content">
+            <div class="book-reveal-cover">${coverMarkup(book)}</div>
+            <div class="book-reveal-body">
+                <h3>${book.title}</h3>
+                <p class="book-reveal-description">${book.description}</p>
+                <p class="book-reveal-price">${book.price}</p>
+                <a href="${book.link}" class="bring-home-btn" target="_blank" rel="noopener">Bring this home</a>
+            </div>
+        </div>
+    `;
+
+    document.body.appendChild(panel);
+    currentPanel = panel;
+    overlay.classList.add("open");
+    overlay.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+
+    requestAnimationFrame(() => {
+        const targetW = Math.min(window.innerWidth - 48, 620);
+        const targetH = Math.min(window.innerHeight - 64, 440);
+        panel.style.top = (window.innerHeight - targetH) / 2 + "px";
+        panel.style.left = (window.innerWidth - targetW) / 2 + "px";
+        panel.style.width = targetW + "px";
+        panel.style.height = targetH + "px";
+        panel.classList.add("open");
+        setTimeout(() => panel.classList.add("settled"), 420);
+    });
+
+    panel.querySelector(".book-reveal-close").addEventListener("click", closeReveal);
+    setTimeout(() => panel.querySelector(".book-reveal-close").focus(), 450);
+}
+
+function closeReveal() {
+    if (!currentPanel) return;
+    currentPanel.classList.remove("settled");
+    currentPanel.classList.add("closing");
+    overlay.classList.remove("open");
+    overlay.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    const panelToRemove = currentPanel;
+    currentPanel = null;
+    setTimeout(() => panelToRemove.remove(), 350);
+    if (lastFocused) lastFocused.focus();
+}
+
+overlay.addEventListener("click", closeReveal);
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape" && currentPanel) closeReveal();
+});
+
+renderBooks();
+renderFutureBooks();
+</script>
+
+</body>
+</html>
