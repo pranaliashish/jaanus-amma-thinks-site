@@ -1,8 +1,8 @@
 /* =========================================================
-   BOOKSHELF PAGE — "For Your Bookshelf"
-   A family reading room, not a product grid.
-   Relies on the CSS variables already defined in style.css
-   (--navy, --gold, --soft-gold, --cream, --midnight, etc.)
+   BOOKSHELF PAGE v2 — "For Your Bookshelf"
+   Illustrated storybook-shelf direction.
+   Relies on CSS variables already defined in style.css
+   (--navy, --gold, --soft-gold, --cream, --midnight, --text-light, etc.)
 ========================================================= */
 
 :root {
@@ -10,226 +10,245 @@
     --oak-dark: #7a5636;
     --walnut: #4e3524;
     --parchment: #faf3e4;
-    --shelf-glow: rgba(212,162,76,0.16);
+    --paper: #fbf6ea;
+    --tape: rgba(230, 201, 141, 0.55);
 
-    --spine-terracotta: #c98a6b;
-    --spine-sage: #8c9c7f;
-    --spine-dustyblue: #8fa3b3;
-    --spine-sand: #d8bd8a;
+    --spine-blush: #e7c7c0;
+    --spine-sage: #a9b99b;
+    --spine-sand: #e3c68f;
+    --spine-dustyblue: #a9bac2;
 }
 
-.bookshelf-page {
-    background:
-        radial-gradient(circle at top left, rgba(212,162,76,0.08), transparent 40%),
-        linear-gradient(180deg, #fffaf7 0%, #fffdfc 100%);
-    padding-top: 120px;
-    padding-bottom: 20px;
+.bookshelf-page-v2 {
+    background: linear-gradient(180deg, #fffaf3 0%, #fffdfa 100%);
+    padding-top: 118px;
+    overflow-x: hidden;
 }
 
-/* ---------- Intro ---------- */
-.bookshelf-intro {
+/* ---------- Nav additions ---------- */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-left: 18px;
+}
+
+.nav-icon-btn {
+    position: relative;
+    background: none;
+    border: none;
+    color: var(--navy);
+    font-size: 1.05rem;
+    cursor: pointer;
+    padding: 6px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-icon-btn:hover { color: var(--gold); transform: translateY(-1px); }
+
+.nav-bag-count {
+    position: absolute;
+    top: -3px;
+    right: -6px;
+    background: var(--gold);
+    color: #fff;
+    font-size: 0.62rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 3px 5px;
+    border-radius: 999px;
+}
+
+.nav-link--active { color: var(--gold); }
+.nav-link--active::after { width: 100% !important; }
+
+@media (max-width: 768px) {
+    .nav-icons { order: -1; margin-left: auto; margin-right: 8px; }
+}
+
+/* ---------- Hero ---------- */
+.bookshelf-hero {
     max-width: 640px;
     margin: 0 auto;
     text-align: center;
-    padding: 0 8% 60px;
+    padding: 10px 8% 50px;
 }
 
-.bookshelf-intro-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: clamp(2.6rem, 5vw, 4rem);
-    color: var(--navy);
-    margin: 22px 0 14px;
-    line-height: 1.1;
-}
-
-.bookshelf-intro-title .heart { color: var(--gold); }
-
-.bookshelf-intro-tagline {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.4rem;
+.hero-mark {
+    position: relative;
+    display: inline-block;
     color: var(--gold);
-    margin-bottom: 20px;
+    font-size: 1.4rem;
+    margin-bottom: 6px;
 }
 
-.bookshelf-intro-copy {
-    font-size: 1.05rem;
+.hero-squiggle {
+    display: block;
+    margin: 4px auto 0;
+}
+
+.hero-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: clamp(2.8rem, 6vw, 4.4rem);
+    line-height: 1.05;
+    color: var(--midnight);
+    margin: 8px 0 6px;
+}
+
+.hero-tagline {
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-size: 1.6rem;
+    color: var(--navy);
+    opacity: 0.85;
+    margin-bottom: 22px;
+}
+
+.hero-copy {
+    font-size: 1.02rem;
     line-height: 1.9;
     color: var(--text-light);
-}
-
-/* ---------- Reading room / bookcase ---------- */
-.reading-room {
-    padding: 20px 5% 10px;
-}
-
-.bookcase {
-    max-width: 1100px;
-    margin: 0 auto;
     position: relative;
 }
 
-.bookcase::before {
-    /* ambient warmth behind the whole piece of furniture */
+.hero-quote {
+    color: var(--gold);
+    font-size: 1.4rem;
+    margin-right: 2px;
+}
+
+.heart { color: var(--gold); }
+
+/* ---------- Shelf rows ---------- */
+.shelf-row { padding: 10px 5% 0; }
+
+.shelf-scene {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 34px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.shelf-scene::before {
     content: "";
     position: absolute;
-    top: -6%;
+    top: -10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%;
-    height: 90%;
-    background: radial-gradient(ellipse at center, var(--shelf-glow), transparent 72%);
+    width: 75%;
+    height: 85%;
+    background: radial-gradient(ellipse at center, rgba(212,162,76,0.10), transparent 72%);
     z-index: 0;
     pointer-events: none;
 }
 
-.bookcase-frame {
-    position: relative;
-    z-index: 1;
-    background: linear-gradient(180deg, rgba(255,253,249,0.5), rgba(255,253,249,0));
-    border-left: 10px solid var(--oak-dark);
-    border-right: 10px solid var(--oak-dark);
-    border-radius: 6px;
-    padding: 0 26px;
-    box-shadow: 0 30px 60px rgba(17,36,61,0.10);
-}
-
-.bookcase-top-cap {
-    height: 16px;
-    margin: 0 -26px;
-    background-color: var(--oak-mid);
-    background-image: linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)), url("images/oak-texture-2.jpg");
-    background-size: cover, 900px auto;
-    background-repeat: no-repeat, repeat-x;
-    border-radius: 4px 4px 0 0;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.14);
-}
-
-/* ---------- Shelf tiers ---------- */
-.shelf-tier {
-    position: relative;
-    padding: 30px 10px 0;
-}
-
-.shelf-tier--upper {
-    opacity: 0.88;
-    filter: saturate(0.9) brightness(0.98);
-    transform: scale(0.94);
-    transform-origin: top center;
-}
-
-.tier-sign {
-    display: inline-block;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.35rem;
-    letter-spacing: 0.5px;
-    color: var(--cream);
-    background-color: var(--oak-mid);
-    background-image: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.05)), url("images/oak-texture-2.jpg");
-    background-size: cover, 500px auto;
-    padding: 4px 18px;
-    border-radius: 3px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.18);
-    transform: rotate(-1.5deg);
-    margin-left: 14px;
-}
-
-.tier-sign--upper {
-    font-size: 1.1rem;
-    opacity: 0.85;
-}
-
-/* ---------- Shelf plank ---------- */
-.tier-shelf-plank {
-    height: 24px;
-    margin-top: 26px;
+.shelf-plank-v2 {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 22px;
     background-color: var(--oak-mid);
     background-image: linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)), url("images/oak-texture-2.jpg");
     background-size: cover, 900px auto;
     background-repeat: no-repeat, repeat-x;
     border-radius: 3px;
-    box-shadow:
-        0 10px 20px rgba(0,0,0,0.16),
-        inset 0 2px 0 rgba(255,255,255,0.12);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16), inset 0 2px 0 rgba(255,255,255,0.12);
     position: relative;
 }
 
-.tier-shelf-plank::after {
+.shelf-plank-v2::before,
+.shelf-plank-v2::after {
     content: "";
     position: absolute;
-    left: 0; right: 0; top: 100%;
-    height: 7px;
-    background: var(--walnut);
-    opacity: 0.45;
-    border-radius: 0 0 3px 3px;
+    top: 100%;
+    width: 26px;
+    height: 20px;
+    background: var(--oak-dark);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
 }
+.shelf-plank-v2::before { left: 6%; }
+.shelf-plank-v2::after { right: 6%; transform: scaleX(-1); }
 
-.tier-shelf-plank--base {
-    margin-bottom: 4px;
-}
+.shelf-row + .shelf-row { margin-top: 56px; }
 
-/* ---------- Shelf contents row ---------- */
-.shelf-items,
-.spine-row {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    gap: 44px;
-    flex-wrap: wrap;
-    position: relative;
-    z-index: 2;
-    padding: 10px 0 22px;
-    min-height: 210px;
-}
-
-.spine-row { min-height: 190px; gap: 10px; }
-
-/* ---------- Reading-corner props ---------- */
-.reading-corner {
-    position: absolute;
-    bottom: 22px;
+/* ---------- Prop clusters ---------- */
+.props-cluster {
     display: flex;
     align-items: flex-end;
     gap: 10px;
+    position: relative;
     z-index: 1;
 }
 
-.reading-corner--left { left: -6px; }
-.reading-corner--right { right: -6px; }
-
 .prop { display: block; filter: drop-shadow(0 5px 6px rgba(0,0,0,0.12)); }
-.prop-plant { width: 130px; }
-.prop-stack { width: 90px; }
-.prop-house { width: 120px; }
-.prop-standing { width: 110px; }
-.prop-lantern {
-    width: 130px;
-    animation: lanternGlow 5s ease-in-out infinite;
-}
-.prop-teacup, .prop-glasses { opacity: 0.9; }
-.prop-glasses { transform: rotate(-4deg) translateY(-4px); }
+.prop-jar { width: 110px; }
+.prop-house { width: 100px; }
+.prop-lantern { width: 110px; animation: lanternGlow 5s ease-in-out infinite; }
+.prop-stack { width: 80px; }
+.prop-vine { width: 90px; opacity: 0.9; }
+.prop-plant { width: 100px; }
 
 @keyframes lanternGlow {
-    0%, 100% { filter: drop-shadow(0 0 8px rgba(230,201,141,0.45)); }
-    50%      { filter: drop-shadow(0 0 16px rgba(230,201,141,0.75)); }
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(230,201,141,0.4)); }
+    50% { filter: drop-shadow(0 0 16px rgba(230,201,141,0.7)); }
 }
 
+.star-ornament { margin-bottom: 6px; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.12)); }
+
+/* ---------- Sticky notes ---------- */
+.sticky-note {
+    position: relative;
+    background: #f6e7c8;
+    color: #3b2b1b;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+    padding: 16px 18px 10px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.14);
+    transform: rotate(-3deg);
+    margin-bottom: 8px;
+    width: 130px;
+}
+
+.sticky-note::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-6deg);
+    width: 46px;
+    height: 16px;
+    background: var(--tape);
+}
+
+.sticky-note--alt { transform: rotate(2deg); }
+
+.note-arrow { display: block; margin: 6px auto 0; }
+
+.props-cluster--left { flex-direction: column; align-items: center; }
+
 /* ---------- Books on the shelf ---------- */
-.book {
+.book-figure {
     --tilt: -2deg;
     position: relative;
-    width: 190px;
+    width: 200px;
     cursor: pointer;
     transform: rotate(var(--tilt));
     transition: transform 0.35s ease, filter 0.35s ease;
     z-index: 3;
 }
 
-.book:nth-of-type(2n) { --tilt: 1.5deg; }
-
-.book:hover,
-.book:focus-visible {
-    transform: rotate(0deg) translateY(-12px);
-    filter: drop-shadow(0 20px 22px rgba(0,0,0,0.2));
+.book-figure:hover, .book-figure:focus-visible {
+    transform: rotate(0deg) translateY(-10px);
+    filter: drop-shadow(0 18px 20px rgba(0,0,0,0.18));
     outline: none;
 }
 
@@ -237,11 +256,11 @@
 
 .book-cover {
     position: relative;
-    aspect-ratio: 3 / 4.4;
+    aspect-ratio: 3 / 4.3;
     border-radius: 4px 8px 8px 4px;
-    overflow: visible;
-    box-shadow: 0 12px 18px rgba(0,0,0,0.16);
+    box-shadow: 0 14px 20px rgba(0,0,0,0.16);
     background: var(--parchment);
+    overflow: visible;
 }
 
 .book-cover img {
@@ -253,103 +272,168 @@
 }
 
 .book-cover::after {
-    /* page-edge illusion on the right side of every cover */
     content: "";
     position: absolute;
     top: 3%; right: -1px; bottom: 3%;
     width: 6px;
     background: repeating-linear-gradient(180deg, #fff8ec 0 2px, #f1e6d1 2px 4px);
-    box-shadow: inset 2px 0 3px rgba(0,0,0,0.08);
     border-radius: 0 3px 3px 0;
 }
 
 .book-cover--placeholder {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 22px;
+    gap: 10px;
+    padding: 20px;
     text-align: center;
     color: var(--cream);
     font-family: 'Dancing Script', cursive;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.25;
-    background: linear-gradient(160deg, var(--spine-terracotta), #a9694c);
+    background: linear-gradient(160deg, #6f8fa6, #37506a);
+    border-radius: 4px 8px 8px 4px;
 }
 
-/* ---------- Lived-in accessories ---------- */
+.placeholder-scene { width: 70%; }
+
+/* ---------- Accessories ---------- */
 .accessory { position: absolute; pointer-events: none; }
 
 .ribbon-bookmark {
-    top: -16px;
-    left: 22%;
-    width: 15px;
-    height: 62px;
+    top: -16px; left: 22%;
+    width: 15px; height: 60px;
     background: linear-gradient(180deg, var(--gold), #b9843a);
     clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transform: rotate(-5deg);
 }
 
-.pressed-flower {
-    top: -10px;
-    right: 18%;
-    transform: rotate(12deg);
+.pressed-flower { top: -10px; right: 18%; transform: rotate(12deg); }
+.doodle-bookmark { top: -18px; right: 10%; transform: rotate(8deg); filter: drop-shadow(0 4px 6px rgba(0,0,0,0.12)); }
+
+/* ---------- Book info text block ---------- */
+.book-info {
+    max-width: 250px;
+    z-index: 1;
 }
 
-.doodle-bookmark {
-    top: -20px;
-    right: 12%;
-    transform: rotate(8deg);
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.12));
+.book-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--midnight);
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
-/* ---------- "Still being written" spines ---------- */
-.spine {
-    position: relative;
-    width: 44px;
-    border-radius: 3px 3px 0 0;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    display: flex;
+.book-info-description {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    margin-bottom: 14px;
+}
+
+.book-info-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+}
+
+.shelf-btn {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.shelf-btn:hover { transform: translateY(-3px); }
+
+.shelf-btn--primary {
+    background: var(--navy);
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(27,45,74,0.28);
+}
+
+.shelf-btn--secondary {
+    background: linear-gradient(135deg, #f2d58a, #e0b85c);
+    color: #6d4f1c;
+    box-shadow: 0 8px 18px rgba(212,162,76,0.22);
+}
+
+/* ---------- Coming soon spines ---------- */
+.coming-soon-cluster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    z-index: 1;
+}
+
+.coming-soon-tag {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #6b4d2f;
+    background: #f6e7c8;
+    padding: 8px 22px;
+    border-radius: 999px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+}
+
+.spine-row-v2 { display: flex; align-items: flex-end; gap: 8px; }
+
+.spine-v2 {
+    position: relative;
+    width: 52px;
+    height: 175px;
+    border-radius: 4px 4px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
     padding: 14px 4px;
     cursor: default;
-    box-shadow:
-        0 8px 14px rgba(0,0,0,0.12),
-        inset 2px 0 rgba(255,255,255,0.3),
-        inset -2px 0 rgba(0,0,0,0.08);
+    box-shadow: 0 8px 14px rgba(0,0,0,0.12), inset 2px 0 rgba(255,255,255,0.35), inset -2px 0 rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
 }
 
-.spine-text {
+.spine-v2-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
     font-family: 'Amatic SC', cursive;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-    color: var(--midnight);
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    color: #3d3428;
+    line-height: 1.15;
 }
 
-.spine:hover, .spine:focus-visible {
-    transform: rotate(180deg) translateY(-6px);
-    outline: none;
-}
+.spine-v2:hover, .spine-v2:focus-visible { transform: translateY(-6px); outline: none; }
 
-.spine.terracotta { background: var(--spine-terracotta); height: 175px; }
-.spine.sage       { background: var(--spine-sage);       height: 195px; }
-.spine.sand       { background: var(--spine-sand);       height: 185px; }
-.spine.dustyblue  { background: var(--spine-dustyblue);  height: 205px; }
+.spine-v2.blush { background: var(--spine-blush); }
+.spine-v2.sage { background: var(--spine-sage); }
+.spine-v2.sand { background: var(--spine-sand); }
+.spine-v2.dustyblue { background: var(--spine-dustyblue); }
 
 .spine-hint {
     position: absolute;
-    bottom: calc(100% + 10px);
+    bottom: calc(100% + 8px);
     left: 50%;
-    writing-mode: horizontal-tb;
-    transform: translateX(-50%) translateY(6px) rotate(180deg);
+    transform: translateX(-50%) translateY(6px);
     background: var(--midnight);
     color: var(--cream);
-    padding: 6px 12px;
+    padding: 5px 10px;
     border-radius: 8px;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     white-space: nowrap;
     font-family: 'Nunito', sans-serif;
     opacity: 0;
@@ -357,138 +441,210 @@
     transition: 0.25s ease;
 }
 
-.spine:hover .spine-hint,
-.spine:focus-visible .spine-hint {
+.spine-v2:hover .spine-hint, .spine-v2:focus-visible .spine-hint {
     opacity: 1;
-    transform: translateX(-50%) translateY(0) rotate(180deg);
+    transform: translateX(-50%) translateY(0);
 }
 
-/* ---------- Note under the bookcase ---------- */
-.future-note {
+/* ---------- Letter card ---------- */
+.letter-card {
+    position: relative;
+    background: var(--paper);
+    max-width: 240px;
+    padding: 26px 22px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: #4a4038;
+    box-shadow: 0 16px 30px rgba(0,0,0,0.14);
+    transform: rotate(2deg);
+    clip-path: polygon(0% 2%, 3% 0%, 97% 1%, 100% 3%, 99% 97%, 96% 100%, 2% 99%, 0% 96%);
+    z-index: 1;
+}
+
+.letter-card::before,
+.letter-card::after {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 16px;
+    background: var(--tape);
+}
+.letter-card::before { top: -8px; left: 10px; transform: rotate(-8deg); }
+.letter-card::after { bottom: -8px; right: 10px; transform: rotate(-8deg); }
+
+.letter-card p { margin-bottom: 10px; }
+.letter-greeting { font-size: 1.3rem; }
+.letter-sign { margin-top: 6px; }
+.letter-sign span { font-weight: 700; color: var(--gold); }
+
+.letter-flower {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    width: 26px;
+    height: 26px;
+    background: radial-gradient(circle, #c98a6b 0%, #c98a6b 40%, transparent 42%);
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+/* ---------- Trust badges ---------- */
+.trust-section {
+    max-width: 1000px;
+    margin: 70px auto 0;
+    padding: 0 6%;
     text-align: center;
-    max-width: 480px;
-    margin: 34px auto 60px;
-    color: var(--text-light);
-    font-size: 0.98rem;
-    line-height: 1.8;
 }
 
-.future-note a {
-    color: var(--gold);
-    font-weight: 600;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(212,162,76,0.4);
+.trust-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--navy);
+    margin-bottom: 40px;
 }
 
-.future-note a:hover { border-bottom-color: var(--gold); }
-
-/* ---------- The reveal: a book lifting off the shelf, not a popup ---------- */
-.book-reveal-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(17,36,61,0.45);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-    z-index: 2000;
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 30px;
 }
 
-.book-reveal-overlay.open { opacity: 1; pointer-events: auto; }
+.trust-item { padding: 10px; }
 
-.book-reveal {
-    position: fixed;
-    background: var(--parchment);
-    border-radius: 4px 8px 8px 4px;
-    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
-    overflow: hidden;
-    z-index: 2001;
-    transition:
-        top 0.5s cubic-bezier(0.2,0.8,0.2,1),
-        left 0.5s cubic-bezier(0.2,0.8,0.2,1),
-        width 0.5s cubic-bezier(0.2,0.8,0.2,1),
-        height 0.5s cubic-bezier(0.2,0.8,0.2,1),
-        border-radius 0.5s ease,
-        opacity 0.35s ease;
-}
-
-.book-reveal.open { border-radius: 18px; }
-
-.book-reveal.closing { opacity: 0; }
-
-.book-reveal-content {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.35s ease 0.22s;
-}
-
-.book-reveal.settled .book-reveal-content { opacity: 1; }
-
-.book-reveal-cover {
-    flex: 0 0 40%;
-    background: var(--warm-white);
-    display: flex;
+.trust-icon {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 28px;
-}
-
-.book-reveal-cover .book-cover { width: 100%; max-width: 220px; }
-
-.book-reveal-body {
-    flex: 1;
-    padding: 36px 40px 36px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow-y: auto;
-}
-
-.book-reveal-body h3 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.1rem;
-    color: var(--navy);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(212,162,76,0.12);
+    color: var(--gold);
+    font-size: 1.2rem;
     margin-bottom: 16px;
 }
 
-.book-reveal-description {
-    color: var(--text-light);
-    line-height: 1.85;
-    margin-bottom: 20px;
+.trust-item h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 8px; }
+.trust-item p { color: var(--text-light); font-size: 0.9rem; line-height: 1.6; }
+
+/* ---------- Payment options ---------- */
+.payment-section {
+    max-width: 800px;
+    margin: 70px auto 0;
+    padding: 0 6%;
+    text-align: center;
 }
 
-.book-reveal-price {
-    font-size: 1.5rem;
-    font-weight: 700;
+.payment-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
     color: var(--navy);
-    margin-bottom: 22px;
+    margin-bottom: 14px;
 }
 
-.book-reveal-close {
+.payment-section > p {
+    color: var(--text-light);
+    line-height: 1.8;
+    max-width: 520px;
+    margin: 0 auto 36px;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.payment-item {
+    background: #fffaf5;
+    border: 1px solid rgba(212,162,76,0.18);
+    border-radius: 16px;
+    padding: 22px 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+}
+
+.payment-item i { font-size: 1.3rem; color: var(--gold); margin-bottom: 4px; }
+.payment-item span { font-weight: 700; color: var(--navy); font-size: 0.95rem; }
+.payment-item small { color: var(--text-light); font-size: 0.78rem; }
+
+.payment-secure-note { color: var(--text-light); font-size: 0.88rem; }
+.payment-secure-note i { color: var(--gold); margin-right: 4px; }
+
+/* ---------- Digital product note band ---------- */
+.digital-note-band {
+    margin-top: 70px;
+    background: var(--midnight);
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    padding: 22px 20px;
+    font-size: 0.95rem;
+    letter-spacing: 0.2px;
+}
+
+.band-deco { opacity: 0.7; margin: 0 12px; }
+
+/* ---------- Book peek (looking closer, not a product popup) ---------- */
+.book-peek-overlay {
+    position: fixed; inset: 0;
+    background: rgba(17,36,61,0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.4s ease;
+    z-index: 2000;
+}
+.book-peek-overlay.open { opacity: 1; pointer-events: auto; }
+
+.book-peek {
+    position: fixed;
+    background: transparent;
+    z-index: 2001;
+    transition: top 0.5s cubic-bezier(0.2,0.8,0.2,1), left 0.5s cubic-bezier(0.2,0.8,0.2,1),
+                width 0.5s cubic-bezier(0.2,0.8,0.2,1), height 0.5s cubic-bezier(0.2,0.8,0.2,1),
+                opacity 0.35s ease;
+}
+.book-peek.closing { opacity: 0; }
+
+.book-peek-inner {
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px;
+    opacity: 0;
+    transition: opacity 0.35s ease 0.2s;
+}
+.book-peek.settled .book-peek-inner { opacity: 1; }
+
+.book-peek .book-cover { width: 70%; box-shadow: 0 30px 60px rgba(0,0,0,0.4); }
+
+.book-peek-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.book-peek-close {
     position: absolute;
-    top: 14px;
-    right: 14px;
-    width: 32px;
-    height: 32px;
+    top: -14px; right: -14px;
+    width: 34px; height: 34px;
     border-radius: 50%;
     border: none;
-    background: rgba(255,255,255,0.75);
+    background: #fff;
     color: var(--navy);
-    font-size: 0.95rem;
     cursor: pointer;
     z-index: 2;
-    transition: background 0.2s ease, transform 0.2s ease;
 }
+.book-peek-close:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
-.book-reveal-close:hover { background: #fff; transform: scale(1.08); }
-.book-reveal-close:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-
-/* ---------- Focus visibility (accessibility floor) ---------- */
-.book:focus-visible .book-cover,
-.spine:focus-visible {
+/* ---------- Focus visibility ---------- */
+.book-figure:focus-visible .book-cover,
+.spine-v2:focus-visible {
     outline: 2px solid var(--gold);
     outline-offset: 4px;
 }
@@ -496,42 +652,35 @@
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
     .prop-lantern { animation: none; }
-    .book, .spine, .book-reveal { transition: none !important; }
+    .book-figure, .spine-v2, .book-peek, .nav-icon-btn { transition: none !important; }
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-    .reading-corner { position: static; margin: 0 10px 14px; }
-    .shelf-tier { padding-top: 24px; }
-    .bookcase-frame { padding: 0 14px; }
+    .shelf-scene { gap: 26px; }
+    .book-info { max-width: 210px; }
 }
 
 @media (max-width: 768px) {
-    .bookshelf-page { padding-top: 90px; }
-    .bookshelf-intro { padding: 0 7% 40px; }
+    .bookshelf-page-v2 { padding-top: 88px; }
+    .bookshelf-hero { padding: 0 7% 36px; }
+    .hero-title { font-size: 2.4rem; }
+    .hero-tagline { font-size: 1.3rem; }
 
-    .shelf-items, .spine-row { gap: 24px; min-height: 0; }
-    .book { width: 140px; }
-    .spine { width: 34px; }
-    .spine.terracotta { height: 130px; }
-    .spine.sage       { height: 145px; }
-    .spine.sand       { height: 138px; }
-    .spine.dustyblue  { height: 150px; }
-    .spine-text { font-size: 0.9rem; }
+    .shelf-scene { justify-content: center; text-align: center; }
+    .book-info { text-align: center; max-width: 280px; }
+    .props-cluster { justify-content: center; }
+    .book-figure { width: 150px; }
 
-    .reading-corner { flex-wrap: wrap; justify-content: center; }
-    .prop-plant, .prop-house, .prop-standing { width: 80px; }
-    .prop-stack { width: 60px; }
-    .prop-lantern { width: 90px; }
+    .letter-card { max-width: 260px; margin: 0 auto; }
 
-    .tier-sign { font-size: 1.1rem; margin-left: 4px; }
+    .spine-v2 { width: 40px; height: 130px; }
+    .spine-v2-text { font-size: 0.85rem; }
 
-    .book-reveal-content { flex-direction: column; }
-    .book-reveal-cover { flex: 0 0 auto; padding: 20px; }
-    .book-reveal-cover .book-cover { max-width: 140px; margin: 0 auto; }
-    .book-reveal-body { padding: 10px 24px 24px; text-align: center; }
+    .trust-section, .payment-section { margin-top: 50px; }
 }
 
 @media (max-width: 480px) {
-    .book { width: 120px; }
+    .book-figure { width: 130px; }
+    .sticky-note { width: 110px; font-size: 1.15rem; }
 }
