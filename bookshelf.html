@@ -277,10 +277,10 @@ const BOOKS = [
 ];
 
 const FUTURE_BOOKS = [
-    { title: "Wonder Talks Collection", tone: "blush", icon: "speech" },
-    { title: "Ancient Indian Wisdom Stories", tone: "sage", icon: "lotus" },
-    { title: "Seasonal Story Collection", tone: "sand", icon: "leaf" },
-    { title: "Nature Stories Collection", tone: "dustyblue", icon: "tree" }
+    { title: "Wonder Talks", tone: "blush", icon: "speech", height: 150 },
+    { title: "Ancient Indian Wisdom", tone: "sage", icon: "lotus", height: 195, lean: true },
+    { title: "Seasonal Stories", tone: "sand", icon: "leaf", height: 175 },
+    { title: "Nature Stories", tone: "dustyblue", icon: "tree", height: 130 }
 ];
 
 const ICONS = {
@@ -363,7 +363,8 @@ function renderFutureBooks() {
     const row = document.getElementById("future-shelf");
     FUTURE_BOOKS.forEach(item => {
         const el = document.createElement("div");
-        el.className = `spine-v2 ${item.tone}`;
+        el.className = `spine-v2 ${item.tone}${item.lean ? " leaning" : ""}`;
+        el.style.height = item.height + "px";
         el.tabIndex = 0;
         el.innerHTML = `${ICONS[item.icon] || ""}<span class="spine-v2-text">${item.title}</span><span class="spine-hint" role="tooltip">Written with care, coming soon 🤍</span>`;
         row.appendChild(el);
