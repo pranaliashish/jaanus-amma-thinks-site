@@ -13,7 +13,9 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="bookshelf.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+<!-- Playfair Display is new — added only for this page's large display headline,
+     alongside your existing Dancing Script / Nunito / Amatic SC. Flagged in chat. -->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Amatic+SC:wght@700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SFJCXJMJNE"></script>
@@ -37,9 +39,14 @@
             <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="index.html#blog" class="nav-link">Stories</a></li>
             <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="bookshelf.html" class="nav-link" aria-current="page">Little Treasures</a></li>
+            <li class="nav-item"><a href="bookshelf.html" class="nav-link nav-link--active" aria-current="page">For Your Bookshelf</a></li>
             <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
         </ul>
+        <div class="nav-icons">
+            <!-- Decorative for now — not wired to real search or a cart yet. Easy to make functional later if you want a true multi-item cart. -->
+            <button class="nav-icon-btn" aria-label="Search" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="nav-icon-btn" aria-label="Bag" type="button"><i class="fa-solid fa-bag-shopping"></i><span class="nav-bag-count">0</span></button>
+        </div>
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -48,95 +55,146 @@
     </div>
 </nav>
 
-<main class="bookshelf-page">
+<main class="bookshelf-page-v2">
 
-    <section class="bookshelf-intro">
-        <span class="bookshelf-tag">📚 FOR YOUR BOOKSHELF</span>
-        <h1 class="bookshelf-intro-title">For Your Bookshelf <span class="heart">♡</span></h1>
-        <p class="bookshelf-intro-tagline">
-            Stories to read together. Guides to return to. Little treasures for childhood.
-        </p>
-        <p class="bookshelf-intro-copy">
-            Welcome to our little reading corner — the kind of room where a cup of tea goes
-            cold because the story got too good to put down. Every book here was made with
-            one hope: that it becomes part of your family's happiest memories.
+    <section class="bookshelf-hero">
+        <div class="hero-mark" aria-hidden="true">
+            ♡
+            <svg class="hero-squiggle" viewBox="0 0 90 14" width="90" height="14" aria-hidden="true">
+                <path d="M2 8 Q 14 -2, 26 8 T 50 8 T 74 8 T 88 8" fill="none" stroke="#d4a24c" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <h1 class="hero-title">For Your Bookshelf</h1>
+        <p class="hero-tagline">Stories that grow with little hearts.</p>
+        <p class="hero-copy">
+            <span class="hero-quote" aria-hidden="true">❝</span>
+            Every book here is created with love, to make bedtime gentler, conversations
+            deeper, and childhood a little more magical. <span class="heart">♡</span>
         </p>
     </section>
 
-    <section class="reading-room" aria-label="The bookshelf">
-        <div class="bookcase">
-            <div class="bookcase-frame">
+    <!-- Shelf One -->
+    <section class="shelf-row" aria-labelledby="shelf-one-label">
+        <div class="shelf-scene shelf-scene--one">
 
-                <div class="bookcase-top-cap" aria-hidden="true"></div>
-
-                <!-- Upper tier: a little further away, a little dimmer — books still being written -->
-                <div class="shelf-tier shelf-tier--upper">
-                    <span class="tier-sign tier-sign--upper">Still Being Written</span>
-
-                    <div class="reading-corner reading-corner--left" aria-hidden="true">
-                        <img src="images/house.png" class="prop prop-house" alt="" loading="lazy">
-                    </div>
-
-                    <div class="spine-row" id="future-shelf"></div>
-
-                    <div class="reading-corner reading-corner--right" aria-hidden="true">
-                        <img src="images/standing-books.png" class="prop prop-standing" alt="" loading="lazy">
-                    </div>
-
-                    <div class="tier-shelf-plank" aria-hidden="true"></div>
+            <div class="props-cluster props-cluster--left">
+                <div class="sticky-note">
+                    Amma's Favourite
+                    <svg class="note-arrow" viewBox="0 0 60 40" width="52" height="34" aria-hidden="true">
+                        <path d="M4 6 Q 30 4, 42 26" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M34 22 L42 26 L40 16" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
+                <img src="images/vase.png" class="prop prop-jar" alt="" loading="lazy">
+                <img src="images/house.png" class="prop prop-house" alt="" loading="lazy">
+            </div>
 
-                <!-- Main tier: within easy reach — the two books ready to bring home, and the corner where someone's clearly been reading -->
-                <div class="shelf-tier shelf-tier--main">
-                    <span class="tier-sign">Amma's Favourites ♡</span>
+            <div id="book-slot-1" class="book-figure"></div>
+            <div id="book-info-1" class="book-info"></div>
 
-                    <div class="reading-corner reading-corner--left" aria-hidden="true">
-                        <img src="images/plant.png" class="prop prop-plant" alt="" loading="lazy">
-                        <img src="images/books-stack.png" class="prop prop-stack" alt="" loading="lazy">
-                    </div>
+            <div class="props-cluster props-cluster--right">
+                <img src="images/lantern.png" class="prop prop-lantern" alt="" loading="lazy">
+                <img src="images/books-stack.png" class="prop prop-stack" alt="" loading="lazy">
+                <img src="images/standing-books.png" class="prop prop-vine" alt="" loading="lazy">
+            </div>
 
-                    <div class="shelf-items" id="favourites-shelf">
-                        <!-- Books render here from the BOOKS list in the script below -->
-                    </div>
+        </div>
+        <div class="shelf-plank-v2" aria-hidden="true"></div>
+    </section>
 
-                    <div class="reading-corner reading-corner--right" aria-hidden="true">
-                        <img src="images/lantern.png" class="prop prop-lantern" alt="" loading="lazy">
-                        <div class="prop prop-teacup">
-                            <svg viewBox="0 0 60 50" width="52" height="44" aria-hidden="true">
-                                <ellipse cx="30" cy="42" rx="26" ry="5" fill="#e9dcc3"/>
-                                <path d="M10 18 h34 v14 a17 17 0 0 1 -17 17 a17 17 0 0 1 -17 -17 z" fill="#fffaf5" stroke="#d8c7a3" stroke-width="1.5"/>
-                                <path d="M44 22 q10 0 10 9 q0 8 -10 8" fill="none" stroke="#d8c7a3" stroke-width="2.5"/>
-                                <ellipse cx="27" cy="19" rx="18" ry="4" fill="#c98a6b" opacity="0.55"/>
-                                <path d="M18 10 q3 -6 0 -10 M27 8 q3 -6 0 -10 M36 10 q3 -6 0 -10" stroke="#e6c98d" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.45"/>
-                            </svg>
-                        </div>
-                        <div class="prop prop-glasses">
-                            <svg viewBox="0 0 80 30" width="66" height="25" aria-hidden="true">
-                                <circle cx="18" cy="15" r="13" fill="none" stroke="#8a6a45" stroke-width="2.5"/>
-                                <circle cx="62" cy="15" r="13" fill="none" stroke="#8a6a45" stroke-width="2.5"/>
-                                <path d="M31 13 q9 -5 18 0" fill="none" stroke="#8a6a45" stroke-width="2.5"/>
-                                <path d="M5 15 q-6 0 -8 4" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round"/>
-                                <path d="M75 15 q6 0 8 4" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </div>
+    <!-- Shelf Two -->
+    <section class="shelf-row" aria-labelledby="shelf-two-label">
+        <div class="shelf-scene shelf-scene--two">
 
-                    <div class="tier-shelf-plank tier-shelf-plank--base" aria-hidden="true"></div>
+            <div class="props-cluster props-cluster--left">
+                <div class="sticky-note sticky-note--alt">
+                    Also on the bookshelf
+                    <svg class="note-arrow" viewBox="0 0 60 40" width="52" height="34" aria-hidden="true">
+                        <path d="M4 6 Q 30 4, 42 26" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M34 22 L42 26 L40 16" fill="none" stroke="#8a6a45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
+                <img src="images/plant.png" class="prop prop-plant" alt="" loading="lazy">
+                <div class="star-ornament" aria-hidden="true">
+                    <svg viewBox="0 0 40 40" width="34" height="34"><path d="M20 2 L24 16 L38 20 L24 24 L20 38 L16 24 L2 20 L16 16 Z" fill="#e6c98d"/></svg>
+                </div>
+            </div>
 
+            <div id="book-slot-2" class="book-figure"></div>
+            <div id="book-info-2" class="book-info"></div>
+
+            <div class="coming-soon-cluster">
+                <span class="coming-soon-tag">Coming Soon <span class="heart">♡</span></span>
+                <div class="spine-row-v2" id="future-shelf"></div>
+            </div>
+
+            <div class="letter-card">
+                <p class="letter-greeting">My dearest friend,</p>
+                <p>Thank you for choosing stories over screens, conversations over
+                distractions, and wonder over hurry.</p>
+                <p>Every book you bring home helps me create more gentle resources
+                for families like yours.</p>
+                <p>I hope these stories find a special place in your home and in
+                your little one's heart.</p>
+                <p class="letter-sign">With love,<br><span>Pranali</span> <span class="heart">♡</span></p>
+                <span class="letter-flower" aria-hidden="true"></span>
+            </div>
+
+        </div>
+        <div class="shelf-plank-v2" aria-hidden="true"></div>
+    </section>
+
+    <!-- Trust badges -->
+    <section class="trust-section">
+        <h2>A better way to buy digital books in India <span class="heart">♡</span></h2>
+        <div class="trust-grid">
+            <div class="trust-item">
+                <span class="trust-icon"><i class="fa-solid fa-download"></i></span>
+                <h3>Instant download</h3>
+                <p>Get your book immediately after payment.</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <h3>Secure payments</h3>
+                <p>Checkout is encrypted and handled by a trusted payment partner.</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon"><i class="fa-solid fa-infinity"></i></span>
+                <h3>Yours forever</h3>
+                <p>Download as many times as you need.</p>
+            </div>
+            <div class="trust-item">
+                <span class="trust-icon"><i class="fa-regular fa-heart"></i></span>
+                <h3>Support independent</h3>
+                <p>Every purchase helps me create more stories.</p>
             </div>
         </div>
     </section>
 
-    <p class="future-note">
-        More little books are being written with care.
-        <a href="index.html#story-circle">Join the Story Circle</a> to hear when they arrive.
-    </p>
+    <!-- Payment options -->
+    <section class="payment-section">
+        <h2>Payment options that work for you <span class="heart">♡</span></h2>
+        <p>Pay the way you're comfortable. We offer multiple secure payment options
+        for India, so you can choose what's easiest for you.</p>
+        <div class="payment-grid">
+            <div class="payment-item"><i class="fa-solid fa-mobile-screen"></i><span>UPI</span><small>PhonePe, GPay, Paytm &amp; more</small></div>
+            <div class="payment-item"><i class="fa-regular fa-credit-card"></i><span>Cards</span><small>Visa, Mastercard, RuPay</small></div>
+            <div class="payment-item"><i class="fa-solid fa-building-columns"></i><span>Net Banking</span><small>All major Indian banks</small></div>
+            <div class="payment-item"><i class="fa-solid fa-wallet"></i><span>Wallets</span><small>Popular wallet apps</small></div>
+        </div>
+        <p class="payment-secure-note"><i class="fa-solid fa-lock"></i> All payments are processed securely.</p>
+        <!-- TODO: once you've integrated a payment processor, name it here, e.g. "...processed securely by Razorpay." -->
+    </section>
+
+    <div class="digital-note-band">
+        <span class="band-deco">✦ 🌙</span>
+        This is a digital product. Nothing will be shipped to your home. <span class="heart">♡</span>
+        <span class="band-deco">🌙 ✦</span>
+    </div>
 
 </main>
 
-<!-- The "open the book" reveal is built by script below (not a plain popup — the chosen book lifts from its place on the shelf) -->
-<div class="book-reveal-overlay" id="revealOverlay" aria-hidden="true"></div>
+<div class="book-peek-overlay" id="peekOverlay" aria-hidden="true"></div>
 
 <footer class="footer">
 
@@ -189,10 +247,8 @@ hamburger.addEventListener('click', () => {
 <script>
 /* =========================================================
    THE BOOKSHELF DATA
-   Add a book by adding an object to BOOKS. Add a "still being
-   written" spine by adding to FUTURE_BOOKS. The shelf, the
-   reveal panel, and all interactions render themselves from
-   these two lists — nothing else needs to change.
+   Add a book to BOOKS, or a "coming soon" spine to FUTURE_BOOKS —
+   everything on the shelf renders from these two lists.
 ========================================================= */
 
 const BOOKS = [
@@ -202,28 +258,37 @@ const BOOKS = [
         price: "₹399",
         description: "A collection of five original bedtime stories that help children understand and express their emotions through wonder.",
         cover: "images/big-feelings-book.png",
-        link: "#", // TODO: replace with your checkout / delivery link (e.g. Gumroad, Payhip, Instamojo)
-        accessory: "bookmark" // ribbon + a small pressed flower tucked in the page
+        link: "#", // TODO: replace with your checkout / delivery link
+        buttonLabel: "Bring this home",
+        buttonStyle: "primary",
+        accessory: "bookmark"
     },
     {
         id: "calm-toddler",
         title: "10 Ways to Calm a Toddler",
         price: "₹149",
         description: "Gentle, practical ideas to calm big feelings, ease tricky moments, and bring a little more peace into your everyday parenting.",
-        cover: null, // No mockup yet — a soft lettered cover renders automatically.
-                      // Once ready, set this to the image path (e.g. "images/calm-toddler-book.png")
-                      // and the real cover will appear in its place, accessory and all.
+        cover: null, // No mockup yet — replace with e.g. "images/calm-toddler-book.png" once ready
         link: "#", // TODO: replace with your checkout / delivery link
-        accessory: "doodle" // a child's crayon-doodle bookmark peeking out
+        buttonLabel: "Add to Bookshelf",
+        buttonStyle: "secondary",
+        accessory: "doodle"
     }
 ];
 
 const FUTURE_BOOKS = [
-    { title: "Wonder Talks", tone: "dustyblue" },
-    { title: "Ancient Indian Wisdom", tone: "sage" },
-    { title: "Seasonal Stories", tone: "sand" },
-    { title: "Nature Stories", tone: "terracotta" }
+    { title: "Wonder Talks Collection", tone: "blush", icon: "speech" },
+    { title: "Ancient Indian Wisdom Stories", tone: "sage", icon: "lotus" },
+    { title: "Seasonal Story Collection", tone: "sand", icon: "leaf" },
+    { title: "Nature Stories Collection", tone: "dustyblue", icon: "tree" }
 ];
+
+const ICONS = {
+    speech: `<svg viewBox="0 0 40 40" width="26" height="26"><path d="M8 10h24a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H18l-7 6v-6h-3a3 3 0 0 1-3-3V13a3 3 0 0 1 3-3z" fill="none" stroke="#fffaf5" stroke-width="2"/></svg>`,
+    lotus: `<svg viewBox="0 0 40 40" width="26" height="26"><path d="M20 30c-8 0-13-6-13-13 5 0 9 3 13 9 4-6 8-9 13-9 0 7-5 13-13 13z" fill="none" stroke="#fffaf5" stroke-width="2"/><path d="M20 30V15" stroke="#fffaf5" stroke-width="2"/></svg>`,
+    leaf: `<svg viewBox="0 0 40 40" width="26" height="26"><path d="M10 30C8 16 18 8 32 8c2 14-8 24-22 22z" fill="none" stroke="#fffaf5" stroke-width="2"/><path d="M12 28 26 12" stroke="#fffaf5" stroke-width="2"/></svg>`,
+    tree: `<svg viewBox="0 0 40 40" width="26" height="26"><circle cx="20" cy="14" r="10" fill="none" stroke="#fffaf5" stroke-width="2"/><path d="M20 22v12M15 34h10" stroke="#fffaf5" stroke-width="2" stroke-linecap="round"/></svg>`
+};
 
 const DOODLE_SVG = `<svg viewBox="0 0 50 60" width="30" height="36" aria-hidden="true">
     <rect x="2" y="2" width="46" height="56" rx="3" fill="#fdf6e6" stroke="#e3d6b8" stroke-width="1"/>
@@ -254,32 +319,43 @@ function accessoryMarkup(kind) {
 }
 
 function coverMarkup(book) {
-    const inner = book.cover
-        ? `<img src="${book.cover}" alt="${book.title} cover">`
-        : `<span class="placeholder-title">${book.title}</span>`;
-    const cls = book.cover ? "book-cover" : "book-cover book-cover--placeholder";
-    return `<div class="${cls}">${inner}${accessoryMarkup(book.accessory)}</div>`;
+    if (book.cover) {
+        return `<div class="book-cover"><img src="${book.cover}" alt="${book.title} cover">${accessoryMarkup(book.accessory)}</div>`;
+    }
+    return `<div class="book-cover book-cover--placeholder">
+        <svg class="placeholder-scene" viewBox="0 0 100 60" aria-hidden="true">
+            <path d="M20 45 a15 15 0 0 1 30 0" fill="none" stroke="#fffaf5" stroke-width="1.5" opacity="0.6"/>
+            <circle cx="72" cy="16" r="8" fill="#fffaf5" opacity="0.55"/>
+        </svg>
+        <span class="placeholder-title">${book.title}</span>
+        ${accessoryMarkup(book.accessory)}
+    </div>`;
 }
 
 function renderBooks() {
-    const shelf = document.getElementById("favourites-shelf");
-    BOOKS.forEach(book => {
-        const el = document.createElement("div");
-        el.className = "book" + (book.accessory === "bookmark" ? " book--ajar" : "");
-        el.tabIndex = 0;
-        el.setAttribute("role", "button");
-        el.setAttribute("aria-label", `Open ${book.title}`);
-        el.innerHTML = coverMarkup(book);
+    BOOKS.forEach((book, i) => {
+        const slot = document.getElementById(`book-slot-${i + 1}`);
+        const info = document.getElementById(`book-info-${i + 1}`);
+        if (!slot || !info) return;
 
-        el.addEventListener("click", () => openReveal(book, el));
-        el.addEventListener("keypress", e => {
-            if (e.key === "Enter" || e.key === " ") {
-                e.preventDefault();
-                openReveal(book, el);
-            }
+        slot.innerHTML = coverMarkup(book);
+        slot.classList.add("book", book.accessory === "bookmark" ? "book--ajar" : "");
+        slot.tabIndex = 0;
+        slot.setAttribute("role", "button");
+        slot.setAttribute("aria-label", `Look closer at ${book.title}`);
+        slot.addEventListener("click", () => openPeek(book, slot));
+        slot.addEventListener("keypress", e => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openPeek(book, slot); }
         });
 
-        shelf.appendChild(el);
+        info.innerHTML = `
+            <h3>${book.title}</h3>
+            <p class="book-info-description">${book.description}</p>
+            <p class="book-info-price">${book.price}</p>
+            <a href="${book.link}" class="shelf-btn shelf-btn--${book.buttonStyle}" target="_blank" rel="noopener">
+                ${book.buttonLabel} <span aria-hidden="true">→</span>
+            </a>
+        `;
     });
 }
 
@@ -287,51 +363,42 @@ function renderFutureBooks() {
     const row = document.getElementById("future-shelf");
     FUTURE_BOOKS.forEach(item => {
         const el = document.createElement("div");
-        el.className = `spine ${item.tone}`;
+        el.className = `spine-v2 ${item.tone}`;
         el.tabIndex = 0;
-        el.innerHTML = `<span class="spine-text">${item.title}</span><span class="spine-hint" role="tooltip">Written with care, coming soon 🤍</span>`;
+        el.innerHTML = `${ICONS[item.icon] || ""}<span class="spine-v2-text">${item.title}</span><span class="spine-hint" role="tooltip">Written with care, coming soon 🤍</span>`;
         row.appendChild(el);
     });
 }
 
-/* ---- The reveal: the chosen book lifts from the shelf and opens ---- */
-const overlay = document.getElementById("revealOverlay");
-let currentPanel = null;
+/* ---- Peek: looking closer at a book, not a product popup ---- */
+const peekOverlay = document.getElementById("peekOverlay");
+let currentPeek = null;
 let lastFocused = null;
 
-function openReveal(book, sourceEl) {
+function openPeek(book, sourceEl) {
     lastFocused = sourceEl;
-    const rect = sourceEl.getBoundingClientRect();
+    const rect = sourceEl.querySelector(".book-cover").getBoundingClientRect();
 
     const panel = document.createElement("div");
-    panel.className = "book-reveal";
+    panel.className = "book-peek";
     panel.style.top = rect.top + "px";
     panel.style.left = rect.left + "px";
     panel.style.width = rect.width + "px";
     panel.style.height = rect.height + "px";
-
     panel.innerHTML = `
-        <button class="book-reveal-close" aria-label="Close">✕</button>
-        <div class="book-reveal-content">
-            <div class="book-reveal-cover">${coverMarkup(book)}</div>
-            <div class="book-reveal-body">
-                <h3>${book.title}</h3>
-                <p class="book-reveal-description">${book.description}</p>
-                <p class="book-reveal-price">${book.price}</p>
-                <a href="${book.link}" class="bring-home-btn" target="_blank" rel="noopener">Bring this home</a>
-            </div>
-        </div>
+        <button class="book-peek-close" aria-label="Close">✕</button>
+        <div class="book-peek-inner">${coverMarkup(book)}<p class="book-peek-title">${book.title}</p></div>
     `;
 
     document.body.appendChild(panel);
-    currentPanel = panel;
-    overlay.classList.add("open");
-    overlay.setAttribute("aria-hidden", "false");
+    currentPeek = panel;
+    peekOverlay.classList.add("open");
+    peekOverlay.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
 
     requestAnimationFrame(() => {
-        const targetW = Math.min(window.innerWidth - 48, 620);
-        const targetH = Math.min(window.innerHeight - 64, 440);
+        const targetH = Math.min(window.innerHeight - 100, 480);
+        const targetW = targetH * 0.7;
         panel.style.top = (window.innerHeight - targetH) / 2 + "px";
         panel.style.left = (window.innerWidth - targetW) / 2 + "px";
         panel.style.width = targetW + "px";
@@ -340,26 +407,26 @@ function openReveal(book, sourceEl) {
         setTimeout(() => panel.classList.add("settled"), 420);
     });
 
-    panel.querySelector(".book-reveal-close").addEventListener("click", closeReveal);
-    setTimeout(() => panel.querySelector(".book-reveal-close").focus(), 450);
+    panel.querySelector(".book-peek-close").addEventListener("click", closePeek);
+    setTimeout(() => panel.querySelector(".book-peek-close").focus(), 450);
 }
 
-function closeReveal() {
-    if (!currentPanel) return;
-    currentPanel.classList.remove("settled");
-    currentPanel.classList.add("closing");
-    overlay.classList.remove("open");
-    overlay.setAttribute("aria-hidden", "true");
+function closePeek() {
+    if (!currentPeek) return;
+    currentPeek.classList.remove("settled");
+    currentPeek.classList.add("closing");
+    peekOverlay.classList.remove("open");
+    peekOverlay.setAttribute("aria-hidden", "true");
     document.body.style.overflow = "";
-    const panelToRemove = currentPanel;
-    currentPanel = null;
-    setTimeout(() => panelToRemove.remove(), 350);
+    const toRemove = currentPeek;
+    currentPeek = null;
+    setTimeout(() => toRemove.remove(), 350);
     if (lastFocused) lastFocused.focus();
 }
 
-overlay.addEventListener("click", closeReveal);
+peekOverlay.addEventListener("click", closePeek);
 document.addEventListener("keydown", e => {
-    if (e.key === "Escape" && currentPanel) closeReveal();
+    if (e.key === "Escape" && currentPeek) closePeek();
 });
 
 renderBooks();
