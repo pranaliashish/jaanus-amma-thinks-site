@@ -388,35 +388,36 @@
     transform: rotate(-2deg);
 }
 
-.spine-row-v2 { display: flex; align-items: flex-end; gap: 8px; }
+.spine-row-v2 { display: flex; align-items: flex-end; gap: 6px; }
 
 .spine-v2 {
     position: relative;
-    width: 52px;
-    height: 175px;
+    width: 66px;
     border-radius: 4px 4px 2px 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    gap: 12px;
-    padding: 14px 4px;
+    gap: 8px;
+    padding: 12px 6px;
     cursor: default;
     box-shadow: 0 8px 14px rgba(0,0,0,0.12), inset 2px 0 rgba(255,255,255,0.35), inset -2px 0 rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
+    transform-origin: bottom center;
 }
 
 .spine-v2-text {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
     font-family: 'Amatic SC', cursive;
-    font-size: 1rem;
-    letter-spacing: 0.4px;
-    color: #3d3428;
+    font-size: 0.95rem;
     line-height: 1.15;
+    letter-spacing: 0.3px;
+    color: #3d3428;
+    text-align: center;
 }
 
 .spine-v2:hover, .spine-v2:focus-visible { transform: translateY(-6px); outline: none; }
+.spine-v2.leaning { transform: rotate(7deg); margin-left: -10px; }
+.spine-v2.leaning:hover, .spine-v2.leaning:focus-visible { transform: rotate(7deg) translateY(-6px); }
 
 .spine-v2.blush { background: var(--spine-blush); }
 .spine-v2.sage { background: var(--spine-sage); }
@@ -673,8 +674,8 @@
 
     .letter-card { max-width: 260px; margin: 0 auto; }
 
-    .spine-v2 { width: 40px; height: 130px; }
-    .spine-v2-text { font-size: 0.85rem; }
+    .spine-v2 { width: 52px; }
+    .spine-v2-text { font-size: 0.82rem; }
 
     .trust-section, .payment-section { margin-top: 50px; }
 }
