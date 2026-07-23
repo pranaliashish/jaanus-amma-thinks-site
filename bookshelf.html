@@ -339,7 +339,7 @@ function renderBooks() {
         if (!slot || !info) return;
 
         slot.innerHTML = coverMarkup(book);
-        slot.classList.add("book", book.accessory === "bookmark" ? "book--ajar" : "");
+        slot.classList.toggle("book--ajar", book.accessory === "bookmark");
         slot.tabIndex = 0;
         slot.setAttribute("role", "button");
         slot.setAttribute("aria-label", `Look closer at ${book.title}`);
