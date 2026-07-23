@@ -159,6 +159,7 @@
     border-radius: 3px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.16), inset 0 2px 0 rgba(255,255,255,0.12);
     position: relative;
+   z-index: 5;
 }
 
 .shelf-plank-v2::before,
@@ -239,11 +240,11 @@
 .book-figure {
     --tilt: -2deg;
     position: relative;
-    width: 200px;
+    width: 260px;
     cursor: pointer;
     transform: rotate(var(--tilt));
     transition: transform 0.35s ease, filter 0.35s ease;
-    z-index: 3;
+    z-index: 4;
    margin-bottom: -12px;
 }
 
@@ -258,7 +259,9 @@
 .book-cover {
     position: relative;
     border-radius: 4px 8px 8px 4px;
-    box-shadow: 0 14px 20px rgba(0,0,0,0.16);
+    box-shadow:
+0 10px 10px rgba(0,0,0,.12),
+0 28px 24px rgba(0,0,0,.18);
     overflow: visible;
 }
 
