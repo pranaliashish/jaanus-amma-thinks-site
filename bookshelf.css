@@ -258,7 +258,6 @@
     position: relative;
     border-radius: 4px 8px 8px 4px;
     box-shadow: 0 14px 20px rgba(0,0,0,0.16);
-    background: var(--parchment);
     overflow: visible;
 }
 
@@ -269,7 +268,7 @@
     border-radius: 4px 8px 8px 4px;
 }
 
-.book-cover::after {
+.book-cover--placeholder::after {
     content: "";
     position: absolute;
     top: 3%; right: -1px; bottom: 3%;
@@ -279,8 +278,9 @@
 }
 
 .book-cover--placeholder {
-     aspect-ratio: 3 / 4.3;
-   display: flex;
+    aspect-ratio: 3 / 4.3;
+    background: var(--parchment);
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
