@@ -256,20 +256,18 @@
 
 .book--ajar { --tilt: -4deg; }
 
+
 .book-cover {
-    position: relative;
-    border-radius: 4px 8px 8px 4px;
-    box-shadow:
-0 10px 10px rgba(0,0,0,.12),
-0 28px 24px rgba(0,0,0,.18);
-    overflow: visible;
+    box-shadow: none;
+    border-radius: 0;
 }
 
 .book-cover img {
     display: block;
-    width: 100%;
+    width: auto;
+    max-width: 260px;
     height: auto;
-    border-radius: 4px 8px 8px 4px;
+    border-radius: 0;
 }
 
 .book-cover--placeholder::after {
