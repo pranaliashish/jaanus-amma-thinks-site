@@ -371,7 +371,7 @@
 .book-info h3 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: var(--midnight);
     margin-bottom: 10px;
     line-height: 1.2;
@@ -379,7 +379,7 @@
 
 .book-info-description {
     color: var(--text-light);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.75;
     margin-bottom: 14px;
 }
