@@ -240,7 +240,7 @@
 .shelf-scene--one .sticky-note{
     position:absolute;
     left:70px;
-    top:-60px;
+    top:-200px;
 }
 
 /* Vase */
@@ -248,7 +248,7 @@
 .shelf-scene--one .prop-jar{
     width:250px;
     left:-80px;
-    bottom:-50px;
+    bottom:-40px;
 }
 
 /* Birdhouse */
@@ -264,7 +264,7 @@
 .shelf-scene--one .prop-stack{
     width:200px;
     left:95px;
-    bottom:-20px;
+    bottom:-23px;
 }
 
 .shelf-scene--one .prop-lantern{
