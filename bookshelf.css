@@ -417,6 +417,43 @@
     box-shadow: 0 8px 18px rgba(212,162,76,0.22);
 }
 
+/* Shelf 2 left decorative layout */
+
+.shelf-scene--two .props-cluster{
+    position: relative;
+    width: 220px;
+    height: 180px;
+}
+
+.shelf-scene--two .prop{
+    position: absolute;
+}
+
+/* Sticky Note */
+
+.shelf-scene--two .sticky-note{
+    position:absolute;
+    left:20px;
+    top:-140px;
+}
+
+/* Star */
+
+.shelf-scene--two .star-ornament{
+    position:absolute;
+    left:15px;
+    bottom:15px;
+}
+
+/* Potted Plant */
+
+.shelf-scene--two .prop-plant-left{
+    width:120px;
+    position:absolute;
+    left:70px;
+    bottom:-10px;
+}
+
 /* ---------- Coming soon spines ---------- */
 .coming-soon-cluster {
     display: flex;
