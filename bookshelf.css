@@ -159,7 +159,6 @@
     border-radius: 3px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.16), inset 0 2px 0 rgba(255,255,255,0.12);
     position: relative;
-   z-index: 5;
 }
 
 .shelf-plank-v2::before,
