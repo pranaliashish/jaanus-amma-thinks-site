@@ -177,21 +177,22 @@
 
 .shelf-row + .shelf-row { margin-top: 56px; }
 
-/* ---------- Prop clusters ---------- */
-.props-cluster {
-    position: relative;
-    width: 240px;   /* Adjust for each shelf later */
-    height: 180px;
-    z-index: 1;
+/* ---------- Shelf 1 Decorative Layout ---------- */
+
+.shelf-scene--one .props-cluster{
+    position:relative;
+    width:230px;
+    height:180px;
+    z-index:2;
 }
 
-.prop { display: block; filter: drop-shadow(0 5px 6px rgba(0,0,0,0.12)); }
-.prop-jar { width: 110px; }
-.prop-house { width: 100px; }
-.prop-lantern { width: 110px; animation: lanternGlow 5s ease-in-out infinite; }
-.prop-stack { width: 80px; }
-.prop-vine { width: 90px; opacity: 0.9; }
-.prop-plant { width: 100px; }
+.shelf-scene--one .prop{
+    position:absolute;
+    display:block;
+    filter:drop-shadow(0 5px 6px rgba(0,0,0,.12));
+}
+
+
 
 @keyframes lanternGlow {
     0%, 100% { filter: drop-shadow(0 0 8px rgba(230,201,141,0.4)); }
@@ -234,6 +235,50 @@
 .note-arrow { display: block; margin: 6px auto 0; }
 
 .props-cluster--left { flex-direction: column; align-items: center; }
+
+/* Sticky Note */
+
+.shelf-scene--one .sticky-note{
+    position:absolute;
+    left:20px;
+    top:-30px;
+}
+
+/* Vase */
+
+.shelf-scene--one .prop-jar{
+    width:42px;
+    left:55px;
+    bottom:70px;
+}
+
+/* Birdhouse */
+
+.shelf-scene--one .prop-house{
+    width:62px;
+    left:35px;
+    bottom:0;
+}
+
+/* Book Stack */
+
+.shelf-scene--one .prop-stack{
+    width:55px;
+    left:95px;
+    bottom:8px;
+}
+
+.shelf-scene--one .prop-lantern{
+    width:60px;
+    left:5px;
+    bottom:0;
+}
+
+.shelf-scene--one .prop-vine{
+    width:90px;
+    left:75px;
+    bottom:0;
+}
 
 /* ---------- Books on the shelf ---------- */
 .book-figure {
