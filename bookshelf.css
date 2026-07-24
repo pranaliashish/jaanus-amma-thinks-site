@@ -472,7 +472,7 @@
 .shelf-scene--two .book-info{
     position:absolute;
     left:430px;
-    bottom:50px;
+    bottom:30px;
     margin:0;
     transform:none;
 }
