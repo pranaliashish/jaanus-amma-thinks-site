@@ -434,6 +434,14 @@
     position: absolute;
 }
 
+.shelf-scene--two .props-cluster--left{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:220px;
+    height:180px;
+}
+
 /* Sticky Note */
 
 .shelf-scene--two .sticky-note{
