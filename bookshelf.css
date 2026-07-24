@@ -445,8 +445,8 @@
 .shelf-scene--two .prop-star{
     width:270px;
     position:absolute;
-    left:5px;
-    bottom:-50px;
+    left:-20px;
+    bottom:-53px;
 }
 
 /* Potted Plant */
@@ -471,7 +471,7 @@
 
 .shelf-scene--two .book-info{
     position:absolute;
-    left:450px;
+    left:430px;
     bottom:50px;
     margin:0;
     transform:none;
