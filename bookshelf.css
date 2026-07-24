@@ -363,7 +363,7 @@
 /* ---------- Book info text block ---------- */
 .book-info {
     max-width: 250px;
-    margin-left: 20px;
+    margin-left: 40px;
    top: -50px;
     z-index: 1;
 }
