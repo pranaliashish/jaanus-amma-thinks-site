@@ -419,6 +419,11 @@
 
 /* Shelf 2 left decorative layout */
 
+.shelf-scene--two{
+    position: relative;
+    height: 500px;
+}
+
 .shelf-scene--two .props-cluster{
     position: relative;
     width: 220px;
@@ -452,6 +457,25 @@
     position:absolute;
     left:70px;
     bottom:-10px;
+}
+
+/* Book */
+
+.shelf-scene--two .book-figure{
+    position:absolute;
+    left:280px;
+    bottom:0;
+    margin:0;
+}
+
+/* Details */
+
+.shelf-scene--two .book-info{
+    position:absolute;
+    left:620px;
+    bottom:90px;
+    margin:0;
+    transform:none;
 }
 
 /* ---------- Coming soon spines ---------- */
