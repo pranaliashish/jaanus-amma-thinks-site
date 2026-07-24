@@ -299,6 +299,7 @@
     transition: transform 0.35s ease, filter 0.35s ease;
     z-index: 4;
    margin-bottom: -12px;
+    margin-left: 50px;
 }
 
 .book-figure:hover, .book-figure:focus-visible {
@@ -362,6 +363,8 @@
 /* ---------- Book info text block ---------- */
 .book-info {
     max-width: 250px;
+    margin-left: 20px;
+   top: -35px;
     z-index: 1;
 }
 
