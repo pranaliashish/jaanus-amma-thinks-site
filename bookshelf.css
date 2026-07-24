@@ -364,7 +364,7 @@
 .book-info {
     max-width: 255px;
     margin-left: 50px;
-   transform: translateY(-30px);
+   transform: translateY(-15px);
     z-index: 1;
 }
 
