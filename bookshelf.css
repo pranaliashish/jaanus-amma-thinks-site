@@ -256,7 +256,7 @@
 .shelf-scene--one .prop-house{
     width:250px;
     left:0px;
-    bottom:-28px;
+    bottom:-30px;
 }
 
 /* Book Stack */
@@ -270,7 +270,7 @@
 /*Lantern*/
 .shelf-scene--one .prop-lantern{
     width:250px;
-    left:-10px;
+    left:-40px;
     bottom:-30px;
 }
 
@@ -286,8 +286,8 @@
 
 .shelf-scene--one .prop-plant{
     width:250px;
-    left:150px;
-    bottom:45px;
+    left:100px;
+    bottom:0px;
 }
 /* ---------- Books on the shelf ---------- */
 .book-figure {
