@@ -437,7 +437,7 @@
 .shelf-scene--two .sticky-note{
     position:absolute;
     left:50px;
-    top:-50px;
+    top:-100px;
 }
 
 /* Star */
