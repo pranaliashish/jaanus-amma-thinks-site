@@ -424,16 +424,6 @@
     height: 500px;
 }
 
-.shelf-scene--two .props-cluster{
-    position: relative;
-    width: 220px;
-    height: 180px;
-}
-
-.shelf-scene--two .prop{
-    position: absolute;
-}
-
 .shelf-scene--two .props-cluster--left{
     position:absolute;
     left:0;
@@ -447,7 +437,7 @@
 .shelf-scene--two .sticky-note{
     position:absolute;
     left:0px;
-    top:-150px;
+    top:0px;
 }
 
 /* Star */
