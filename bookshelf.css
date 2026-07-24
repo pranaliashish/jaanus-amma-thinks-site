@@ -179,10 +179,9 @@
 
 /* ---------- Prop clusters ---------- */
 .props-cluster {
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
     position: relative;
+    width: 240px;   /* Adjust for each shelf later */
+    height: 180px;
     z-index: 1;
 }
 
