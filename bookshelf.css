@@ -308,7 +308,7 @@
 .book-cover img {
     display: block;
     width: auto;
-    max-width: 260px;
+    max-width: 300px;
     height: auto;
     border-radius: 0;
 }
@@ -345,14 +345,6 @@
 /* ---------- Accessories ---------- */
 .accessory { position: absolute; pointer-events: none; }
 
-.ribbon-bookmark {
-    top: -16px; left: 22%;
-    width: 15px; height: 60px;
-    background: linear-gradient(180deg, var(--gold), #b9843a);
-    clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-    transform: rotate(-5deg);
-}
 
 .pressed-flower { top: -10px; right: 18%; transform: rotate(12deg); }
 .doodle-bookmark { top: -18px; right: 10%; transform: rotate(8deg); filter: drop-shadow(0 4px 6px rgba(0,0,0,0.12)); }
