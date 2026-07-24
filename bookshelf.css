@@ -614,7 +614,7 @@
 /* ---------- Trust badges ---------- */
 .trust-section {
     max-width: 1000px;
-    margin: 70px auto 0;
+    margin: 40px auto 0;
     padding: 0 6%;
     text-align: center;
 }
@@ -653,7 +653,7 @@
 /* ---------- Payment options ---------- */
 .payment-section {
     max-width: 800px;
-    margin: 70px auto 0;
+    margin: 40px auto 0;
     padding: 0 6%;
     text-align: center;
 }
