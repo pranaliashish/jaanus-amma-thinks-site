@@ -239,8 +239,8 @@
 
 .shelf-scene--one .sticky-note{
     position:absolute;
-    left:70px;
-    top:-200px;
+    left:100px;
+    top:-250px;
 }
 
 /* Vase */
@@ -254,7 +254,7 @@
 /* Birdhouse */
 
 .shelf-scene--one .prop-house{
-    width:200px;
+    width:250px;
     left:30px;
     bottom:-25px;
 }
@@ -264,21 +264,30 @@
 .shelf-scene--one .prop-stack{
     width:200px;
     left:95px;
-    bottom:-23px;
+    bottom:-25px;
 }
 
 .shelf-scene--one .prop-lantern{
     width:200px;
     left:5px;
-    bottom:0;
+    bottom:-30px;
 }
+
+/* Standing Books */
 
 .shelf-scene--one .prop-vine{
-    width:90px;
-    left:75px;
+    width:200px;
+    left:85px;
     bottom:0;
 }
 
+/* Creeper */
+
+.shelf-scene--one .prop-plant{
+    width:80px;
+    left:150px;
+    bottom:45px;
+}
 /* ---------- Books on the shelf ---------- */
 .book-figure {
     --tilt: -2deg;
