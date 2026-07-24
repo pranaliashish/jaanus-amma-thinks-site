@@ -350,8 +350,11 @@ function renderBooks() {
         });
 
         info.innerHTML = `
-            <h3>${book.title}</h3>
-            <p class="book-info-description">${book.description}</p>
+           <h3>${book.title}</h3>
+
+<p class="book-subtitle">${book.subtitle}</p>
+
+<p class="book-info-description">${book.description}</p>
             <p class="book-info-price">${book.price}</p>
             <a href="${book.link}" class="shelf-btn shelf-btn--${book.buttonStyle}" target="_blank" rel="noopener">
                 ${book.buttonLabel} <span aria-hidden="true">→</span>
