@@ -213,7 +213,7 @@
     padding: 30px 18px 10px;
     border-radius: 4px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.14);
-    transform: rotate(-6deg);
+    transform: rotate(-8deg);
     margin-bottom: 8px;
     width: 130px;
 }
@@ -239,7 +239,7 @@
 
 .shelf-scene--one .sticky-note{
     position:absolute;
-    left:155px;
+    left:165px;
     top:-250px;
 }
 
