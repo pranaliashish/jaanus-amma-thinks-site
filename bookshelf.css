@@ -437,7 +437,7 @@
 .shelf-scene--two .sticky-note{
     position:absolute;
     left:50px;
-    bottom:300px;
+    top:0;
 }
 
 /* Star */
@@ -446,7 +446,7 @@
     width:270px;
     position:absolute;
     left:25px;
-    bottom:-50px;
+    bottom:-100px;
 }
 
 /* Potted Plant */
@@ -454,7 +454,7 @@
 .shelf-scene--two .prop-plant-left{
     width:350px;
     position:absolute;
-    left:-50px;
+    left:-100px;
     bottom:-25px;
 }
 
@@ -471,7 +471,7 @@
 
 .shelf-scene--two .book-info{
     position:absolute;
-    left:420px;
+    left:450px;
     bottom:50px;
     margin:0;
     transform:none;
