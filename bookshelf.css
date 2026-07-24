@@ -248,16 +248,16 @@
 
 .shelf-scene--one .prop-jar{
     width:250px;
-    left:20px;
-    bottom:0px;
+    left:-50px;
+    bottom:-30px;
 }
 
 /* Birdhouse */
 
 .shelf-scene--one .prop-house{
     width:200px;
-    left:35px;
-    bottom:-20px;
+    left:30px;
+    bottom:-25px;
 }
 
 /* Book Stack */
@@ -265,7 +265,7 @@
 .shelf-scene--one .prop-stack{
     width:200px;
     left:95px;
-    bottom:-15px;
+    bottom:-20px;
 }
 
 .shelf-scene--one .prop-lantern{
