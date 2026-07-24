@@ -437,13 +437,13 @@
 .shelf-scene--two .sticky-note{
     position:absolute;
     left:50px;
-    top:-100px;
+    bottom:100px;
 }
 
 /* Star */
 
 .shelf-scene--two .prop-star{
-    width:100px;
+    width:200px;
     position:absolute;
     left:25px;
     bottom:8px;
@@ -454,15 +454,15 @@
 .shelf-scene--two .prop-plant-left{
     width:350px;
     position:absolute;
-    left:10px;
-    bottom:-15px;
+    left:-10px;
+    bottom:-25px;
 }
 
 /* Book */
 
 .shelf-scene--two .book-figure{
     position:absolute;
-    left:150px;
+    left:130px;
     bottom:-35px;
     margin:0;
 }
