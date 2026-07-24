@@ -479,6 +479,16 @@
 }
 
 /* ---------- Coming soon spines ---------- */
+
+/* Coming Soon */
+
+.shelf-scene--two .coming-soon-cluster{
+    position:absolute;
+    right:0;
+    bottom:0;
+    margin:0;
+}
+
 .coming-soon-cluster {
     display: flex;
     flex-direction: column;
