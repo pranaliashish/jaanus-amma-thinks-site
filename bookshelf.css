@@ -239,7 +239,7 @@
 
 .shelf-scene--one .sticky-note{
     position:absolute;
-    left:100px;
+    left:130px;
     top:-250px;
 }
 
@@ -255,8 +255,8 @@
 
 .shelf-scene--one .prop-house{
     width:250px;
-    left:30px;
-    bottom:-25px;
+    left:0px;
+    bottom:-28px;
 }
 
 /* Book Stack */
@@ -264,12 +264,13 @@
 .shelf-scene--one .prop-stack{
     width:200px;
     left:95px;
-    bottom:-25px;
+    bottom:-30px;
 }
 
+/*Lantern*/
 .shelf-scene--one .prop-lantern{
-    width:200px;
-    left:5px;
+    width:250px;
+    left:-10px;
     bottom:-30px;
 }
 
@@ -278,13 +279,13 @@
 .shelf-scene--one .prop-vine{
     width:200px;
     left:85px;
-    bottom:0;
+    bottom:-10px;
 }
 
 /* Creeper */
 
 .shelf-scene--one .prop-plant{
-    width:80px;
+    width:250px;
     left:150px;
     bottom:45px;
 }
