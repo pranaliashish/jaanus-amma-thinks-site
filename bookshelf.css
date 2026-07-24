@@ -213,7 +213,7 @@
     padding: 30px 18px 10px;
     border-radius: 4px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.14);
-    transform: rotate(-3deg);
+    transform: rotate(-6deg);
     margin-bottom: 8px;
     width: 130px;
 }
@@ -223,7 +223,7 @@
     position: absolute;
     top: -10px;
     left: 50%;
-    transform: translateX(-50%) rotate(-6deg);
+    transform: translateX(-50%) rotate(-8deg);
     width: 46px;
     height: 16px;
     background: var(--tape);
@@ -239,7 +239,7 @@
 
 .shelf-scene--one .sticky-note{
     position:absolute;
-    left:150px;
+    left:155px;
     top:-250px;
 }
 
@@ -270,7 +270,7 @@
 /*Lantern*/
 .shelf-scene--one .prop-lantern{
     width:250px;
-    left:-60px;
+    left:-80px;
     bottom:-32px;
 }
 
@@ -278,7 +278,7 @@
 
 .shelf-scene--one .prop-vine{
     width:200px;
-    left:65px;
+    left:45px;
     bottom:-10px;
 }
 
@@ -286,7 +286,7 @@
 
 .shelf-scene--one .prop-plant{
     width:250px;
-    left:80px;
+    left:60px;
     bottom:-158px;
 }
 /* ---------- Books on the shelf ---------- */
@@ -363,7 +363,7 @@
 /* ---------- Book info text block ---------- */
 .book-info {
     max-width: 250px;
-    margin-left: 40px;
+    margin-left: 50px;
    top: -50px;
     z-index: 1;
 }
