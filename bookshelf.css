@@ -579,7 +579,7 @@
     line-height: 1.5;
     color: #4a4038;
     box-shadow: 0 16px 30px rgba(0,0,0,0.14);
-    transform: rotate(8deg);
+    transform: rotate(5deg);
     clip-path: polygon(0% 2%, 3% 0%, 97% 1%, 100% 3%, 99% 97%, 96% 100%, 2% 99%, 0% 96%);
     z-index: 1;
 }
