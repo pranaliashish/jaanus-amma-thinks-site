@@ -461,8 +461,8 @@
 
 .shelf-scene--two .book-figure{
     position:absolute;
-    left:280px;
-    bottom:0;
+    left:230px;
+    bottom:-30px;
     margin:0;
 }
 
@@ -470,8 +470,8 @@
 
 .shelf-scene--two .book-info{
     position:absolute;
-    left:620px;
-    bottom:90px;
+    left:550px;
+    bottom:50px;
     margin:0;
     transform:none;
 }
@@ -482,7 +482,7 @@
 
 .shelf-scene--two .coming-soon-cluster{
     position:absolute;
-    right:0;
+    right:60px;
     bottom:0;
     margin:0;
 }
