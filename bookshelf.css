@@ -211,7 +211,7 @@
     font-weight: 700;
     text-align: center;
     line-height: 1.25;
-    padding: 16px 18px 10px;
+    padding: 30px 18px 10px;
     border-radius: 4px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.14);
     transform: rotate(-3deg);
@@ -247,25 +247,25 @@
 /* Vase */
 
 .shelf-scene--one .prop-jar{
-    width:150px;
-    left:55px;
-    bottom:70px;
+    width:250px;
+    left:20px;
+    bottom:0px;
 }
 
 /* Birdhouse */
 
 .shelf-scene--one .prop-house{
-    width:150px;
+    width:200px;
     left:35px;
-    bottom:0;
+    bottom:-20px;
 }
 
 /* Book Stack */
 
 .shelf-scene--one .prop-stack{
-    width:150px;
+    width:200px;
     left:95px;
-    bottom:8px;
+    bottom:-15px;
 }
 
 .shelf-scene--one .prop-lantern{
