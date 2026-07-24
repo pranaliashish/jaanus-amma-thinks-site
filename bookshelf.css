@@ -437,7 +437,7 @@
 .shelf-scene--two .sticky-note{
     position:absolute;
     left:50px;
-    top:0;
+    top:-300px;
 }
 
 /* Star */
@@ -445,8 +445,8 @@
 .shelf-scene--two .prop-star{
     width:270px;
     position:absolute;
-    left:25px;
-    bottom:-100px;
+    left:5px;
+    bottom:-50px;
 }
 
 /* Potted Plant */
