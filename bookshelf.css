@@ -451,10 +451,10 @@
 /* Potted Plant */
 
 .shelf-scene--two .prop-plant-left{
-    width:250px;
+    width:300px;
     position:absolute;
-    left:70px;
-    bottom:-10px;
+    left:50px;
+    bottom:0px;
 }
 
 /* Book */
