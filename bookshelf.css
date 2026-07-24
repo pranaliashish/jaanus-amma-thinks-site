@@ -247,7 +247,7 @@
 /* Vase */
 
 .shelf-scene--one .prop-jar{
-    width:42px;
+    width:150px;
     left:55px;
     bottom:70px;
 }
@@ -255,7 +255,7 @@
 /* Birdhouse */
 
 .shelf-scene--one .prop-house{
-    width:62px;
+    width:150px;
     left:35px;
     bottom:0;
 }
@@ -263,7 +263,7 @@
 /* Book Stack */
 
 .shelf-scene--one .prop-stack{
-    width:55px;
+    width:150px;
     left:95px;
     bottom:8px;
 }
