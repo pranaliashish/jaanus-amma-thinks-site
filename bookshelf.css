@@ -442,27 +442,28 @@
 
 /* Star */
 
-.shelf-scene--two .star-ornament{
+.shelf-scene--two .prop-star{
+    width:100px;
     position:absolute;
-    left:15px;
-    bottom:15px;
+    left:25px;
+    bottom:8px;
 }
 
 /* Potted Plant */
 
 .shelf-scene--two .prop-plant-left{
-    width:300px;
+    width:350px;
     position:absolute;
-    left:50px;
-    bottom:0px;
+    left:10px;
+    bottom:-15px;
 }
 
 /* Book */
 
 .shelf-scene--two .book-figure{
     position:absolute;
-    left:230px;
-    bottom:-30px;
+    left:150px;
+    bottom:-35px;
     margin:0;
 }
 
@@ -470,7 +471,7 @@
 
 .shelf-scene--two .book-info{
     position:absolute;
-    left:550px;
+    left:400px;
     bottom:50px;
     margin:0;
     transform:none;
@@ -482,7 +483,7 @@
 
 .shelf-scene--two .coming-soon-cluster{
     position:absolute;
-    right:60px;
+    right:250px;
     bottom:0;
     margin:0;
 }
