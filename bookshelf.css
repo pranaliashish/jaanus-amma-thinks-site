@@ -239,7 +239,7 @@
 
 .shelf-scene--one .sticky-note{
     position:absolute;
-    left:130px;
+    left:135px;
     top:-250px;
 }
 
@@ -271,7 +271,7 @@
 .shelf-scene--one .prop-lantern{
     width:250px;
     left:-40px;
-    bottom:-30px;
+    bottom:-32px;
 }
 
 /* Standing Books */
