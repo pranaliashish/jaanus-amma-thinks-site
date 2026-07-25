@@ -794,96 +794,243 @@
 }
 
 @media (max-width: 768px) {
-    .bookshelf-page-v2 { padding-top: 88px; }
- .bookshelf-hero{
-    padding:0 24px 50px;
-    max-width:100%;
-}
-   .hero-copy{
-    font-size:.95rem;
-    line-height:1.8;
-}
-    .hero-title { font-size: 2.4rem; }
+
+    /* ============================================================
+       PAGE / HERO
+    ============================================================ */
+    .bookshelf-page-v2 {
+        padding-top: 88px;
+    }
+    .bookshelf-hero {
+        padding: 0 24px 44px;
+        max-width: 100%;
+    }
+    .hero-title  { font-size: 2.4rem; }
     .hero-tagline { font-size: 1.3rem; }
+    .hero-copy {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
 
-    .shelf-scene { justify-content: center; text-align: center; }
+    /* ============================================================
+       SHELF SCENE — grid recomposition
+       Desktop hand-places every piece with absolute px offsets
+       tuned for a wide canvas. Mobile rebuilds the same 4 pieces
+       (props-left, book, info, props-right / coming-soon) as a
+       2-column grid:
+           row 1:  book  | info      <- book+details stay side by side
+           row 2:  left  | right     <- decor clusters flank, still "on the shelf"
+    ============================================================ */
+    .shelf-scene--one,
+    .shelf-scene--two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "book info"
+            "left  right";
+        align-items: end;
+        column-gap: 14px;
+        row-gap: 26px;
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .shelf-scene--two {
+        grid-template-areas:
+            "book info"
+            "left  soon";
+    }
 
-   .shelf-scene--one{
-    display:grid;
-    grid-template-columns:70px 120px 150px;
-    align-items:end;
-    justify-content:center;
-    column-gap:10px;
+    /* ---- Book: the hero. Kept position:relative (inherited from
+       base) so the bookmark/flower accessories still anchor to it —
+       do not set position:static here. ---- */
+    .shelf-scene--one .book-figure,
+    .shelf-scene--two .book-figure {
+        grid-area: book;
+        width: 100%;
+        max-width: 170px;
+        margin: 0;
+        transform: none;
+        justify-self: end;
+    }
 
-    height:auto;
-}
+    /* The actual fix for the book/text overlap: base CSS sizes the
+       cover img itself (width:auto; max-width:330px), so shrinking
+       .book-figure alone did nothing — the image ignored it. */
+    .shelf-scene--one .book-cover img,
+    .shelf-scene--two .book-cover img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 
-   .shelf-scene--one .book-info{
+    /* ---- Book info: stays beside the book, never under the shelf ---- */
+    .shelf-scene--one .book-info {
+        grid-area: info;
+        margin: 0;
+        transform: none;
+        width: 100%;
+        text-align: left;
+        justify-self: start;
+    }
+    .shelf-scene--two .book-info {
+        grid-area: info;
+        position: static;
+        left: auto;
+        bottom: auto;
+        margin: 0;
+        transform: none;
+        width: 100%;
+        text-align: left;
+        justify-self: start;
+    }
+    .book-info h3 {
+        font-size: 1.05rem;
+        line-height: 1.25;
+        margin-bottom: 6px;
+    }
+    .book-subtitle       { font-size: 0.72rem; }
+    .book-info-description {
+        font-size: 0.78rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+    .book-info-price     { font-size: 1.1rem; margin-bottom: 10px; }
+    .shelf-btn            { padding: 10px 18px; font-size: 0.82rem; }
 
-    width:150px;
+    /* ---- Props clusters: reset desktop's absolute dollhouse
+       layout into bottom-aligned, wrapping rows — so any cluster
+       still reads as trinkets sitting on the shelf, and nothing
+       clips or overflows on very narrow phones. ---- */
+    .shelf-scene--one .props-cluster--left,
+    .shelf-scene--one .props-cluster--right,
+    .shelf-scene--two .props-cluster--left {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 6px;
+    }
+    .shelf-scene--one .props-cluster--left  { grid-area: left; }
+    .shelf-scene--one .props-cluster--right { grid-area: right; }
+    .shelf-scene--two .props-cluster--left  { grid-area: left; }
 
-    margin:0;
-    transform:none;
+    .shelf-scene--two .coming-soon-cluster {
+        grid-area: soon;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin: 0;
+        width: 100%;
+    }
 
-    text-align:left;
-}
-   .shelf-scene--one .book-info h3{
-    font-size:1.05rem;
-    line-height:1.2;
-}
+    /* ---- Individual props: strip absolute left/bottom, resize
+       down to "shelf trinket" scale (width only — height follows
+       naturally, same pattern the desktop rules already use) ---- */
+    .shelf-scene--one .prop {
+        position: static;
+        left: auto;
+        bottom: auto;
+    }
+    .shelf-scene--one .prop-jar     { width: 70px; }
+    .shelf-scene--one .prop-house   { width: 62px; }
+    .shelf-scene--one .prop-stack   { width: 54px; }
+    .shelf-scene--one .prop-lantern { width: 62px; }
+    .shelf-scene--one .prop-vine    { width: 52px; }
+    .shelf-scene--one .prop-plant   { width: 72px; }
 
-   .book-info-description{
-    font-size:.8rem;
-    line-height:1.45;
-}
-   
-    .shelf-scene--one .book-figure{
+    .shelf-scene--two .prop-star,
+    .shelf-scene--two .prop-plant-left {
+        position: static;
+        left: auto;
+        bottom: auto;
+    }
+    .shelf-scene--two .prop-star       { width: 76px; }
+    .shelf-scene--two .prop-plant-left { width: 90px; }
 
-    width:120px;
+    /* ---- Sticky notes: small tag tucked into the cluster row
+       instead of desktop's far-above floated placement. The arrow
+       was drawn to point at desktop-only geometry, so it's hidden. ---- */
+    .shelf-scene--one .sticky-note,
+    .shelf-scene--two .sticky-note {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 84px;
+        font-size: 0.75rem;
+        padding: 18px 8px 8px;
+    }
+    .shelf-scene--one .sticky-note::before,
+    .shelf-scene--two .sticky-note::before {
+        width: 30px;
+        height: 12px;
+    }
+    .shelf-scene--one .note-arrow,
+    .shelf-scene--two .note-arrow {
+        display: none;
+    }
 
-    margin:0;
-    transform:none;
-        position:relative;
-}
+    /* ---- Coming soon spines ---- */
+    .spine-row-v2      { flex-wrap: wrap; justify-content: center; }
+    .spine-v2          { width: 46px; }
+    .spine-v2-text     { font-size: 0.72rem; }
+    .coming-soon-tag   { font-size: 1.05rem; padding: 6px 16px; }
 
-   .book-info-price{
-    margin-bottom:10px;
-}
+    /* ---- Letter card: becomes its own centered note below shelf
+       two, no longer pulled up -300px to overlap the scene ---- */
+    .letter-card {
+        position: relative;
+        top: 0;
+        margin: 32px auto 0;
+        max-width: 260px;
+    }
 
-   .shelf-btn{
-    padding:10px 18px;
-    font-size:.85rem;
-}
-   
-   .shelf-scene--one .sticky-note{
-
-    left:135px;
-    top:95px;
-
-    width:95px;
-
-    font-size:1rem;
-}
-      
-    .props-cluster { justify-content: center; }
-   
-.shelf-scene--one .prop-jar{
-
-    width:120px;
-
-    left:-18px;
-    bottom:-20px;
-}
-    .letter-card { max-width: 260px; margin: 0 auto; }
-
-    .spine-v2 { width: 52px; }
-    .spine-v2-text { font-size: 0.82rem; }
-
+    /* ============================================================
+       SHELF ROW SPACING
+    ============================================================ */
+    .shelf-row + .shelf-row { margin-top: 60px; }
     .trust-section, .payment-section { margin-top: 50px; }
 }
 
 @media (max-width: 480px) {
-  
-    
-    .sticky-note { width: 110px; font-size: 1.15rem; }
+
+    /* Tighten the same composition for small phones — proportions
+       shrink further, but the grid structure (book|info, left|right)
+       stays identical to the 768px block. */
+    .shelf-scene--one,
+    .shelf-scene--two {
+        row-gap: 20px;
+    }
+    .shelf-scene--one .book-figure,
+    .shelf-scene--two .book-figure {
+        max-width: 130px;
+    }
+
+    .shelf-scene--one .prop-jar     { width: 58px; }
+    .shelf-scene--one .prop-house   { width: 52px; }
+    .shelf-scene--one .prop-stack   { width: 44px; }
+    .shelf-scene--one .prop-lantern { width: 52px; }
+    .shelf-scene--one .prop-vine    { width: 44px; }
+    .shelf-scene--one .prop-plant   { width: 60px; }
+    .shelf-scene--two .prop-star       { width: 62px; }
+    .shelf-scene--two .prop-plant-left { width: 74px; }
+
+    .shelf-scene--one .sticky-note,
+    .shelf-scene--two .sticky-note {
+        width: 70px;
+        font-size: 0.68rem;
+    }
+
+    .spine-v2 { width: 40px; }
+
+    .letter-card {
+        max-width: 220px;
+        font-size: 1.05rem;
+        padding: 20px 18px;
+    }
 }
