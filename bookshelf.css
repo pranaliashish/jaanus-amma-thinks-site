@@ -819,7 +819,7 @@
     position:absolute;
 
     left:170px;
-    top:15px;
+    top:70px;
 
     width:150px;
 
@@ -828,10 +828,19 @@
 
     text-align:left;
 }
+   .shelf-scene--one .book-info h3{
+    font-size:1.05rem;
+    line-height:1.2;
+}
+
+   .book-info-description{
+    font-size:.8rem;
+    line-height:1.45;
+}
    
     .shelf-scene--one .book-figure{
     position:absolute;
-    left:18px;
+    left:0;
     bottom:-10px;
 
     width:125px;
@@ -840,6 +849,15 @@
     transform:none;
 }
 
+   .book-info-price{
+    margin-bottom:10px;
+}
+
+   .shelf-btn{
+    padding:10px 18px;
+    font-size:.85rem;
+}
+   
    .shelf-scene--one .sticky-note{
 
     left:135px;
