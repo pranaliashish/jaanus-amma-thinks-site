@@ -71,13 +71,7 @@
     max-width: 640px;
     margin: 0 auto;
     text-align: center;
-     padding:0 24px 50px;
-    max-width:100%;
-}
-
-.hero-copy{
-    font-size:.95rem;
-    line-height:1.8;
+    padding:10px 8% 50px;
 }
 
 .hero-mark {
