@@ -806,27 +806,9 @@
     .hero-tagline { font-size: 1.3rem; }
 
     .shelf-scene { justify-content: center; text-align: center; }
-   .shelf-scene--one{
-    display:flex;
-    align-items:flex-end;
-    justify-content:center;
-    gap:16px;
-    flex-wrap:nowrap;
-    height:auto;
-}
-   .shelf-scene--one .book-info{
-    width:160px;
-    margin:0;
-    text-align:left;
-    transform:none;
-} 
       
     .props-cluster { justify-content: center; }
-    .shelf-scene--one .book-figure{
-       width: 135px;
-       margin:0;
-    transform:none;
-    }
+   
 
     .letter-card { max-width: 260px; margin: 0 auto; }
 
@@ -837,6 +819,27 @@
 }
 
 @media (max-width: 480px) {
-    .book-figure { width: 130px; }
+   .shelf-scene--one{
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:nowrap;
+    height:auto;
+}
+
+     .shelf-scene--one .book-info{
+    width:160px;
+    margin:0;
+    text-align:left;
+    transform:none;
+} 
+
+    .shelf-scene--one .book-figure{
+       width: 110px;
+       margin:0;
+    transform:none;
+    }
+    
     .sticky-note { width: 110px; font-size: 1.15rem; }
 }
