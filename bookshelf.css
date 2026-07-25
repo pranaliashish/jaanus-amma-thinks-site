@@ -808,18 +808,17 @@
 
     .shelf-scene { justify-content: center; text-align: center; }
 
-    .shelf-scene--one{
-    position:relative;
-    height:330px;
-    display:block;
+   .shelf-scene--one{
+    display:grid;
+    grid-template-columns:70px 120px 150px;
+    align-items:end;
+    justify-content:center;
+    column-gap:10px;
+
+    height:auto;
 }
 
    .shelf-scene--one .book-info{
-
-    position:absolute;
-
-    left:170px;
-    top:70px;
 
     width:150px;
 
@@ -839,14 +838,12 @@
 }
    
     .shelf-scene--one .book-figure{
-    position:absolute;
-    left:0;
-    bottom:-10px;
 
-    width:125px;
+    width:120px;
 
     margin:0;
     transform:none;
+        position:relative;
 }
 
    .book-info-price{
