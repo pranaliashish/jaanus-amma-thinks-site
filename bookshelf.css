@@ -795,25 +795,20 @@
 
 @media (max-width: 768px) {
     .bookshelf-page-v2 { padding-top: 88px; }
-    .bookshelf-hero { padding: 0 7% 36px; }
+ .bookshelf-hero{
+    padding:0 24px 50px;
+    max-width:100%;
+}
+   .hero-copy{
+    font-size:.95rem;
+    line-height:1.8;
+}
     .hero-title { font-size: 2.4rem; }
     .hero-tagline { font-size: 1.3rem; }
 
     .shelf-scene { justify-content: center; text-align: center; }
-      
-    .props-cluster { justify-content: center; }
-   
 
-    .letter-card { max-width: 260px; margin: 0 auto; }
-
-    .spine-v2 { width: 52px; }
-    .spine-v2-text { font-size: 0.82rem; }
-
-    .trust-section, .payment-section { margin-top: 50px; }
-}
-
-@media (max-width: 480px) {
-   .shelf-scene--one{
+    .shelf-scene--one{
     display:flex;
     align-items:flex-end;
     justify-content:center;
@@ -834,6 +829,20 @@
        margin:0;
     transform:none;
     }
+      
+    .props-cluster { justify-content: center; }
+   
+
+    .letter-card { max-width: 260px; margin: 0 auto; }
+
+    .spine-v2 { width: 52px; }
+    .spine-v2-text { font-size: 0.82rem; }
+
+    .trust-section, .payment-section { margin-top: 50px; }
+}
+
+@media (max-width: 480px) {
+  
     
     .sticky-note { width: 110px; font-size: 1.15rem; }
 }
