@@ -834,18 +834,28 @@
         margin: 0 auto;
         padding: 0;
     }
-    .shelf-scene--one {
-        grid-template-areas:
-            "book  info"
-            "left  left"
-            "right right";
-    }
+
+   .shelf-scene--one{
+    grid-template-areas:
+        "note note"
+        "book info"
+        "left left"
+        "right right";
+}
     .shelf-scene--two {
-        grid-template-areas:
-            "book info"
-            "left left"
-            "soon soon";
+    grid-template-areas:
+    "note note"
+    "book info"
+    "left left"
+    "soon soon";    
     }
+
+   .shelf-scene--one .sticky-note,
+.shelf-scene--two .sticky-note{
+    grid-area:note;
+    justify-self:start;
+    margin-left:20px;
+}
 
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
