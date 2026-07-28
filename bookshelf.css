@@ -814,51 +814,63 @@
 
     /* ============================================================
        SHELF SCENE — grid recomposition
-       Desktop hand-places every piece with absolute px offsets
-       tuned for a wide canvas. Mobile rebuilds the same 4 pieces
-       (props-left, book, info, props-right / coming-soon) as a
-       2-column grid:
-           row 1:  book  | info      <- book+details stay side by side
-           row 2:  left  | right     <- decor clusters flank, still "on the shelf"
+       Row 1: book | info   <- side by side, book stays hero-sized
+       Row 2: props-left    <- full width, one tidy row of trinkets
+       Row 3: props-right / coming-soon <- full width, own row
+       Each decorative cluster now gets the FULL shelf width instead
+       of half of it, so items sit in one row instead of wrapping
+       into cramped fragments.
     ============================================================ */
     .shelf-scene--one,
     .shelf-scene--two {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "book info"
-            "left  right";
         align-items: end;
         column-gap: 14px;
-        row-gap: 26px;
+        row-gap: 18px;
         width: 100%;
         max-width: 600px;
         height: auto;
         margin: 0 auto;
         padding: 0;
     }
+    .shelf-scene--one {
+        grid-template-areas:
+            "book  info"
+            "left  left"
+            "right right";
+    }
     .shelf-scene--two {
         grid-template-areas:
             "book info"
-            "left  soon";
+            "left left"
+            "soon soon";
     }
 
-    /* ---- Book: the hero. Kept position:relative (inherited from
-       base) so the bookmark/flower accessories still anchor to it —
-       do not set position:static here. ---- */
+    /* ---- Book: the hero. shelf-one's book-figure is already
+       position:relative in base CSS (needed so the bookmark/flower
+       accessories anchor correctly) — kept as relative here, not
+       static, for both scenes so accessories keep working.
+       shelf-two's book-figure is position:absolute in base
+       (desktop-only placement) — MUST be reset here or it ignores
+       the grid entirely and floats over other content. ---- */
     .shelf-scene--one .book-figure,
     .shelf-scene--two .book-figure {
         grid-area: book;
+        position: relative;
+        left: auto;
+        bottom: auto;
+        top: auto;
         width: 100%;
         max-width: 170px;
         margin: 0;
         transform: none;
         justify-self: end;
+        align-self: start;
     }
 
-    /* The actual fix for the book/text overlap: base CSS sizes the
-       cover img itself (width:auto; max-width:330px), so shrinking
-       .book-figure alone did nothing — the image ignored it. */
+    /* Base CSS sizes the cover img itself (width:auto; max-width:330px),
+       so shrinking .book-figure alone does nothing — reset the image too. */
     .shelf-scene--one .book-cover img,
     .shelf-scene--two .book-cover img {
         width: 100%;
@@ -866,15 +878,10 @@
         height: auto;
     }
 
-    /* ---- Book info: stays beside the book, never under the shelf ---- */
-    .shelf-scene--one .book-info {
-        grid-area: info;
-        margin: 0;
-        transform: none;
-        width: 100%;
-        text-align: left;
-        justify-self: start;
-    }
+    /* ---- Book info: stays beside the book, top-aligned with it
+       so the title lines up near the book's top instead of the
+       taller text block floating above a shorter book. ---- */
+    .shelf-scene--one .book-info,
     .shelf-scene--two .book-info {
         grid-area: info;
         position: static;
@@ -885,25 +892,25 @@
         width: 100%;
         text-align: left;
         justify-self: start;
+        align-self: start;
     }
     .book-info h3 {
         font-size: 1.05rem;
         line-height: 1.25;
         margin-bottom: 6px;
     }
-    .book-subtitle       { font-size: 0.72rem; }
+    .book-subtitle         { font-size: 0.72rem; }
     .book-info-description {
         font-size: 0.78rem;
         line-height: 1.5;
         margin-bottom: 10px;
     }
-    .book-info-price     { font-size: 1.1rem; margin-bottom: 10px; }
-    .shelf-btn            { padding: 10px 18px; font-size: 0.82rem; }
+    .book-info-price { font-size: 1.1rem; margin-bottom: 10px; }
+    .shelf-btn        { padding: 10px 18px; font-size: 0.82rem; }
 
-    /* ---- Props clusters: reset desktop's absolute dollhouse
-       layout into bottom-aligned, wrapping rows — so any cluster
-       still reads as trinkets sitting on the shelf, and nothing
-       clips or overflows on very narrow phones. ---- */
+    /* ---- Props clusters: each gets the FULL shelf width now (see
+       grid-template-areas above), laid out as one wrapping flex
+       row — this is the fix for the tiny/fragmented prop look. ---- */
     .shelf-scene--one .props-cluster--left,
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
@@ -914,7 +921,7 @@
         flex-wrap: wrap;
         align-items: flex-end;
         justify-content: center;
-        gap: 6px;
+        gap: 10px;
     }
     .shelf-scene--one .props-cluster--left  { grid-area: left; }
     .shelf-scene--one .props-cluster--right { grid-area: right; }
@@ -930,19 +937,19 @@
     }
 
     /* ---- Individual props: strip absolute left/bottom, resize
-       down to "shelf trinket" scale (width only — height follows
-       naturally, same pattern the desktop rules already use) ---- */
+       to shelf-trinket scale. Full-width rows mean these can be a
+       little more generous than a cramped half-column allowed. ---- */
     .shelf-scene--one .prop {
         position: static;
         left: auto;
         bottom: auto;
     }
-    .shelf-scene--one .prop-jar     { width: 70px; }
-    .shelf-scene--one .prop-house   { width: 62px; }
-    .shelf-scene--one .prop-stack   { width: 54px; }
-    .shelf-scene--one .prop-lantern { width: 62px; }
-    .shelf-scene--one .prop-vine    { width: 52px; }
-    .shelf-scene--one .prop-plant   { width: 72px; }
+    .shelf-scene--one .prop-jar     { width: 78px; }
+    .shelf-scene--one .prop-house   { width: 68px; }
+    .shelf-scene--one .prop-stack   { width: 58px; }
+    .shelf-scene--one .prop-lantern { width: 70px; }
+    .shelf-scene--one .prop-vine    { width: 56px; }
+    .shelf-scene--one .prop-plant   { width: 80px; }
 
     .shelf-scene--two .prop-star,
     .shelf-scene--two .prop-plant-left {
@@ -950,18 +957,18 @@
         left: auto;
         bottom: auto;
     }
-    .shelf-scene--two .prop-star       { width: 76px; }
-    .shelf-scene--two .prop-plant-left { width: 90px; }
+    .shelf-scene--two .prop-star       { width: 84px; }
+    .shelf-scene--two .prop-plant-left { width: 100px; }
 
-    /* ---- Sticky notes: small tag tucked into the cluster row
+    /* ---- Sticky notes: small tag folded into the cluster row
        instead of desktop's far-above floated placement. The arrow
-       was drawn to point at desktop-only geometry, so it's hidden. ---- */
+       pointed at desktop-only geometry, so it's hidden here. ---- */
     .shelf-scene--one .sticky-note,
     .shelf-scene--two .sticky-note {
         position: relative;
         left: auto;
         top: auto;
-        width: 84px;
+        width: 86px;
         font-size: 0.75rem;
         padding: 18px 8px 8px;
     }
@@ -976,13 +983,13 @@
     }
 
     /* ---- Coming soon spines ---- */
-    .spine-row-v2      { flex-wrap: wrap; justify-content: center; }
-    .spine-v2          { width: 46px; }
-    .spine-v2-text     { font-size: 0.72rem; }
-    .coming-soon-tag   { font-size: 1.05rem; padding: 6px 16px; }
+    .spine-row-v2    { flex-wrap: wrap; justify-content: center; }
+    .spine-v2        { width: 46px; }
+    .spine-v2-text   { font-size: 0.72rem; }
+    .coming-soon-tag { font-size: 1.05rem; padding: 6px 16px; }
 
-    /* ---- Letter card: becomes its own centered note below shelf
-       two, no longer pulled up -300px to overlap the scene ---- */
+    /* ---- Letter card: its own centered note below shelf two,
+       no longer pulled up -300px to overlap the scene ---- */
     .letter-card {
         position: relative;
         top: 0;
@@ -999,30 +1006,29 @@
 
 @media (max-width: 480px) {
 
-    /* Tighten the same composition for small phones — proportions
-       shrink further, but the grid structure (book|info, left|right)
-       stays identical to the 768px block. */
+    /* Tighten the same composition — proportions shrink further,
+       grid structure (book|info, left, right/soon rows) unchanged. */
     .shelf-scene--one,
     .shelf-scene--two {
-        row-gap: 20px;
+        row-gap: 14px;
     }
     .shelf-scene--one .book-figure,
     .shelf-scene--two .book-figure {
         max-width: 130px;
     }
 
-    .shelf-scene--one .prop-jar     { width: 58px; }
-    .shelf-scene--one .prop-house   { width: 52px; }
-    .shelf-scene--one .prop-stack   { width: 44px; }
-    .shelf-scene--one .prop-lantern { width: 52px; }
-    .shelf-scene--one .prop-vine    { width: 44px; }
-    .shelf-scene--one .prop-plant   { width: 60px; }
-    .shelf-scene--two .prop-star       { width: 62px; }
-    .shelf-scene--two .prop-plant-left { width: 74px; }
+    .shelf-scene--one .prop-jar     { width: 64px; }
+    .shelf-scene--one .prop-house   { width: 56px; }
+    .shelf-scene--one .prop-stack   { width: 48px; }
+    .shelf-scene--one .prop-lantern { width: 56px; }
+    .shelf-scene--one .prop-vine    { width: 46px; }
+    .shelf-scene--one .prop-plant   { width: 66px; }
+    .shelf-scene--two .prop-star       { width: 68px; }
+    .shelf-scene--two .prop-plant-left { width: 82px; }
 
     .shelf-scene--one .sticky-note,
     .shelf-scene--two .sticky-note {
-        width: 70px;
+        width: 72px;
         font-size: 0.68rem;
     }
 
