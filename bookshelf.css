@@ -814,10 +814,12 @@
 
     /* ============================================================
        SHELF SCENE — grid recomposition
-       Row 1: note  |  .      <- sticky note sits directly above the book
-       Row 2: book  |  info   <- side by side, book stays hero-sized
-       Row 3: left  |  left   <- full-width row of trinkets
-       Row 4: right |  right  (shelf one) / soon | soon (shelf two)
+       Row 1: book | info   <- side by side, book stays hero-sized
+       Row 2: left | left   <- full-width row of trinkets
+       Row 3: right | right (shelf one) / soon | soon (shelf two)
+
+       padding-top reserves empty space above row 1 — that's where
+       the sticky note (positioned absolutely, see below) sits.
     ============================================================ */
     .shelf-scene--one,
     .shelf-scene--two {
@@ -830,39 +832,39 @@
         max-width: 600px;
         height: auto;
         margin: 0 auto;
-        padding: 0;
+        padding-top: 54px;
     }
     .shelf-scene--one {
         grid-template-areas:
-            "note  ."
             "book  info"
             "left  left"
             "right right";
     }
     .shelf-scene--two {
         grid-template-areas:
-            "note  ."
             "book  info"
             "left  left"
             "soon  soon";
     }
 
-    /* ---- Sticky note: its own row, right-aligned in column 1 so
-       it sits directly above the book (which is also right-aligned
-       in that column). Negative bottom margin lets it tuck slightly
-       over the book's top corner, like a note actually pinned to it,
-       rather than floating with a full gap above. ---- */
+    /* ---- Sticky note: NOT a grid item — grid-area only works on
+       direct children of the grid container, and .sticky-note is
+       nested inside .props-cluster--left, two levels down. So it's
+       pulled out with position:absolute instead, anchored to
+       .shelf-scene (position:relative already in your base CSS).
+       right: calc(50% + 7px) is the exact grid-line coordinate
+       where column 1 ends — the same edge the book right-aligns
+       to — so the note lines up with the book at any width. ---- */
     .shelf-scene--one .sticky-note,
     .shelf-scene--two .sticky-note {
-        grid-area: note;
-        justify-self: end;
-        position: relative;
-        left: auto;
-        top: auto;
+        position: absolute;
+        top: 4px;
+        right: calc(50% + 7px);
+        z-index: 6;
+        margin: 0;
         width: 88px;
         font-size: 0.75rem;
         padding: 18px 8px 8px;
-        margin: 0 6px -14px 0;
     }
     .shelf-scene--one .sticky-note { transform: rotate(-8deg); }
     .shelf-scene--two .sticky-note { transform: rotate(6deg); }
@@ -935,16 +937,18 @@
     .book-info-price { font-size: 1.1rem; margin-bottom: 10px; }
     .shelf-btn        { padding: 10px 18px; font-size: 0.82rem; }
 
-    /* ---- Props clusters: each gets the FULL shelf width (see
-       grid-template-areas above), laid out as one tidy row.
-       flex-direction: row is explicit here because the base
-       (non-media) rule ".props-cluster--left { flex-direction:
-       column }" applies at every screen size and was never reset —
-       that's what was stacking the jar/house/stack vertically. ---- */
+    /* ---- Props clusters: each gets the FULL shelf width, laid
+       out as one tidy row. flex-direction: row is explicit here
+       because the base (non-media) rule ".props-cluster--left {
+       flex-direction: column }" applies at every screen size and
+       was never reset — that's what stacked the jar/house/stack
+       vertically in your last screenshots. position:relative is
+       removed here on purpose, so it can't intercept the sticky
+       note's absolute positioning above — .shelf-scene stays the
+       one positioning context for that. ---- */
     .shelf-scene--one .props-cluster--left,
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
-        position: relative;
         width: 100%;
         height: auto;
         display: flex;
@@ -996,8 +1000,7 @@
     .spine-v2-text   { font-size: 0.72rem; }
     .coming-soon-tag { font-size: 1.05rem; padding: 6px 16px; }
 
-    /* ---- Letter card: its own centered note below shelf two,
-       no longer pulled up -300px to overlap the scene ---- */
+    /* ---- Letter card: its own centered note below shelf two ---- */
     .letter-card {
         position: relative;
         top: 0;
@@ -1015,10 +1018,12 @@
 @media (max-width: 480px) {
 
     /* Tighten the same composition — proportions shrink further,
-       grid structure unchanged. */
+       grid structure unchanged. right: calc(50% + 7px) still holds
+       since column-gap stays 14px at this breakpoint too. */
     .shelf-scene--one,
     .shelf-scene--two {
         row-gap: 14px;
+        padding-top: 46px;
     }
     .shelf-scene--one .book-figure,
     .shelf-scene--two .book-figure {
@@ -1027,9 +1032,9 @@
 
     .shelf-scene--one .sticky-note,
     .shelf-scene--two .sticky-note {
+        top: 2px;
         width: 74px;
         font-size: 0.68rem;
-        margin: 0 4px -12px 0;
     }
 
     .shelf-scene--one .prop-jar     { width: 64px; }
