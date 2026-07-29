@@ -1023,12 +1023,12 @@
         bottom: auto;
     }
     
-.shelf-scene--one .prop-jar     { width: 56px; }
-    .shelf-scene--one .prop-house   { width: 50px; }
-    .shelf-scene--one .prop-stack   { width: 46px; }
-    .shelf-scene--one .prop-lantern { width: 84px; }
-    .shelf-scene--one .prop-vine    { width: 90px; }
-    .shelf-scene--one .prop-plant   { width: 96px; }
+.shelf-scene--one .prop-jar     { width: 200px; }
+    .shelf-scene--one .prop-house   { width: 250px; }
+    .shelf-scene--one .prop-stack   { width: 150px; }
+    .shelf-scene--one .prop-lantern { width: 150px; }
+    .shelf-scene--one .prop-vine    { width: 200px; }
+    .shelf-scene--one .prop-plant   { width: 200px; }
 
     .shelf-scene--one .props-cluster--right {
         margin-bottom: -10px;
@@ -1037,8 +1037,8 @@
         margin-bottom: -10px;
     }
 
-    .shelf-scene--two .prop-star       { width: 60px; }
-    .shelf-scene--two .prop-plant-left { width: 80px; }
+    .shelf-scene--two .prop-star       { width: 250px; }
+    .shelf-scene--two .prop-plant-left { width: 200px; }
     /* ---- Coming soon spines ---- */
     .spine-row-v2    { flex-wrap: wrap; justify-content: center; }
     .spine-v2        { width: 46px; }
