@@ -885,6 +885,7 @@
         height: 20px;
         background: var(--oak-dark);
         clip-path: polygon(0 0, 100% 0, 0 100%);
+       padding-top: 18px;
     }
     .shelf-scene--two .coming-soon-cluster::before { left: 6%; }
     .shelf-scene--two .coming-soon-cluster::after   { right: 6%; transform: scaleX(-1); }
@@ -939,7 +940,7 @@
         margin: 0;
         transform: none;
         justify-self: end;
-        align-self: start;
+        align-self: end;
     }
 
     /* Base CSS sizes the cover img itself (width:auto; max-width:330px),
@@ -963,7 +964,7 @@
         width: 100%;
         text-align: left;
         justify-self: start;
-        align-self: start;
+        align-self: end;
     }
     .book-info h3 {
         font-size: 1.05rem;
@@ -1021,22 +1022,23 @@
         left: auto;
         bottom: auto;
     }
-    .shelf-scene--one .prop-jar     { width: 78px; }
-    .shelf-scene--one .prop-house   { width: 68px; }
-    .shelf-scene--one .prop-stack   { width: 58px; }
-    .shelf-scene--one .prop-lantern { width: 70px; }
-    .shelf-scene--one .prop-vine    { width: 56px; }
-    .shelf-scene--one .prop-plant   { width: 80px; }
+    
+.shelf-scene--one .prop-jar     { width: 56px; }
+    .shelf-scene--one .prop-house   { width: 50px; }
+    .shelf-scene--one .prop-stack   { width: 46px; }
+    .shelf-scene--one .prop-lantern { width: 84px; }
+    .shelf-scene--one .prop-vine    { width: 90px; }
+    .shelf-scene--one .prop-plant   { width: 96px; }
 
-    .shelf-scene--two .prop-star,
-    .shelf-scene--two .prop-plant-left {
-        position: static;
-        left: auto;
-        bottom: auto;
+    .shelf-scene--one .props-cluster--right {
+        margin-bottom: -10px;
     }
-    .shelf-scene--two .prop-star       { width: 84px; }
-    .shelf-scene--two .prop-plant-left { width: 100px; }
+    .shelf-scene--two .props-cluster--left {
+        margin-bottom: -10px;
+    }
 
+    .shelf-scene--two .prop-star       { width: 60px; }
+    .shelf-scene--two .prop-plant-left { width: 80px; }
     /* ---- Coming soon spines ---- */
     .spine-row-v2    { flex-wrap: wrap; justify-content: center; }
     .spine-v2        { width: 46px; }
@@ -1080,15 +1082,14 @@
         font-size: 0.68rem;
     }
 
-    .shelf-scene--one .prop-jar     { width: 64px; }
-    .shelf-scene--one .prop-house   { width: 56px; }
-    .shelf-scene--one .prop-stack   { width: 48px; }
-    .shelf-scene--one .prop-lantern { width: 56px; }
-    .shelf-scene--one .prop-vine    { width: 46px; }
-    .shelf-scene--one .prop-plant   { width: 66px; }
-    .shelf-scene--two .prop-star       { width: 68px; }
-    .shelf-scene--two .prop-plant-left { width: 82px; }
-
+   .shelf-scene--one .prop-jar     { width: 46px; }
+    .shelf-scene--one .prop-house   { width: 42px; }
+    .shelf-scene--one .prop-stack   { width: 38px; }
+    .shelf-scene--one .prop-lantern { width: 68px; }
+    .shelf-scene--one .prop-vine    { width: 72px; }
+    .shelf-scene--one .prop-plant   { width: 78px; }
+    .shelf-scene--two .prop-star       { width: 50px; }
+    .shelf-scene--two .prop-plant-left { width: 66px; }
     .spine-v2 { width: 40px; }
 
     .letter-card {
@@ -1100,5 +1101,9 @@
    .shelf-scene--two .coming-soon-cluster::before,
     .shelf-scene--two .coming-soon-cluster::after {
         top: -14px;
+    }
+
+   .shelf-scene--two .coming-soon-cluster {
+        padding-top: 14px;
     }
 }
