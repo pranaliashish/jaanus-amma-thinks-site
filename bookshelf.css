@@ -1121,15 +1121,7 @@
         font-size: 0.68rem;
     }
 
-   .shelf-scene--one .prop-jar     { width: 46px; }
-    .shelf-scene--one .prop-house   { width: 42px; }
-    .shelf-scene--one .prop-stack   { width: 38px; }
-    .shelf-scene--one .prop-lantern { width: 68px; }
-    .shelf-scene--one .prop-vine    { width: 72px; }
-    .shelf-scene--one .prop-plant   { width: 78px; }
-    .shelf-scene--two .prop-star       { width: 50px; }
-    .shelf-scene--two .prop-plant-left { width: 66px; }
-    .spine-v2 { width: 40px; }
+  
 
     .letter-card {
         max-width: 220px;
