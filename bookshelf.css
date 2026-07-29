@@ -946,9 +946,10 @@
        removed here on purpose, so it can't intercept the sticky
        note's absolute positioning above — .shelf-scene stays the
        one positioning context for that. ---- */
-    .shelf-scene--one .props-cluster--left,
+  .shelf-scene--one .props-cluster--left,
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
+        position: static;
         width: 100%;
         height: auto;
         display: flex;
