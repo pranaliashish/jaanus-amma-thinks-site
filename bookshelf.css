@@ -814,12 +814,10 @@
 
     /* ============================================================
        SHELF SCENE — grid recomposition
-       Row 1: book | info   <- side by side, book stays hero-sized
-       Row 2: props-left    <- full width, one tidy row of trinkets
-       Row 3: props-right / coming-soon <- full width, own row
-       Each decorative cluster now gets the FULL shelf width instead
-       of half of it, so items sit in one row instead of wrapping
-       into cramped fragments.
+       Row 1: note  |  .      <- sticky note sits directly above the book
+       Row 2: book  |  info   <- side by side, book stays hero-sized
+       Row 3: left  |  left   <- full-width row of trinkets
+       Row 4: right |  right  (shelf one) / soon | soon (shelf two)
     ============================================================ */
     .shelf-scene--one,
     .shelf-scene--two {
@@ -834,28 +832,49 @@
         margin: 0 auto;
         padding: 0;
     }
-
-   .shelf-scene--one{
-    grid-template-areas:
-        "note note"
-        "book info"
-        "left left"
-        "right right";
-}
+    .shelf-scene--one {
+        grid-template-areas:
+            "note  ."
+            "book  info"
+            "left  left"
+            "right right";
+    }
     .shelf-scene--two {
-    grid-template-areas:
-    "note note"
-    "book info"
-    "left left"
-    "soon soon";    
+        grid-template-areas:
+            "note  ."
+            "book  info"
+            "left  left"
+            "soon  soon";
     }
 
-   .shelf-scene--one .sticky-note,
-.shelf-scene--two .sticky-note{
-    grid-area:note;
-    justify-self:start;
-    margin-left:20px;
-}
+    /* ---- Sticky note: its own row, right-aligned in column 1 so
+       it sits directly above the book (which is also right-aligned
+       in that column). Negative bottom margin lets it tuck slightly
+       over the book's top corner, like a note actually pinned to it,
+       rather than floating with a full gap above. ---- */
+    .shelf-scene--one .sticky-note,
+    .shelf-scene--two .sticky-note {
+        grid-area: note;
+        justify-self: end;
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 88px;
+        font-size: 0.75rem;
+        padding: 18px 8px 8px;
+        margin: 0 6px -14px 0;
+    }
+    .shelf-scene--one .sticky-note { transform: rotate(-8deg); }
+    .shelf-scene--two .sticky-note { transform: rotate(6deg); }
+    .shelf-scene--one .sticky-note::before,
+    .shelf-scene--two .sticky-note::before {
+        width: 30px;
+        height: 12px;
+    }
+    .shelf-scene--one .note-arrow,
+    .shelf-scene--two .note-arrow {
+        display: none;
+    }
 
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
@@ -888,9 +907,7 @@
         height: auto;
     }
 
-    /* ---- Book info: stays beside the book, top-aligned with it
-       so the title lines up near the book's top instead of the
-       taller text block floating above a shorter book. ---- */
+    /* ---- Book info: stays beside the book, top-aligned with it. ---- */
     .shelf-scene--one .book-info,
     .shelf-scene--two .book-info {
         grid-area: info;
@@ -918,9 +935,12 @@
     .book-info-price { font-size: 1.1rem; margin-bottom: 10px; }
     .shelf-btn        { padding: 10px 18px; font-size: 0.82rem; }
 
-    /* ---- Props clusters: each gets the FULL shelf width now (see
-       grid-template-areas above), laid out as one wrapping flex
-       row — this is the fix for the tiny/fragmented prop look. ---- */
+    /* ---- Props clusters: each gets the FULL shelf width (see
+       grid-template-areas above), laid out as one tidy row.
+       flex-direction: row is explicit here because the base
+       (non-media) rule ".props-cluster--left { flex-direction:
+       column }" applies at every screen size and was never reset —
+       that's what was stacking the jar/house/stack vertically. ---- */
     .shelf-scene--one .props-cluster--left,
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
@@ -928,6 +948,7 @@
         width: 100%;
         height: auto;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-end;
         justify-content: center;
@@ -947,8 +968,7 @@
     }
 
     /* ---- Individual props: strip absolute left/bottom, resize
-       to shelf-trinket scale. Full-width rows mean these can be a
-       little more generous than a cramped half-column allowed. ---- */
+       to shelf-trinket scale. ---- */
     .shelf-scene--one .prop {
         position: static;
         left: auto;
@@ -969,28 +989,6 @@
     }
     .shelf-scene--two .prop-star       { width: 84px; }
     .shelf-scene--two .prop-plant-left { width: 100px; }
-
-    /* ---- Sticky notes: small tag folded into the cluster row
-       instead of desktop's far-above floated placement. The arrow
-       pointed at desktop-only geometry, so it's hidden here. ---- */
-    .shelf-scene--one .sticky-note,
-    .shelf-scene--two .sticky-note {
-        position: relative;
-        left: auto;
-        top: auto;
-        width: 86px;
-        font-size: 0.75rem;
-        padding: 18px 8px 8px;
-    }
-    .shelf-scene--one .sticky-note::before,
-    .shelf-scene--two .sticky-note::before {
-        width: 30px;
-        height: 12px;
-    }
-    .shelf-scene--one .note-arrow,
-    .shelf-scene--two .note-arrow {
-        display: none;
-    }
 
     /* ---- Coming soon spines ---- */
     .spine-row-v2    { flex-wrap: wrap; justify-content: center; }
@@ -1017,7 +1015,7 @@
 @media (max-width: 480px) {
 
     /* Tighten the same composition — proportions shrink further,
-       grid structure (book|info, left, right/soon rows) unchanged. */
+       grid structure unchanged. */
     .shelf-scene--one,
     .shelf-scene--two {
         row-gap: 14px;
@@ -1025,6 +1023,13 @@
     .shelf-scene--one .book-figure,
     .shelf-scene--two .book-figure {
         max-width: 130px;
+    }
+
+    .shelf-scene--one .sticky-note,
+    .shelf-scene--two .sticky-note {
+        width: 74px;
+        font-size: 0.68rem;
+        margin: 0 4px -12px 0;
     }
 
     .shelf-scene--one .prop-jar     { width: 64px; }
@@ -1035,12 +1040,6 @@
     .shelf-scene--one .prop-plant   { width: 66px; }
     .shelf-scene--two .prop-star       { width: 68px; }
     .shelf-scene--two .prop-plant-left { width: 82px; }
-
-    .shelf-scene--one .sticky-note,
-    .shelf-scene--two .sticky-note {
-        width: 72px;
-        font-size: 0.68rem;
-    }
 
     .spine-v2 { width: 40px; }
 
