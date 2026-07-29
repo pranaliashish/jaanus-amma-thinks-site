@@ -992,15 +992,13 @@
   .shelf-scene--one .props-cluster--left,
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
-        position: static;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-end;
-        justify-content: center;
-        gap: 10px;
+      position:relative;
+
+    width:100%;
+
+    height:130px;
+
+    display:block;
     }
     .shelf-scene--one .props-cluster--left  { grid-area: left; }
     .shelf-scene--one .props-cluster--right { grid-area: right; }
@@ -1044,6 +1042,66 @@
     .spine-v2        { width: 46px; }
     .spine-v2-text   { font-size: 0.72rem; }
     .coming-soon-tag { font-size: 1.05rem; padding: 6px 16px; }
+
+   .prop-jar{
+
+    position:absolute;
+
+    left:5%;
+
+    bottom:10px;
+
+    width:65px;
+
+}
+
+   .prop-house{
+
+    position:absolute;
+
+    left:28%;
+
+    bottom:18px;
+
+    width:55px;
+
+}
+
+   .prop-stack{
+
+    position:absolute;
+
+    left:55%;
+
+    bottom:8px;
+
+    width:60px;
+
+}
+
+   .prop-lantern{
+
+    position:absolute;
+
+    left:2%;
+
+    bottom:-2px;
+
+    width:70px;
+
+}
+
+   .prop-plant{
+
+    position:absolute;
+
+    right:3%;
+
+    bottom:-10px;
+
+    width:85px;
+
+}
 
     /* ---- Letter card: its own centered note below shelf two ---- */
     .letter-card {
