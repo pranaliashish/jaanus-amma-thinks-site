@@ -842,11 +842,34 @@
     }
     .shelf-scene--two {
         grid-template-areas:
-            "book  info"
-            "left  left"
-            "soon  soon";
+            "book   info"
+            "left   left"
+            "plank2 plank2"
+            "soon   soon";
     }
 
+   /* ---- Extra shelf plank under book two + its props, matching
+       the real .shelf-plank-v2 styling. Faked with ::after since
+       there's no second HTML plank element — .shelf-scene--two
+       already uses ::before for its glow effect, so ::after is
+       free here. Note: the tiny corner wedge brackets on the real
+       plank use its own ::before/::after, which a pseudo-element
+       can't have nested — so this version is the plain plank
+       without those brackets. Say the word if you'd like those
+       added too once you see how this looks. ---- */
+    .shelf-scene--two::after {
+        content: "";
+        grid-area: plank2;
+        width: 100%;
+        height: 22px;
+        background-color: var(--oak-mid);
+        background-image: linear-gradient(rgba(0,0,0,0.08), rgba(0,0,0,0.08)), url("images/oak-texture-2.jpg");
+        background-size: cover, 900px auto;
+        background-repeat: no-repeat, repeat-x;
+        border-radius: 3px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.16), inset 0 2px 0 rgba(255,255,255,0.12);
+    }
+   
     /* ---- Sticky note: NOT a grid item — grid-area only works on
        direct children of the grid container, and .sticky-note is
        nested inside .props-cluster--left, two levels down. So it's
