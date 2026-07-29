@@ -1015,28 +1015,9 @@
 
     /* ---- Individual props: strip absolute left/bottom, resize
        to shelf-trinket scale. ---- */
-    .shelf-scene--one .prop {
-        position: static;
-        left: auto;
-        bottom: auto;
-    }
+   
     
-.shelf-scene--one .prop-jar     { width: 200px; }
-    .shelf-scene--one .prop-house   { width: 250px; }
-    .shelf-scene--one .prop-stack   { width: 150px; }
-    .shelf-scene--one .prop-lantern { width: 150px; }
-    .shelf-scene--one .prop-vine    { width: 200px; }
-    .shelf-scene--one .prop-plant   { width: 200px; }
 
-    .shelf-scene--one .props-cluster--right {
-        margin-bottom: -10px;
-    }
-    .shelf-scene--two .props-cluster--left {
-        margin-bottom: -10px;
-    }
-
-    .shelf-scene--two .prop-star       { width: 250px; }
-    .shelf-scene--two .prop-plant-left { width: 200px; }
     /* ---- Coming soon spines ---- */
     .spine-row-v2    { flex-wrap: wrap; justify-content: center; }
     .spine-v2        { width: 46px; }
