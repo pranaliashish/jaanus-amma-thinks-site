@@ -869,6 +869,25 @@
         border-radius: 3px;
         box-shadow: 0 10px 20px rgba(0,0,0,0.16), inset 0 2px 0 rgba(255,255,255,0.12);
     }
+
+   /* ---- Corner wedge brackets for the new plank2 — can't nest
+       pseudo-elements on .shelf-scene--two::after itself, so these
+       live on .coming-soon-cluster (the next row down) instead.
+       top: -18px matches this breakpoint's row-gap exactly, so the
+       wedges sit flush against plank2's bottom edge. left/right: 6%
+       mirrors the real .shelf-plank-v2 brackets' positioning. ---- */
+    .shelf-scene--two .coming-soon-cluster::before,
+    .shelf-scene--two .coming-soon-cluster::after {
+        content: "";
+        position: absolute;
+        top: -18px;
+        width: 26px;
+        height: 20px;
+        background: var(--oak-dark);
+        clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+    .shelf-scene--two .coming-soon-cluster::before { left: 6%; }
+    .shelf-scene--two .coming-soon-cluster::after   { right: 6%; transform: scaleX(-1); }
    
     /* ---- Sticky note: NOT a grid item — grid-area only works on
        direct children of the grid container, and .sticky-note is
@@ -1076,5 +1095,10 @@
         max-width: 220px;
         font-size: 1.05rem;
         padding: 20px 18px;
+    }
+
+   .shelf-scene--two .coming-soon-cluster::before,
+    .shelf-scene--two .coming-soon-cluster::after {
+        top: -14px;
     }
 }
