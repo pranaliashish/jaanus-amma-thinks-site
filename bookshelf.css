@@ -915,9 +915,11 @@
         width: 30px;
         height: 12px;
     }
-
+.shelf-scene--one .sticky-note {
+    top: -50px;
+}
 .shelf-scene--two .sticky-note {
-    top: -350px;
+    top: -50px;
 }
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
