@@ -897,17 +897,7 @@
        right: calc(50% + 7px) is the exact grid-line coordinate
        where column 1 ends — the same edge the book right-aligns
        to — so the note lines up with the book at any width. ---- */
-    .shelf-scene--one .sticky-note,
-    .shelf-scene--two .sticky-note {
-        position: absolute;
-        top: 4px;
-        right: calc(50% + 7px);
-        z-index: 6;
-        margin: 0;
-        width: 88px;
-        font-size: 0.75rem;
-        padding: 18px 8px 8px;
-    }
+   
     .shelf-scene--one .sticky-note { transform: rotate(-8deg); }
     .shelf-scene--two .sticky-note { transform: rotate(6deg); }
     .shelf-scene--one .sticky-note::before,
@@ -915,11 +905,18 @@
         width: 30px;
         height: 12px;
     }
-.shelf-scene--one .sticky-note {
-    top: -50px;
+.shelf-scene--one .sticky-note{
+    position:absolute;
+    top:-45px;
+    left:65px;      /* or right:... */
+    transform:rotate(-8deg);
 }
-.shelf-scene--two .sticky-note {
-    top: -50px;
+
+   .shelf-scene--two .sticky-note{
+    position:absolute;
+    top:-15px;
+    left:40px;
+    transform:rotate(6deg);
 }
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
@@ -1112,12 +1109,20 @@
         max-width: 150px;
     }
 
-    .shelf-scene--one .sticky-note,
-    .shelf-scene--two .sticky-note {
-        top: 2px;
-        width: 74px;
-        font-size: 0.68rem;
-    }
+ .shelf-scene--one .sticky-note{
+    position:absolute;
+    top:-45px;
+    left:65px;      /* or right:... */
+    transform:rotate(-8deg);
+}
+
+   .shelf-scene--two .sticky-note{
+    position:absolute;
+    top:-15px;
+    left:40px;
+    transform:rotate(6deg);
+}
+    
 
   
 
