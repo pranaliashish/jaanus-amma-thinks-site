@@ -837,7 +837,6 @@
     .shelf-scene--one {
         grid-template-areas:
             "book  info"
-            "left  left"
             "right right";
     }
     .shelf-scene--two {
@@ -989,7 +988,10 @@
        removed here on purpose, so it can't intercept the sticky
        note's absolute positioning above — .shelf-scene stays the
        one positioning context for that. ---- */
-  .shelf-scene--one .props-cluster--left,
+  .shelf-scene--one .props-cluster--left{
+    display: none;
+}
+   
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
       position:relative;
@@ -1128,7 +1130,9 @@
         font-size: 1.05rem;
         padding: 20px 18px;
     }
-
+.shelf-scene--one .props-cluster--left{
+    display: none;
+}
    .shelf-scene--two .coming-soon-cluster::before,
     .shelf-scene--two .coming-soon-cluster::after {
         top: -14px;
