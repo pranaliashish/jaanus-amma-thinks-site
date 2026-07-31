@@ -907,7 +907,6 @@
     }
 .shelf-scene--one .sticky-note{
     position:absolute;
-    max-width:30px;
    top:-55px;
     left:65px;      /* or right:... */
     transform:rotate(-8deg);
@@ -915,7 +914,6 @@
 
    .shelf-scene--two .sticky-note{
     position:absolute;
-      max-width:30px;
     top:-100px;
     left:40px;
     transform:rotate(6deg);
