@@ -1028,7 +1028,6 @@
         bottom: auto;
         margin: 0;
         width: 100%;
-       transform: translateY(25px);
     }
 
     /* ---- Individual props: strip absolute left/bottom, resize
