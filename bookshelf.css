@@ -929,6 +929,7 @@
     top:-470px;
     left:155px;
     transform:rotate(6deg);
+      z-index:1;
 }
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
@@ -1070,7 +1071,7 @@
         left:35px;
         bottom: -155px;
         width: 180px;
-       z-index: 15;
+       z-index:15;
     }
     .shelf-scene--one .prop-vine {
         position: absolute;
