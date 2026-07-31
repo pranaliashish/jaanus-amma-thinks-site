@@ -927,9 +927,8 @@
    .shelf-scene--two .sticky-note{
     position:absolute;
     top:-470px;
-    left:155px;
+    left:165px;
     transform:rotate(6deg);
-      z-index:1;
 }
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
