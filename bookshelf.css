@@ -1047,13 +1047,13 @@
     .shelf-scene--one .prop-lantern {
         position: absolute;
         left: -60px;
-        bottom: -20px;
+        bottom: -25px;
         width: 200px;
     }
     .shelf-scene--one .prop-plant {
         position: absolute;
-        left:5px;
-        bottom: -120px;
+        left:20px;
+        bottom: -140px;
         width: 180px;
     }
     .shelf-scene--one .prop-vine {
