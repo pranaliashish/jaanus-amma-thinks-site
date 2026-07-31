@@ -914,8 +914,8 @@
     .shelf-scene--two .sticky-note { transform: rotate(6deg); }
     .shelf-scene--one .sticky-note::before,
     .shelf-scene--two .sticky-note::before {
-        width: 24px;
-        height: 10px;
+        width: 20px;
+        height: 9px;
     }
 .shelf-scene--one .sticky-note{
     position:absolute;
