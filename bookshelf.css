@@ -926,7 +926,7 @@
 
    .shelf-scene--two .sticky-note{
     position:absolute;
-    top:-300px;
+    top:-390px;
     left:40px;
     transform:rotate(6deg);
 }
@@ -1062,19 +1062,19 @@
     .shelf-scene--one .prop-lantern {
         position: absolute;
         left: -60px;
-        bottom: -45px;
+        bottom: -50px;
         width: 200px;
     }
     .shelf-scene--one .prop-plant {
         position: absolute;
         left:35px;
-        bottom: -150px;
+        bottom: -155px;
         width: 180px;
     }
     .shelf-scene--one .prop-vine {
         position: absolute;
         left: 50px;
-        bottom: -30px;
+        bottom: -35px;
         width: 120px;
     }
    .shelf-scene--two .prop-star {
