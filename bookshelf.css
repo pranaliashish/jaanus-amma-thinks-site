@@ -903,7 +903,7 @@
     position: absolute;
     top: 4px;
     right: calc(50% + 7px);
-    z-index: 5;
+    z-index: 6;
     margin: 0;
     width: 88px;
     font-size: 0.75rem;
@@ -1070,7 +1070,7 @@
         left:35px;
         bottom: -155px;
         width: 180px;
-       z-index: 6;
+       z-index: 7;
     }
     .shelf-scene--one .prop-vine {
         position: absolute;
