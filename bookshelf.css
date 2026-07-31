@@ -1046,33 +1046,33 @@
     }
     .shelf-scene--one .prop-lantern {
         position: absolute;
-        left: -20px;
+        left: -60px;
         bottom: -20px;
         width: 200px;
     }
     .shelf-scene--one .prop-plant {
         position: absolute;
-        right: 3%;
-        bottom: -100px;
+        left:5px;
+        bottom: -120px;
         width: 180px;
     }
     .shelf-scene--one .prop-vine {
         position: absolute;
-        left: 30px;
-        bottom: -20px;
+        left: 50px;
+        bottom: -10px;
         width: 120px;
     }
    .shelf-scene--two .prop-star {
         position: absolute;
         left: 10px;
         right: 8%;
-        bottom: -30px;
+        bottom: -40px;
         width: 150px;
     }
     .shelf-scene--two .prop-plant-left {
         position: absolute;
         left: 0;
-        bottom: -10px;
+        bottom: -30px;
         width: 250px;
     }
 
