@@ -914,10 +914,11 @@
     .shelf-scene--two .sticky-note::before {
         width: 30px;
         height: 12px;
-       top: -358px;
     }
 
-
+.shelf-scene--two .sticky-note {
+    top: -350px;
+}
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
        accessories anchor correctly) — kept as relative here, not
@@ -1123,7 +1124,8 @@
         font-size: 1.05rem;
         padding: 20px 18px;
     }
-.shelf-scene--one .props-cluster--left{
+
+   .shelf-scene--one .props-cluster--left .prop {
     display: none;
 }
    .shelf-scene--two .coming-soon-cluster::before,
