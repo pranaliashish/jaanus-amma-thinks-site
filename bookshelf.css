@@ -915,10 +915,7 @@
         width: 30px;
         height: 12px;
     }
-    .shelf-scene--one .note-arrow,
-    .shelf-scene--two .note-arrow {
-        display: none;
-    }
+
 
     /* ---- Book: the hero. shelf-one's book-figure is already
        position:relative in base CSS (needed so the bookmark/flower
@@ -988,9 +985,14 @@
        removed here on purpose, so it can't intercept the sticky
        note's absolute positioning above — .shelf-scene stays the
        one positioning context for that. ---- */
-  .shelf-scene--one .props-cluster--left{
-    display: none;
-}
+ .shelf-scene--one .props-cluster--left {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+    .shelf-scene--one .props-cluster--left .prop {
+        display: none;
+    }
    
     .shelf-scene--one .props-cluster--right,
     .shelf-scene--two .props-cluster--left {
