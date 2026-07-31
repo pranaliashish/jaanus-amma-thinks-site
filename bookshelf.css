@@ -935,7 +935,7 @@
         bottom: auto;
         top: auto;
         width: 100%;
-        max-width: 170px;
+        max-width: 200px;
         margin: 0;
         transform: none;
         justify-self: end;
@@ -1070,7 +1070,7 @@
 
     bottom:-2px;
 
-    width:40px;
+    width:34px;
 
 }
 
@@ -1082,9 +1082,19 @@
 
     bottom:-10px;
 
-    width:45px;
+    width:38px;
 
 }
+
+   .prop-vine{
+    position:absolute;
+    left:38%;
+    bottom:4px;
+    width:60px;
+}
+
+   .shelf-scene--two .prop-star       { width: 28px; }
+    .shelf-scene--two .prop-plant-left { width: 50px; }
 
     /* ---- Letter card: its own centered note below shelf two ---- */
     .letter-card {
@@ -1113,7 +1123,7 @@
     }
     .shelf-scene--one .book-figure,
     .shelf-scene--two .book-figure {
-        max-width: 130px;
+        max-width: 150px;
     }
 
     .shelf-scene--one .sticky-note,
