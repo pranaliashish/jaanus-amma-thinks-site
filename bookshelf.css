@@ -1046,34 +1046,34 @@
     }
     .shelf-scene--one .prop-lantern {
         position: absolute;
-        left: 2%;
-        bottom: -10px;
+        left: -20px;
+        bottom: -20px;
         width: 200px;
     }
     .shelf-scene--one .prop-plant {
         position: absolute;
         right: 3%;
-        bottom: -50px;
-        width: 150px;
+        bottom: -100px;
+        width: 180px;
     }
     .shelf-scene--one .prop-vine {
         position: absolute;
         left: 30px;
-        bottom: 0;
-        width: 150px;
+        bottom: -20px;
+        width: 120px;
     }
    .shelf-scene--two .prop-star {
         position: absolute;
         left: 10px;
         right: 8%;
-        bottom: -50px;
+        bottom: -30px;
         width: 150px;
     }
     .shelf-scene--two .prop-plant-left {
         position: absolute;
         left: 0;
-        bottom: -50px;
-        width: 200px;
+        bottom: -10px;
+        width: 250px;
     }
 
     /* ---- Letter card: its own centered note below shelf two ---- */
