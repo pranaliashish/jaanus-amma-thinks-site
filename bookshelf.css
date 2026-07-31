@@ -907,14 +907,16 @@
     }
 .shelf-scene--one .sticky-note{
     position:absolute;
-    top:-45px;
+    width:30px;
+   top:-55px;
     left:65px;      /* or right:... */
     transform:rotate(-8deg);
 }
 
    .shelf-scene--two .sticky-note{
     position:absolute;
-    top:-15px;
+      width:30px;
+    top:-100px;
     left:40px;
     transform:rotate(6deg);
 }
@@ -1108,23 +1110,7 @@
     .shelf-scene--two .book-figure {
         max-width: 150px;
     }
-
- .shelf-scene--one .sticky-note{
-    position:absolute;
-    top:-45px;
-    left:65px;      /* or right:... */
-    transform:rotate(-8deg);
-}
-
-   .shelf-scene--two .sticky-note{
-    position:absolute;
-    top:-15px;
-    left:40px;
-    transform:rotate(6deg);
-}
     
-
-  
 
     .letter-card {
         max-width: 220px;
