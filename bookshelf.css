@@ -1052,19 +1052,19 @@
     .shelf-scene--one .prop-lantern {
         position: absolute;
         left: -60px;
-        bottom: -25px;
+        bottom: -45px;
         width: 200px;
     }
     .shelf-scene--one .prop-plant {
         position: absolute;
         left:35px;
-        bottom: -130px;
+        bottom: -150px;
         width: 180px;
     }
     .shelf-scene--one .prop-vine {
         position: absolute;
         left: 50px;
-        bottom: -10px;
+        bottom: -30px;
         width: 120px;
     }
    .shelf-scene--two .prop-star {
