@@ -914,6 +914,7 @@
     .shelf-scene--two .sticky-note::before {
         width: 30px;
         height: 12px;
+       top: -358px;
     }
 
 
