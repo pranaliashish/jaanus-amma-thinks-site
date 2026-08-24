@@ -5,6 +5,7 @@ category: Motherhood Reflections
 description: Feeling pressured to clean and catch up while your baby naps?
   Discover gentle, realistic tips to use nap time for rest, essential tasks, and
   caring for yourself too.
+cover: /images/uploads/motherhood-rest.png
 ---
 There is a strange kind of pressure that comes with becoming a mother.
 
